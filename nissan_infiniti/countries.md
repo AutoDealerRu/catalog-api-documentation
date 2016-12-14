@@ -2,10 +2,24 @@
 
 ## `GET /:mark/`
 
-| Конечная точка | Описание |
-| ---- | --------------- |
-| [GET /:NISSAN] | Список доступный стран Nissan |
-| [GET /:INFINITI] | Список доступный стран Infiniti |
+<table>
+    <thead>
+        <tr>
+            <th>Конечная точка</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GET /:NISSAN</td>
+            <td>Список доступный стран Nissan</td>
+        </tr>
+        <tr>
+            <td>GET /:INFINITI</td>
+            <td>Список доступный стран Infiniti</td>
+        </tr>
+    </tbody>
+</table>
 
 [users]: /v3_resources/users.md
 [channels]: /v3_resources/channels.md
