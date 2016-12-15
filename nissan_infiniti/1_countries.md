@@ -6,8 +6,8 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| [GET /NISSAN] | Страны марки Nissan |
-| [GET /INFINITI] | Страны марки Infiniti |
+| GET /NISSAN | Страны марки Nissan |
+| GET /INFINITI | Страны марки Infiniti |
 
 ### Пример запроса
 

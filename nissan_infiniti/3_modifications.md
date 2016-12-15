@@ -8,8 +8,8 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| [GET /NISSAN/EL/298] | Модификации Nissan Европа (лев) ALMERA JPN MAKE N16 |
-| [GET /INFINITI/ER/019] | Модификации Infiniti Европа (прав) G37 SEDAN V36 |
+| GET /NISSAN/EL/298 | Модификации Nissan Европа (лев) ALMERA JPN MAKE N16 |
+| GET /INFINITI/ER/019 | Модификации Infiniti Европа (прав) G37 SEDAN V36 |
 
 ### Пример запроса
 
