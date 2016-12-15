@@ -6,7 +6,7 @@ This README would normally document whatever steps are necessary to get your app
 
 * Quick summary
 * Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* [Example](https://github.com/justintv/Twitch-API/blob/master/v3_resources/streams.md)
 
 ### How do I get set up? ###
 
