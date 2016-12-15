@@ -8,8 +8,8 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| [GET /NISSAN/EL] | Список доступный моделей Nissan Европа (леворульные) |
-| [GET /INFINITI/ER] | Список доступный моделей Infiniti Европа (праворульные) |
+| [GET /NISSAN/EL] | Модели марки Nissan Европа (лев) |
+| [GET /INFINITI/ER] | Модели марки Infiniti Европа (прав) |
 
 ### Пример запроса
 
@@ -37,10 +37,6 @@ curl -H 'Authorization: <token>' \
     "breadcrumbs": [
         ...
         ,{
-            "name": "NISSAN",
-            "url": "NISSAN"
-        },
-        {
             "name": "Европа (лев)",
             "url": "EL"
         }
@@ -70,4 +66,4 @@ curl -H 'Authorization: <token>' \
 
 ## `GET /:mark/:country_short_name/:directory`
 
-Для перехода к списку моделей нужно выбрать модель и передать ее сокращение (directory)
+Для перехода к списку модификаций нужно выбрать модель и передать ее сокращение (directory) в GET параметры
