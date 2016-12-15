@@ -6,8 +6,8 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| [GET /NISSAN] | Список доступный стран Nissan |
-| [GET /INFINITI] | Список доступный стран Infiniti |
+| [GET /NISSAN] | Страны марки Nissan |
+| [GET /INFINITI] | Страны марки Infiniti |
 
 ### Пример запроса
 
@@ -22,19 +22,19 @@ curl -H 'Authorization: <token>' \
 {
     "countries": [
         {
-        "type": "CARS_FOREIGN",
-        "mark": "NISSAN",
-        "country_short_name": "AR",
-        "full_name": "Австралия"
+            "type": "CARS_FOREIGN",
+            "mark": "NISSAN",
+            "country_short_name": "AR",
+            "full_name": "Австралия"
         },
         ...
     ],
     "breadcrumbs": [
-        {
-        "name": "Каталог",
-        "url": "/catalogs"
-        },
         ...
+        ,{
+            "name": "NISSAN",
+            "url": "NISSAN"
+        }
     ]
 }
 ```
@@ -58,4 +58,4 @@ curl -H 'Authorization: <token>' \
 
 ## `GET /:mark/:country_short_name`
 
-Для перехода к списку моделей нужно выбрать одну из стран и передать ее сокращение (country_short_name)
+Для перехода к списку моделей нужно выбрать страну и передать ее сокращение (country_short_name) в GET параметры
