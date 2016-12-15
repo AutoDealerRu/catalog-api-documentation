@@ -52,7 +52,7 @@ curl -H 'Authorization: <token>' \
 | country_short_name | string | - | Сокращение страны (например: AR / GL ) |
 | model | string | - | Название модели (например ATLAS) |
 | serial | string | - | Серия модели (например F22, F23, F24) |
-| directory | string | Да | это число от 001 до 999 содержашее в себе текущую модель+серию |
+| directory | string | Да | Техсимвольное число содержашее в себе текущую модель+серию |
 | from_date | null/Date | - | Дата производства "от" |
 | to_date | null/Date | - | Дата производства "до" |
 

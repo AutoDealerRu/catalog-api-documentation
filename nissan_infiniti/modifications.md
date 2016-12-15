@@ -1,4 +1,4 @@
-# Модели (models)
+# Модификации (modifications)
 
 ## `GET /:mark/:country_short_name/:directory`
 
@@ -63,8 +63,8 @@ curl -H 'Authorization: <token>' \
 | country_short_name | string | - | Сокращение страны (например: AR / GL ) |
 | model | string | - | Название модели (например ATLAS) |
 | serial | string | - | Серия модели (например F22, F23, F24) |
-| directory | string | - | это число от 001 до 999 содержашее в себе текущую модель+серию |
-| modification | integer | Да | номер модификации |
+| directory | string | - | Техсимвольное число содержашее в себе текущую модель+серию |
+| modification | integer | Да | Номер модификации |
 | from_date | null/Date | - | Дата производства "от" |
 | to_date | null/Date | - | Дата производства "до" |
 | body | null/string | - | Кузов |
@@ -75,8 +75,6 @@ curl -H 'Authorization: <token>' \
 | other.name | string | - | Имя характеристики |
 | other.value | string | - | Значение характеристики |
 
-Звездочкой (*) омечен параметр для следующего запроса
-
 ### Значения breadcrumbs
 
 | Имя точка | Тип | Описание |
@@ -85,6 +83,6 @@ curl -H 'Authorization: <token>' \
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET /:mark/:country_short_name/:directory/:`
+## `GET /:mark/:country_short_name/:directory/:modification`
 
-Для перехода к списку групп нужно выбрать модель и передать ее сокращение (modification) в GET параметры
+Для перехода к списку групп нужно выбрать модификацию и передать ее сокращение (modification) в GET параметры
