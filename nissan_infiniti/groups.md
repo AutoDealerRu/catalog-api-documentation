@@ -64,9 +64,9 @@ curl -H 'Authorization: <token>' \
 | group_short | string | Да | Сокращенное имя группы |
 | group_name | string | - | Имя группы |
 | coordinate | object | - | Координаты |
-|   bottom | object | - | Нижние точки |
-|       x | integer | - | Нижний Х |
-|       y | integer | - | Нижний У |
+| coordinate.bottom | object | - | Нижние точки |
+| coordinate.bottom.x | integer | - | Нижний Х |
+| coordinate.bottom.y | integer | - | Нижний У |
 | coordinate.top | object | - | Верхние точки |
 | coordinate.top.x | integer | - | Верхний Х |
 | coordinate.top.y | integer | - | Верхний У |
