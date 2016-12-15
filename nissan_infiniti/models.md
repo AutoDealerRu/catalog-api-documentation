@@ -46,15 +46,15 @@ curl -H 'Authorization: <token>' \
 
 ### Значения models
 
-| Имя точка | Тип | Описание |
-| :---- | :------: | :--------------- |
-| mark | string | Название марки (NISSAN или INFINITI) |
-| country_short_name | string | Сокращение страны (например: AR / GL ) |
-| model | string | Название модели (например ATLAS) |
-| serial | string | Серия модели (например F22, F23, F24) |
-| directory | string | это число от 001 до 999 содержашее в себе текущую модель+серию |
-| from_date | null/Date | Дата производства "от" |
-| to_date | null/Date | Дата производства "до" |
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| mark | string | - | Название марки (NISSAN или INFINITI) |
+| country_short_name | string | - | Сокращение страны (например: AR / GL ) |
+| model | string | - | Название модели (например ATLAS) |
+| serial | string | - | Серия модели (например F22, F23, F24) |
+| directory | string | Да | это число от 001 до 999 содержашее в себе текущую модель+серию |
+| from_date | null/Date | - | Дата производства "от" |
+| to_date | null/Date | - | Дата производства "до" |
 
 ### Значения breadcrumbs
 

@@ -57,23 +57,25 @@ curl -H 'Authorization: <token>' \
 
 ### Значения modifications
 
-| Имя точка | Тип | Описание |
-| :---- | :------: | :--------------- |
-| mark | string | Название марки (NISSAN или INFINITI) |
-| country_short_name | string | Сокращение страны (например: AR / GL ) |
-| model | string | Название модели (например ATLAS) |
-| serial | string | Серия модели (например F22, F23, F24) |
-| directory | string | это число от 001 до 999 содержашее в себе текущую модель+серию |
-| modification | integer | номер модификации |
-| from_date | null/Date | Дата производства "от" |
-| to_date | null/Date | Дата производства "до" |
-| body | null/string | Кузов |
-| engine | null/string | Двигатель |
-| drive | null/string | Привод |
-| transmission | null/string | Трансмиссия |
-| other | array | остальные характеристики (array of objects) |
-| other.name | string | Имя характеристики |
-| other.value | string | Значение характеристики |
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| mark | string | - | Название марки (NISSAN или INFINITI) |
+| country_short_name | string | - | Сокращение страны (например: AR / GL ) |
+| model | string | - | Название модели (например ATLAS) |
+| serial | string | - | Серия модели (например F22, F23, F24) |
+| directory | string | - | это число от 001 до 999 содержашее в себе текущую модель+серию |
+| modification | integer | Да | номер модификации |
+| from_date | null/Date | - | Дата производства "от" |
+| to_date | null/Date | - | Дата производства "до" |
+| body | null/string | - | Кузов |
+| engine | null/string | - | Двигатель |
+| drive | null/string | - | Привод |
+| transmission | null/string | - | Трансмиссия |
+| other | array | - | остальные характеристики (array of objects) |
+| other.name | string | - | Имя характеристики |
+| other.value | string | - | Значение характеристики |
+
+Звездочкой (*) омечен параметр для следующего запроса
 
 ### Значения breadcrumbs
 
