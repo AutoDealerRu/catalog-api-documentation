@@ -57,8 +57,8 @@ curl -H 'Authorization: <token>' \
 | model | string | Название модели (например ATLAS) |
 | serial | string | Серия модели (например F22, F23, F24) |
 | directory | string | это число от 001 до 999 содержашее в себе текущую модель+серию |
-| from_date | null|Date | Дата производства "от" |
-| to_date | null|Date | Дата производства "до" |
+| from_date | null/Date | Дата производства "от" |
+| to_date | null/Date | Дата производства "до" |
 
 ### Значения breadcrumbs
 
