@@ -1,32 +1,13 @@
-# Countries (страны)
+# Страны (countries)
 
-## `GET /:mark/`
-
-<table>
-    <thead>
-        <tr>
-            <th>Конечная точка</th>
-            <th>Описание</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>GET /:NISSAN</td>
-            <td>Список доступный стран Nissan</td>
-        </tr>
-        <tr>
-            <td>GET /:INFINITI</td>
-            <td>Список доступный стран Infiniti</td>
-        </tr>
-    </tbody>
-</table>
-
-[users]: /v3_resources/users.md
-[channels]: /v3_resources/channels.md
-
-## `GET /:mark/`
+## `GET /:mark`
 
 Возвращает объект с двумя массивами countries и breadcrumbs
+
+| Конечная точка | Описание |
+| :---- | :--------------- |
+| [GET /NISSAN] | Список доступный стран Nissan |
+| [GET /INFINITI] | Список доступный стран Infiniti |
 
 ### Пример запроса
 
@@ -61,7 +42,7 @@ curl -H 'Authorization: <token>' \
 ### Значения countries
 
 | Имя точка | Тип | Описание |
-| ---- | --------------- | --------------- |
+| :---- | :------: | :--------------- |
 | type | string | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
 | mark | string | Название марки (NISSAN или INFINITI) |
 | country_short_name | string | Сокращение страны (например: AR / GL ) |
@@ -70,6 +51,11 @@ curl -H 'Authorization: <token>' \
 ### Значения breadcrumbs
 
 | Имя точка | Тип | Описание |
-| ---- | --------------- | --------------- |
+| :---- | :------: | :--------------- |
 | name | string | Имя хлебной крошки |
 | url | string | адрес текущей хлебной крошки |
+
+
+## `GET /:mark/:country_short_name`
+
+Для перехода к списку моделей нужно выбрать одну из стран и передать ее сокращение (country_short_name)
