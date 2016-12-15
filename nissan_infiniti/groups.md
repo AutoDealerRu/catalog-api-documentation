@@ -64,9 +64,9 @@ curl -H 'Authorization: <token>' \
 | group_short | string | Да | Сокращенное имя группы |
 | group_name | string | - | Имя группы |
 | coordinate | object | - | Координаты |
-| coordinate.bottom | object | - | Нижние точки |
-| coordinate.bottom.x | integer | - | Нижний Х |
-| coordinate.bottom.y | integer | - | Нижний У |
+|   bottom | object | - | Нижние точки |
+|       x | integer | - | Нижний Х |
+|       y | integer | - | Нижний У |
 | coordinate.top | object | - | Верхние точки |
 | coordinate.top.x | integer | - | Верхний Х |
 | coordinate.top.y | integer | - | Верхний У |
@@ -81,4 +81,4 @@ curl -H 'Authorization: <token>' \
 
 ## `GET /:mark/:country_short_name/:directory/:modification/:group_short`
 
-Для перехода к списку групп нужно выбрать группу и передать ее сокращение (group_short) в GET параметры
+Для перехода к списку подгрупп нужно выбрать группу и передать ее сокращение (group_short) в GET параметры
