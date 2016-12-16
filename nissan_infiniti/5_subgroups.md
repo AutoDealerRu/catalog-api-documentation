@@ -76,8 +76,6 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| image | string | - | Путь до картинки |
-| items | array | - | Все группы относящиеся к данному изображению |
 | mark | string | - | Название марки (NISSAN или INFINITI) |
 | country_short_name | string | - | Сокращение страны (например: AR / GL ) |
 | directory | string | - | Техсимвольное число содержашее в себе текущую модель+серию |
@@ -92,9 +90,6 @@ curl -H 'Authorization: <token>' \
 | coordinate.top | object | - | Верхние точки |
 | coordinate.top.x | integer | - | Верхний Х |
 | coordinate.top.y | integer | - | Верхний У |
-
-#### ВАЖНО! В массиве subgroups количество подмассивов равно количеству изображений.
-#### Все подгрупы в массиве subgroups[0] относятся к изображению images[0] и т.д.
 
 ### Значения breadcrumbs
 
