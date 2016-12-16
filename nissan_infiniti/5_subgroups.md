@@ -2,7 +2,12 @@
 
 ## `GET /:mark/:country_short_name/:directory/:modification/:group`
 
-Возвращает объект с images, subgroups и breadcrumbs
+### Возвращает объект содержащий:
+1. images - все возможные изображения (закладки); 
+2. subgroups - подгруппы для всех картинок; 
+3. breadcrumbs (хлебные крошки) - массив из имен и путей.
+
+Возвращает объект с images, subgroups и breadcrumbs (мыссивы)
 
 ### Примеры
 
@@ -66,7 +71,7 @@ curl -H 'Authorization: <token>' \
 | Имя точка | Тип | Описание |
 | :---- | :------: | :--------------- |
 | images | Array | Пути до изображений |
-| images[0] | string | Каждая картинка images[key] используется в подруппах subgroups[key]|
+| images[0] | string | Путь до картинки |
 
 ### Значения subgroups
 
@@ -86,6 +91,9 @@ curl -H 'Authorization: <token>' \
 | coordinate.top | object | - | Верхние точки |
 | coordinate.top.x | integer | - | Верхний Х |
 | coordinate.top.y | integer | - | Верхний У |
+
+#### ВАЖНО! В массиве subgroups количество подмассивов равно количеству изображений.
+#### Все подгрупы в массиве subgroups[0] относятся к изображению images[0] и т.д.
 
 ### Значения breadcrumbs
 
