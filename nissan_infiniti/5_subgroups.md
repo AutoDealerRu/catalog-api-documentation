@@ -3,9 +3,8 @@
 ## `GET /:mark/:country_short_name/:directory/:modification/:group`
 
 ### Возвращает объект содержащий:
-1. images - все возможные изображения (закладки); 
-2. subgroups - подгруппы для всех картинок; 
-3. breadcrumbs (хлебные крошки) - массив из имен и путей.
+1. subgroups - подгруппы для всех картинок; 
+2. breadcrumbs (хлебные крошки) - массив из имен и путей.
 
 Возвращает объект с images, subgroups и breadcrumbs (мыссивы)
 
@@ -27,33 +26,32 @@ curl -H 'Authorization: <token>' \
 
 ```json
 {
-    "images": [
-        "NISSAN/EL/298/GRPIMG/000000.gif",
-        ...
-    ],
     "subgroups": [
-        [
-            {
-                "mark": "NISSAN",
-                "country_short_name": "EL",
-                "directory": "298",
-                "group_short": "A",
-                "image_group": 1,
-                "figure": "101",
-                "group_name": "BARE & SHORT ENGINE",
-                "coordinate": {
-                    "bottom": {
-                        "x": 775,
-                        "y": 72
-                    },
-                    "top": {
-                        "x": 739,
-                        "y": 56
+        {
+            "image": "NISSAN/EL/298/GRPIMG/000000.gif",
+            "items": [
+                {
+                    "mark": "NISSAN",
+                    "country_short_name": "EL",
+                    "directory": "298",
+                    "group_short": "A",
+                    "image_group": 0,
+                    "figure": "101",
+                    "group_name": "BARE & SHORT ENGINE",
+                    "coordinate": {
+                        "bottom": {
+                            "x": 775,
+                            "y": 72
+                        },
+                        "top": {
+                            "x": 739,
+                            "y": 56
+                        }
                     }
-                }
-            },
-            ...
-        ],
+                },
+                ...
+            ]
+        },
         ...
     ],
     "breadcrumbs": [
@@ -66,17 +64,20 @@ curl -H 'Authorization: <token>' \
 }
 ```
 
-### Значения images
+### Значения subgroups
 
 | Имя точка | Тип | Описание |
 | :---- | :------: | :--------------- |
-| images | Array | Пути до изображений |
-| images[0] | string | Путь до картинки |
+| subgroups | array | Подгруппы сгруппированные с изображением |
+| subgroups[0].image | string | Путь до картинки |
+| subgroups[0].items | array | Все группы относящиеся к данному изображению |
 
-### Значения subgroups
+### Значения items (одного из элементов)
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
+| image | string | - | Путь до картинки |
+| items | array | - | Все группы относящиеся к данному изображению |
 | mark | string | - | Название марки (NISSAN или INFINITI) |
 | country_short_name | string | - | Сокращение страны (например: AR / GL ) |
 | directory | string | - | Техсимвольное число содержашее в себе текущую модель+серию |
