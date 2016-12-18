@@ -89,7 +89,7 @@ curl -H 'Authorization: <token>' \
 | categories[..].markets[..].code | string | - | Идентификатор рынка |
 | categories[..].markets[..].models | array | - | Модели |
 | categories[..].markets[..].models[..].name | string | - | Название модели |
-| categories[..].markets[..].models[..].short_name | string | - | Идентификатор модели |
+| categories[..].markets[..].models[..].short_name | string | Да | Идентификатор модели |
 | categories[..].markets[..].models[..].index | string | - | Порядковый номер модели |
 | categories[..].markets[..].models[..].market_code | string | - | Идентификатор рынка |
 | categories[..].markets[..].models[..].market_name | string | - | Название рынка |
@@ -99,8 +99,8 @@ curl -H 'Authorization: <token>' \
 | categories[..].markets[..].models[..].date_start | Date | - | Дата начала производства модели |
 | categories[..].markets[..].models[..].date_end | Date | - | Дата окончания производства модели |
 | categories[..].markets[..].models[..].options | string | - | Опции модели |
-| categories[..].markets[..].models[..].options[..].rule_position | string | - | Позиция руля (слева, справа, для мотоциклов - посередине) |
-| categories[..].markets[..].models[..].options[..].transmissions | string | - | КПП (автоматическая или ручная) |
+| categories[..].markets[..].models[..].options[..].rule_position | string | Да | Позиция руля (слева, справа, для мотоциклов - посередине) |
+| categories[..].markets[..].models[..].options[..].transmissions | array | Да | КПП (автоматическая или ручная) |
 
 
 ### Значения breadcrumbs

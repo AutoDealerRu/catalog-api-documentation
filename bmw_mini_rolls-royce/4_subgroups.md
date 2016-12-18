@@ -58,7 +58,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| short_name | integer | - | Индентификатор |
+| short_name | integer | Да | Индентификатор |
 | name | string | - | Наименование |
 | image | string | - | URL изображения |
 | index | integer | - | Порядковый номер |

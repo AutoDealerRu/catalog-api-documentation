@@ -54,7 +54,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| number | string | - | Номер группы |
+| number | string | Да | Номер группы |
 | name | string | - | Название группы |
 | image | string | - | URL изображения группы |
 | series_short_name | string | - | Идентификатор серии |
