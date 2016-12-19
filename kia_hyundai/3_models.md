@@ -1,6 +1,6 @@
 # Модели (models)
 
-## `GET /:mark/:country_short/:family`
+## `GET /:type/:mark/:country_short/:family`
 
 Возвращает объект с двумя массивами models и breadcrumbs
 
@@ -68,6 +68,6 @@ curl -H 'Authorization: <token>' \
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET /:mark/:country_short/:family/:model`
+## `GET /:type/:mark/:country_short/:family/:model`
 
 Для перехода к списку модификаций нужно выбрать модель и передать ее код (model) в GET параметры

@@ -1,6 +1,6 @@
 # Страны (countries)
 
-## `GET /:mark`
+## `GET /:type/:mark`
 
 Возвращает объект с двумя массивами countries и breadcrumbs
 
@@ -60,6 +60,6 @@ curl -H 'Authorization: <token>' \
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET /:mark/:country_short`
+## `GET /:type/:mark/:country_short`
 
 Для перехода к списку семейств нужно выбрать страну и передать ее сокращение (country_short) в GET параметры

@@ -1,6 +1,6 @@
 # Семейства (families)
 
-## `GET /:mark/:country_short`
+## `GET /:type/:mark/:country_short`
 
 Возвращает объект с двумя массивами families и breadcrumbs
 
@@ -58,6 +58,6 @@ curl -H 'Authorization: <token>' \
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET /:mark/:country_short/:family`
+## `GET /:type/:mark/:country_short/:family`
 
 Для перехода к списку моделей нужно выбрать Семейство (family) и передать его в GET параметры
