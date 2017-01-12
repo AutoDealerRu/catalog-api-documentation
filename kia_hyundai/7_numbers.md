@@ -117,14 +117,13 @@ curl -H 'Authorization: <token>' \
 | group | string | Да | Сокращение группы |
 | subgroup | string | Да | Сокращение подгруппы |
 
-### Пример запроса загрузки изображения
-
+#### Пример запроса загрузки изображения
 #### `GET /:type/:mark/:country_short/:family/:model/:modification/:group/:subgroup/image`
 ```bash
 curl -H 'Authorization: <token>' \
 -X GET https://acat.online/api/catalogs/CARS_FOREIGN/KIA/EUR/CARENS/EURK1D006A/BKWDS65/AC/AC004457EU/image
 ```
-#### В ответ придет изображение, если статус 200 - схема иначе 404 - "изображение не найдено" (в ответе так же будет картинка)
+#### В ответ придет изображение, если статус 200 (схема) или 404 ("изображение не найдено", с изображением - заглушкой)
 
 ### Значения numbers (number_type = 'NUMBER')
 
