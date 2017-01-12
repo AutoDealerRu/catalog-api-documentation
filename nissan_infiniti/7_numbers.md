@@ -21,28 +21,26 @@ curl -H 'Authorization: <token>' \
   "images": [
     ...,
     {
+        "type": "CARS_FOREIGN",
+        "mark": "INFINITI",
+        "country_short_name": "CA",
+        "directory": "001",
+        "modification": 1,
+        "group": "A",
+        "subgroup": "110",
+        "figure": "110C",
+        "section": "003"
         "current": true,
-        "subgroup": "110",
-        "group": "A",
-        "modification": 1,
-        "type": "CARS_FOREIGN",
-        "mark": "INFINITI",
-        "country_short_name": "CA",
-        "directory": "001",
-        "figure": "110C",
-        "section": "003",
-        "image": "NISSAN/CAINF/001/SECIMG/000190.gif"
     },{
-        "subgroup": "110",
-        "group": "A",
-        "modification": 1,
         "type": "CARS_FOREIGN",
         "mark": "INFINITI",
         "country_short_name": "CA",
         "directory": "001",
+        "modification": 1,
+        "group": "A",
+        "subgroup": "110",
         "figure": "110C",
-        "section": "004",
-        "image": "NISSAN/CAINF/001/SECIMG/0001D8.gif"
+        "section": "004"
     }
   ],
   "numbers": [
@@ -153,10 +151,17 @@ curl -H 'Authorization: <token>' \
 | figure | string | ДА | Номер фигуры |
 | section | string | ДА | Номер изображения (закладки / секции) |
 | current | boolean | - | Текущее изображение (Да или не будет этой переменной) |
-| image | string | - | Изображение закладки (полный путь) |
 
-#### Пример построения ссылки для изображения (закладки)
+#### Пример построения ссылки для закладки (изображения)
 #### `/:type/:mark/:country_short_name/:directory/:modification/:group/:subgroup/:figure/:section`
+
+#### Пример запроса загрузки изображения
+#### `GET /:mark/:country_short_name/:directory/:modification/:group/:subgroup/:figure/:section/image`
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/INFINITI/CA/001/1/A/110/110C/003/image
+```
+#### В ответ придет изображение, если статус 200 (схема) или 404 ("изображение не найдено", с изображением - заглушкой)
 
 ## Типы номеров:
 
