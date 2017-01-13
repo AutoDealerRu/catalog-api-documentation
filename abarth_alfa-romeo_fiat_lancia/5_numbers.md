@@ -1,6 +1,6 @@
 # Основные узлы
 
-## `GET /:mark/:model_short_name/:modification_short_name`
+## `GET /:mark/:model_short_name/:modification_short_name/:unit_short_name/:subgroup_id`
 
 Возвращает объект объектом подгруппы, номерами, рассшифровками и breadcrumbs
 
