@@ -117,6 +117,6 @@ curl -H 'Authorization: <token>' \
 | url | string | Адрес текущей хлебной крошки |
 
 
-## `GET /:type//:mark/:mark_short_name/:model_id/:modification_id`
+## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id`
 
 Для перехода к списку групп нужно выбрать модифацию и передать ее идентификатор (modification_id) в GET параметры

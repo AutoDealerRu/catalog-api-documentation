@@ -119,6 +119,6 @@ curl -H 'Authorization: <token>' \
 | url | string | Адрес текущей хлебной крошки |
 
 
-## `GET /:type//:mark/:mark_short_name/:model_id/:modification_id/:group_id`
+## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id`
 
 Для перехода к списку номеров нужно выбрать группу и передать ее идентификатор (id) в GET параметры
