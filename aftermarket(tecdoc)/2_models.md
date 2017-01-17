@@ -6,7 +6,7 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/AFTERMARKET/AC | Модели марки AC|
+| GET /CARS_FOREIGN/AFTERMARKET/AC | Модели марки AC |
 
 ### Пример запроса
 

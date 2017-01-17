@@ -6,7 +6,7 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/AFTERMARKET/AC/4211 | Модификации AC ACE|
+| GET /CARS_FOREIGN/AFTERMARKET/AC/4211 | Модификации AC ACE |
 
 ### Пример запроса
 
@@ -63,8 +63,8 @@ curl -H 'Authorization: <token>' \
     "breadcrumbs": [
         ...
         ,{
-            "name": "AC",
-            "url": "AC"
+            "name": "ACE",
+            "url": "4211"
         }
     ]
 }

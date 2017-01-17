@@ -6,8 +6,8 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/AFTERMARKET | Легковые марки машин|
-| GET /TRUCKS_FOREIGN/AFTERMARKET | Грузовые марки машин|
+| GET /CARS_FOREIGN/AFTERMARKET | Легковые марки машин |
+| GET /TRUCKS_FOREIGN/AFTERMARKET | Грузовые марки машин |
 
 ### Пример запроса
 
