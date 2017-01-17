@@ -1,6 +1,6 @@
 # Номера деталей
 
-## `GET /:mark/:category/:model`
+## `GET /:mark/:category/:model/:subgroup`
 
 Возвращает объект с двумя массивами (numbers, breadcrumbs) и двумя объектами (model, group)
 
