@@ -9,56 +9,35 @@
   - УАЗ
 
 - CARS_FOREIGN
-  - Abarth
-  - Aftermarket
-  - Alfa Romeo
-  - Audi
-  - BMW
   - BYD
-  - Chevrolet
   - Chevrolet
   - Citroen
   - Daewoo
-  - Daewoo
   - Derways
   - DongFeng
-  - Fiat
   - Ford
   - Geely
   - Hafei
   - Honda
-  - Hyundai
-  - Infiniti
   - Iran Khodro
   - Isuzu
   - Jaguar
   - Jeep
-  - KIA
-  - Lancia
   - Land Rover
-  - Lexus
   - Lifan
   - Mahindra
   - Mazda
   - Mercedes Benz
-  - Mini
   - Mitsubishi
-  - Nissan
   - Opel
   - Peugeot
   - Porsche
   - Renault
-  - Rolls-Royce
   - Rover
   - Saab
-  - Saab
-  - Seat
-  - Skoda
   - SsangYong
   - Subaru
   - Suzuki
-  - Toyota
-  - Volkswagen
   - Volvo
 
 - TRUCKS_NATIVE
@@ -84,7 +63,6 @@
   - Урал
 
 - TRUCKS_FOREIGN
-  - Aftermarket
   - Avia
   - BAW
   - Beifang Benchi
@@ -95,14 +73,10 @@
   - DongFeng
   - FAW
   - Foton
-  - Hyundai
   - Iveco
   - JMC
-  - KIA
-  - MAN
   - MAN
   - Mercedes Benz
-  - Renault
   - Renault
   - Scania
   - Shaanxi
@@ -110,15 +84,12 @@
   - Tatra
   - Terex
   - Volvo
-  - Volvo
 
 - BUS
   - Golden Dragon
   - Higer
-  - Hyundai
   - Ikarus
   - JAC
-  - KIA
   - King Long
   - Madara
   - Yutong
@@ -158,7 +129,6 @@
   - КЗКТ
   - Клевер
   - КМЗ
-  - КМЗ 1 Мая
   - Ковровец
   - Кредмаш
   - КЭЗ
@@ -227,30 +197,35 @@
   - Xiamen
 
 - AGRICULTURAL_MACHINERY
-  - Balkancar
-  - Case
-  - ChengGong
-  - Detva
-  - Doosan
-  - Foton
-  - Hanwoo
-  - HBXG
-  - Hidromek
-  - JCB
-  - Komat'su
-  - LiuGong
-  - Locust
-  - Mitsuber
-  - New Holland
-  - SDLG
-  - Shantui
-  - Thermo King
+  - Fortschritt
+  - Honey Bee
+  - MacDon
+  - Mecanica Ceahlau
+  - Metal-Fach
   - Tigarbo
-  - Volvo
-  - XCMG
-  - Xiamen
-
-- TRACTOR
+  - Агро
+  - БелоцерковМАЗ
+  - БобруйскАгроМаш
+  - БобруйскСельМаш
+  - БЭМЗ
+  - ВСМ
+  - Гомсельмаш
+  - ДКЗ
+  - ЗиД
+  - КЗК
+  - Клевер
+  - ЛидАгроПромМаш
+  - ЛидСельМаш
+  - МолдАгроТехника
+  - НефАЗ
+  - Ростсельмаш
+  - Сибсельмаш
+  - ТКЗ
+  - УМПО
+  - Унисибмаш
+  - Червона зирка
+ 
+ - TRACTOR
   - Tracom
   - Versatile
   - АТЗ
@@ -277,7 +252,6 @@
   - Isuzu
   - Iveco
   - Komat'su
-  - Nissan
   - Yanmar
   - Yuchai
   - Zetor
@@ -297,14 +271,12 @@
   - ЯМЗ
 
 - MOTORCYCLE
-  - BMW
   - CF Moto
   - Eagle-Wing
   - Honda
   - Jawa
   - Jianshe
   - Sarkana zvaigzne
-  - Suzuki
   - Suzuki
   - Zongshen
   - ЗиД
