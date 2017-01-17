@@ -1,18 +1,18 @@
 # Группы (groups)
 
-## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id`
+## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id`
 
-Возвращает объект с двумя массивам groups и breadcrumbs
+Возвращает объект с двумя массивам numbers и breadcrumbs
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/AFTERMARKET/AC/4211/12428 | Группы AC ACE 4.6 |
+| GET /CARS_FOREIGN/AFTERMARKET/AC/4211/12428/12096 | Номера AC ACE 4.6 Масла |
 
 ### Пример запроса
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/AC/4211/12428
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/AC/4211/12428/12096
 ```
 
 ### Пример ответа
