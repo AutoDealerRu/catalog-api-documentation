@@ -1,0 +1,286 @@
+Этот каталог содержит в себе каталожную информацию по следующим маркам:  
+- CARS_NATIVE
+  - АЗЛК
+  - ВАЗ
+  - ГАЗ
+  - ЗАЗ
+  - ИЖ
+  - ЛуАЗ
+  - УАЗ
+
+- CARS_FOREIGN
+  - BYD
+  - Chevrolet
+  - Citroen
+  - Daewoo
+  - Derways
+  - DongFeng
+  - Ford
+  - Geely
+  - Hafei
+  - Honda
+  - Iran Khodro
+  - Isuzu
+  - Jaguar
+  - Jeep
+  - Land Rover
+  - Lifan
+  - Mahindra
+  - Mazda
+  - Mercedes Benz
+  - Mitsubishi
+  - Opel
+  - Peugeot
+  - Porsche
+  - Renault
+  - Rover
+  - Saab
+  - SsangYong
+  - Subaru
+  - Suzuki
+  - Volvo
+
+- TRUCKS_NATIVE
+  - Madara
+  - Shaanxi Fast Gear
+  - ZF
+  - Алтай
+  - БелАЗ
+  - Брянский арсенал
+  - ГАЗ
+  - ЗИЛ
+  - КАЗ
+  - КамАЗ
+  - КрАЗ
+  - МАЗ
+  - МЗКТ
+  - МоАЗ
+  - МТМ
+  - НефАЗ
+  - СЗАП
+  - ТМЗ
+  - Тонар
+  - Урал
+
+- TRUCKS_FOREIGN
+  - Avia
+  - BAW
+  - Beifang Benchi
+  - CAMC
+  - Caterpillar
+  - CNHTC Sinotruk
+  - DAF
+  - DongFeng
+  - FAW
+  - Foton
+  - Iveco
+  - JMC
+  - MAN
+  - Mercedes Benz
+  - Renault
+  - Scania
+  - Shaanxi
+  - Tata
+  - Tatra
+  - Terex
+  - Volvo
+
+- BUS
+  - Golden Dragon
+  - Higer
+  - Ikarus
+  - JAC
+  - King Long
+  - Madara
+  - Yutong
+  - Богдан
+  - ЗИЛ
+  - КАвЗ
+  - КамАЗ
+  - ЛАЗ
+  - ЛиАЗ
+  - МАЗ
+  - НефАЗ
+  - ПАЗ
+  - РАФ
+
+- SPECIAL_TECH_NATIVE
+  - Автокран
+  - Амкодор
+  - АТЗ
+  - БелАЗ
+  - Беловеж
+  - БобруйскАгроМаш
+  - Брянский арсенал
+  - ВЭКС
+  - Газпром-кран
+  - ГАКЗ
+  - Геомаш
+  - Гидромаш
+  - Донэкс
+  - Дормаш
+  - ЕлАЗ
+  - ЗЗГТ
+  - ЗиК
+  - Златэкс
+  - Ижнефтемаш
+  - Ижорские заводы
+  - Канаш
+  - КЗКТ
+  - Клевер
+  - КМЗ
+  - Ковровец
+  - Кредмаш
+  - КЭЗ
+  - ЛЗА
+  - МАЗ
+  - Маштехремонт
+  - МЗКМ
+  - ММЗ
+  - МоАЗ
+  - МРМЗ
+  - МТЗ
+  - МТМ
+  - НефАЗ
+  - НКМЗ
+  - Орел-Погрузчик
+  - Оста
+  - ОТЗ
+  - Промтрактор
+  - ПТЗ
+  - Раскат
+  - РМЗ
+  - САЗ
+  - Сальсксельмаш
+  - Сарэкс
+  - Синергия
+  - Стройдормаш
+  - Стромнефтемаш
+  - ТВЭКС
+  - ТЗА
+  - Торфмаш
+  - УВЗ
+  - УМЗ №2
+  - Урал
+  - Уралмаш
+  - ХТЗ
+  - ЧЗТС
+  - ЧМЗ
+  - ЧСДМ
+  - ШААЗ
+  - Экско
+  - Эксмаш
+  - ЮрМаш
+
+- SPECIAL_TECH_FOREIGN
+  - Balkancar
+  - Case
+  - ChengGong
+  - Detva
+  - Doosan
+  - Foton
+  - Hanwoo
+  - HBXG
+  - Hidromek
+  - JCB
+  - Komat'su
+  - LiuGong
+  - Locust
+  - Mitsuber
+  - New Holland
+  - SDLG
+  - Shantui
+  - Thermo King
+  - Tigarbo
+  - Volvo
+  - XCMG
+  - Xiamen
+
+- AGRICULTURAL_MACHINERY
+  - Fortschritt
+  - Honey Bee
+  - MacDon
+  - Mecanica Ceahlau
+  - Metal-Fach
+  - Tigarbo
+  - Агро
+  - БелоцерковМАЗ
+  - БобруйскАгроМаш
+  - БобруйскСельМаш
+  - БЭМЗ
+  - ВСМ
+  - Гомсельмаш
+  - ДКЗ
+  - ЗиД
+  - КЗК
+  - Клевер
+  - ЛидАгроПромМаш
+  - ЛидСельМаш
+  - МолдАгроТехника
+  - НефАЗ
+  - Ростсельмаш
+  - Сибсельмаш
+  - ТКЗ
+  - УМПО
+  - Унисибмаш
+  - Червона зирка
+ 
+ - TRACTOR
+  - Tracom
+  - Versatile
+  - АТЗ
+  - ВгТЗ
+  - ВТЗ
+  - КМЗ
+  - ЛТЗ
+  - МТЗ
+  - Промтрактор
+  - ПТЗ
+  - ХЗТСШ
+  - ХТЗ
+  - ЧТЗ
+  - ЮМЗ
+
+- ENGINE
+  - Andoria
+  - Balkancar
+  - Bearford
+  - Chrysler
+  - Cummins
+  - Deutz
+  - DongFeng
+  - Isuzu
+  - Iveco
+  - Komat'su
+  - Yanmar
+  - Yuchai
+  - Zetor
+  - АМЗ
+  - Барнаултрансмаш
+  - ВТЗ
+  - ГАЗ
+  - ЗМЗ
+  - КамАЗ
+  - ММЗ
+  - Пензадизельмаш
+  - СМД
+  - Теплостар
+  - ТМЗ
+  - УМЗ
+  - Элтра
+  - ЯМЗ
+
+- MOTORCYCLE
+  - CF Moto
+  - Eagle-Wing
+  - Honda
+  - Jawa
+  - Jianshe
+  - Sarkana zvaigzne
+  - Suzuki
+  - Zongshen
+  - ЗиД
+  - ИЖ
+  - ИМЗ
+  - Русская механика
+  - УМПО
