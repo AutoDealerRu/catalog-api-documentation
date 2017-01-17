@@ -1,41 +1,26 @@
-# Номера (numbers)
+# Информация по номеру (number_information)
 
-## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id`
+## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id/:provider_id/:number/:article_id`
 
 Возвращает объект с двумя массивам numbers и breadcrumbs
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/AFTERMARKET/AC/4211/12428/12096 | Номера AC ACE 4.6 Масла |
+| GET /CARS_FOREIGN/AFTERMARKET/AC/4211/12428/12096/11353/XLS011/129385604 | Информация AC ACE 4.6 Масла XLS011 (Масло осевого редуктора)|
 
 ### Пример запроса
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/AC/4211/12428/12096
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/AC/4211/12428/12096/11353/XLS011/129385604
 ```
 
 ### Пример ответа
 
 ```json
 {
-    "numbers": [
-        {
-            "type": "CARS_FOREIGN",
-            "mark": "AFTERMARKET",
-            "mark_short_name": "AC",
-            "model_id": 4211,
-            "modification_id": 12428,
-            "group_id": 12096,
-            "number": "XLS011",
-            "name": "Масло осевого редуктора",
-            "article_id": 129385604,
-            "provider": {
-                "id": 11353,
-                "name": "CARLUBE",
-                "image": "AFTERMARKET/logos/11353"
-            }
-        },
+    "number": [
+        
         ...
     ],
     "breadcrumbs": [
@@ -72,8 +57,3 @@ curl -H 'Authorization: <token>' \
 | :---- | :------: | :--------------- |
 | name | string | Имя хлебной крошки |
 | url | string | Адрес текущей хлебной крошки |
-
-
-## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id/:provider_id/:number/:article_id`
-
-### Для перехода к описанию номера нужно передать provider.id, number и article_id в GET параметры
