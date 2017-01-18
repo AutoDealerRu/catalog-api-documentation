@@ -16,7 +16,7 @@ curl -H 'Authorization: <token>' \
 ```
 
 ## Если изображение есть
-[GET Пример ответа](/7_numbers.md)
+[GET Пример ответа](/nissan_infiniti/7_numbers.md)
 
 # ВАЖНО! Может придти ответ `tab: NULL` - изображения нет, следовательно номеров нет
 
