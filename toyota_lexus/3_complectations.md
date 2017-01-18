@@ -23,6 +23,7 @@ curl -H 'Authorization: <token>' \
 {
     "complectations": [
         {
+           "type": "CARS_FOREIGN",
            "country_short_name": "US",
            "catalog_code": "672450",
            "model_code": "RN120L-GKPSEA",
@@ -82,6 +83,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
+| type | string | - | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
 | mark_short_name | string | Да | Краткое название марки (TOYOTA или LEXUS) |
 | country_short_name | string | Да | Сокращение страны (например: US / JP ) |
 | catalog_code | string | Да | Код каталога |
@@ -127,6 +129,6 @@ curl -H 'Authorization: <token>' \
 | model | string |  Модель |
 
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:complectation_code`
+## `GET /:type/:mark_short_name/:country_short_name/:catalog_code/:model_code/:sysopt/:complectation_code`
 
 Для перехода к списку групп нужно выбрать комплектацию и передать код модели (model_code), sysopt и код комлектации (complectation_code) в GET параметры

@@ -1,6 +1,6 @@
 # Подномера деталей (subnumbers)
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration/:number`
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration/:number`
 
 Возвращает объект с массивом subnumbers
 

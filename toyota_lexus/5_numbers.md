@@ -1,6 +1,6 @@
 # Номера деталей (numbers)
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration`
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration`
 
 Возвращает объект с массивами numbers, breadcrumbs
 
@@ -122,6 +122,6 @@ curl -H 'Authorization: <token>' \
 | name | string | Имя хлебной крошки |
 | url | string | адрес текущей хлебной крошки |
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration/:number`
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration/:number`
 
 Для перехода к расширенной информации о детали выберите номер детали(number) в GET параметры
