@@ -43,8 +43,8 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
-| mark | string | - | Название марки (NISSAN или INFINITI) |
+| type | string | Да | Тип машины (всегда CARS_FOREIGN) |
+| mark | string | Да | Название марки (NISSAN или INFINITI) |
 | country_short_name | string | Да | Сокращение страны (например: AR / GL ) |
 | full_name | string | - | Полное название страны |
 

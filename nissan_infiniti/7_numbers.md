@@ -141,7 +141,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | ДА | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
+| type | string | Да | Тип машины (всегда CARS_FOREIGN) |
 | mark | string | ДА | Название марки (NISSAN или INFINITI) |
 | country_short_name | string | ДА | Сокращение страны (например: AR / GL ) |
 | directory | string | ДА | Техсимвольное число содержашее в себе текущую модель+серию |
@@ -210,7 +210,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | Да | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
+| type | string | Да | Тип машины (всегда CARS_FOREIGN) |
 | mark | string | Да | Название марки (NISSAN или INFINITI) |
 | country_short_name | string | Да | Сокращение страны (например: AR / GL ) |
 | directory | string | Да | Техсимвольное число содержашее в себе текущую модель+серию |

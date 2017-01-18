@@ -2,11 +2,7 @@
 
 ## `GET /:mark/:country_short_name/:directory/:modification/:group`
 
-### Возвращает объект содержащий:
-1. subgroups - подгруппы для всех картинок; 
-2. breadcrumbs (хлебные крошки) - массив из имен и путей.
-
-Возвращает объект с images, subgroups и breadcrumbs (мыссивы)
+Возвращает объект содержащий массивы subgroups и breadcrumbs
 
 ### Примеры
 
@@ -31,11 +27,12 @@ curl -H 'Authorization: <token>' \
             "image": "NISSAN/EL/298/GRPIMG/000000.gif",
             "items": [
                 {
+                    "type": "CARS_FOREIGN",
                     "mark": "NISSAN",
                     "country_short_name": "EL",
                     "directory": "298",
+                    "modification": 1,
                     "group_short": "A",
-                    "image_group": 0,
                     "figure": "101",
                     "group_name": "BARE & SHORT ENGINE",
                     "coordinate": {
@@ -76,11 +73,12 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| mark | string | - | Название марки (NISSAN или INFINITI) |
-| country_short_name | string | - | Сокращение страны (например: AR / GL ) |
-| directory | string | - | Техсимвольное число содержашее в себе текущую модель+серию |
-| group_short | string | - | Сокращенное имя группы |
-| image_group | number | - | номер ключа в массиве images |
+| type | string | Да | Тип машины (всегда CARS_FOREIGN) |
+| mark | string | Да | Название марки (NISSAN или INFINITI) |
+| country_short_name | string | Да | Сокращение страны (например: AR / GL ) |
+| directory | string | Да | Техсимвольное число содержашее в себе текущую модель+серию |
+| modification | integer | Да | Номер модификации |
+| group_short | string | Да | Сокращенное имя группы |
 | figure | string | Да | Номер подгруппы |
 | group_name | string | - | Сокращенное имя подгруппы |
 | coordinate | object | - | Координаты |
