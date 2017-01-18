@@ -15,8 +15,7 @@ curl -H 'Authorization: <token>' \
 -X GET https://acat.online/api/catalogs/CARS_FOREIGN/NISSAN/EL/298/1/A/101
 ```
 
-## Если изображение есть
-[GET Пример ответа](/nissan_infiniti/7_numbers.md)
+## Если изображение есть [Пример ответа](/nissan_infiniti/7_numbers.md#Пример-ответа-частичный)
 
 # ВАЖНО! Может придти ответ `tab: NULL` - изображения нет, следовательно номеров нет
 
