@@ -44,11 +44,11 @@ curl -H 'Authorization: <token>' \
 | Имя | Тип | Описание |
 | :---- | :------: | :--------------- |
 | country_short_name | string | Краткое название марки (TOYOTA или LEXUS) |
-| catalog_code | number | Код каталога |
+| catalog_code | integer | Код каталога |
 | number | string | Основной номер |
 | amount | string | Количество |
 | subnumber | string | Номер |
 | date_start | string | Дата производства "от" |
 | date_end | string | Дата производства "до" |
-| analogs[] | integer | Список номеров деталей аналогов |
+| analogs[] | array | Список номеров деталей аналогов |
 
