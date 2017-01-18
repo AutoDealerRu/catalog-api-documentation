@@ -22,45 +22,40 @@ curl -H 'Authorization: <token>' \
     "groups": [
         {
             "type": "CARS_FOREIGN",
+            "mark": "AFTERMARKET",
+            "mark_short_name": "AC",
+            "model_id": 4211,
+            "modification_id": 12428,
             "level": 1,
             "group_name": "Коробка передач",
             "id": 10338,
-            "parent_id": null,
             "child_exist": true,
             "items": [
               {
-                "type": "CARS_FOREIGN",
+                "id": 10340,
                 "level": 2,
                 "group_name": "Автоматическая коробка передач",
-                "id": 10340,
-                "parent_id": 10338,
                 "child_exist": true,
                 "items": [
                   {
-                    "type": "CARS_FOREIGN",
+                    "id": 11915,
                     "level": 3,
                     "group_name": "Масла",
-                    "id": 11915,
-                    "parent_id": 10340,
                     "child_exist": false,
                     "items": []
                   }
                 ]
               },
               {
-                "type": "CARS_FOREIGN",
+                "id": 10339,
                 "level": 2,
                 "group_name": "Ступенчатая коробка передач",
-                "id": 10339,
-                "parent_id": 10338,
                 "child_exist": true,
                 "items": [
                   {
-                    "type": "CARS_FOREIGN",
+                    "id": 12093,
                     "level": 3,
                     "group_name": "Масла",
-                    "id": 12093,
-                    "parent_id": 10339,
                     "child_exist": false,
                     "items": []
                   }
@@ -69,18 +64,19 @@ curl -H 'Authorization: <token>' \
             ]
         },{
             "type": "CARS_FOREIGN",
+            "mark": "AFTERMARKET",
+            "mark_short_name": "AC",
+            "model_id": 4211,
+            "modification_id": 12428,
             "level": 1,
             "group_name": "Система охлаждения",
             "id": 10107,
-            "parent_id": null,
             "child_exist": true,
             "items": [
               {
-                "type": "CARS_FOREIGN",
+                "id": 12305,
                 "level": 2,
                 "group_name": "антифриз",
-                "id": 12305,
-                "parent_id": 10107,
                 "child_exist": false,
                 "items": []
               }
@@ -98,7 +94,7 @@ curl -H 'Authorization: <token>' \
 }
 ```
 
-### Значения countries
+### Значения groups
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
@@ -106,10 +102,22 @@ curl -H 'Authorization: <token>' \
 | mark | string | - | Название каталога (всегда будет AFTERMARKET) |
 | mark_short_name | string | - | Сокращенное название марки |
 | model_id | integer | - | Идентифкационный номер модели |
-| model_name_eng | string | - | Название модели на английском |
-| modification_id | integer | Да | Идентифкационный номер модификации |
-| name | string | - | Название модификации |
-| modification_type | string | - | Тип модификации |
+| modification_id | integer | - | Идентифкационный номер модификации |
+| id | integer | Да | ID группы |
+| level | integer | - | Указатель текущего уровня вложенности (1 ~ 5) |
+| group_name | string | - | Имя группы |
+| child_exist | boolean | - | Наличие вложенных подгрупп |
+| items | array of objects | - | Вложенные группы (если child_exists = false, значит items - пустой) |
+
+### Значения items (вложенность до 4 уровней)
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| id | integer | Да | ID группы |
+| level | integer | - | Указатель текущего уровня вложенности (1 ~ 5) |
+| group_name | string | - | Имя группы |
+| child_exist | boolean | - | Наличие вложенных подгрупп |
+| items | array of objects | - | Вложенные группы (если child_exists = false, значит items - пустой) |
 
 ### Значения breadcrumbs
 
@@ -121,4 +129,5 @@ curl -H 'Authorization: <token>' \
 
 ## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id`
 
-Для перехода к списку номеров нужно выбрать группу и передать ее идентификатор (id) в GET параметры
+### Для перехода к списку номеров нужно выбрать группу и передать ее идентификатор (id) в GET параметры
+### ВАЖНО! Ссылкой на следующий уровень оформляется только конечная группа, без вложенных (признак child_exists == false)
