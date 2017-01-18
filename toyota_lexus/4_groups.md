@@ -8,7 +8,7 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001 | Список групп |
+| GET /CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001 | Список групп US 4-RUNNER TRUCK комплектация LN51L-KRA |
 
 ### Пример запроса
 
