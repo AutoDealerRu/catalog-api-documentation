@@ -51,11 +51,11 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип кузова |
-| mark | string | - | Название каталога (всегда будет AFTERMARKET) |
+| type | string | Да | Тип кузова |
+| mark | string | Да | Название каталога (всегда будет AFTERMARKET) |
+| mark_short_name | string | Да | Сокращенное название марки |
 | mark_name | string | - | Название марки (ACURA, HYUNDAI и т.д.) |
 | image | string | - | Путь до изображения |
-| mark_short_name | string | Да | Сокращенное название марки |
 
 ### Значения breadcrumbs
 

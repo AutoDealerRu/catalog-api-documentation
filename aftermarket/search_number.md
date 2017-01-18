@@ -1,45 +1,55 @@
-# Модификации (modifications)
+# Поиск по номеру (search_number)
 
-## `GET /:type/:mark/:mark_short_name/:model_id`
-
-Возвращает объект с двумя массивам modifications и breadcrumbs
-
-| Конечная точка | Описание |
-| :---- | :--------------- |
-| GET /CARS_FOREIGN/AFTERMARKET/AC/4211 | Модификации AC ACE |
-
-### Пример запроса
+- Виды поисков:
+  - поиск по неоригинальным номерам (номера каталога)
+  - поиск по оригинальным номерам (кроссам)
+  
+## Пример запроса для поиска по неоригинальным номеру
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/AC/4211
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/search?number=C2G001ABE
 ```
 
-### Пример ответа
+### `GET /:type/AFTERMARKET/search?number=:number`
+  
+## Пример запроса для поиска по оригинальному номеру
+
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/search?original_number=1111281
+```
+
+### `GET /:type/AFTERMARKET/search?original_number=:number`
+
+## ВАЖНО!
+### 1. Указание типа (CARS_FOREIGN или TRUCKS_FOREIGN) не влияет на результат, отдаются все найденные запчасти всех типов
+### 2. Ответ одинаковый для обоих видов запроса
+### 3. Не указывать одновременно оба типа, в ответ придет ошибка
+### 4. Искомый номер перед поиском очищаются от спецсимволов, пробелов. 
+  
+## Пример ответа
 
 ```json
 {
-    "modifications": [
-        {
+    "numbers": [
+    	{
             "type": "CARS_FOREIGN",
             "mark": "AFTERMARKET",
             "mark_short_name": "AC",
             "model_id": 4211,
-            "modification_id": 12428
-            "model_name_eng": "ACE",
-            "name": "AC ACE",
-            "modification_type": "4.6",
+            "modification_id": 12428,
+            "group_id": 10130,
+            "provider_id": 11005,
+            "number": "C2G001ABE",
+            "article_id": 116495492,
+            "name": "AC ACE 4.6",
             "from_date": "1998-10-01T00:00:00.000Z",
             "to_date": null,
             "power_kW": 240,
             "power_hp": 326,
             "cubic_centimeters": 4601,
             "construction_type": "кабрио",
-            "construction_description": {
-                "drive_type": "Привод на задние колеса",
-                "doors": 0,
-                "tank": 0
-            },
             "technical_information": {
                 "chassis_configuration": null,
                 "tonnage": "0.00",
@@ -56,21 +66,24 @@ curl -H 'Authorization: <token>' \
                 "transmission": null,
                 "refueling": "Впрыскивание во впускной коллектор/Карбюратор",
                 "valves_per_combustion_chamber": "4"
-            },
+            }
         },
         ...
-    ],
+    ],   
     "breadcrumbs": [
-        ...
-        ,{
-            "name": "ACE",
-            "url": "4211"
+        {
+            "name": "Каталог",
+            "url": "/catalogs"
+        },
+        {
+            "name": "Поиск",
+            "url": "search"
         }
     ]
 }
 ```
 
-### Значения modifications
+### Значения numbers
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
@@ -79,19 +92,17 @@ curl -H 'Authorization: <token>' \
 | mark_short_name | string | Да | Сокращенное название марки |
 | model_id | integer | Да | Идентифкационный номер модели |
 | modification_id | integer | Да | Идентифкационный номер модификации |
-| model_name_eng | string | - | Название модели на английском |
-| name | string | - | Название модификации |
-| modification_type | string | - | Тип модификации |
+| group_id | integer | Да | Идентифкационный номер группы |
+| provider_id | integer | Да | ID производителя |
+| number | string | Да | Номер |
+| article_id | integer | Да | ID артикула |
+| name | string | - | Название |
 | from_date | null/date | - | Дата начала производства |
 | to_date | null/date | - | Дата окончания производства |
 | power_kW | integer | - | Мощность кВт |
 | power_hp | integer | - | Лошадиных сил |
 | cubic_centimeters | integer | - | Объем в куб. см. |
 | construction_type | string | - | Тип конструкции |
-| construction_description | object | - | Описание конструкции |
-| construction_description.drive_type | string | - | Тип привода |
-| construction_description.doors | integer | - | Количество дверей (актуально для грузовых) |
-| construction_description.tank | integer | - | Бак |
 | technical_information | object | - | Техническая информаци |
 | technical_information.chassis_configuration | null / string | - | Конфигурация шасси |
 | technical_information.tonnage | string | - | Тоннаж |
@@ -116,7 +127,11 @@ curl -H 'Authorization: <token>' \
 | name | string | Имя хлебной крошки |
 | url | string | Адрес текущей хлебной крошки |
 
+## Пример запроса для перехода к описанию
 
-## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id`
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/AFTERMARKET/AC/4211/12428/10130/11005/C2G001ABE/116495492
+```
 
-Для перехода к списку групп нужно выбрать модифацию и передать ее идентификатор (modification_id) в GET параметры
+### `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id/:provider_id/:number/:article_id`
