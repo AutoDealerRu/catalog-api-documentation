@@ -24,6 +24,7 @@ curl -H 'Authorization: <token>' \
 {
     "models": [
         {
+           "type": "CARS_FOREIGN",
            "mark": "NISSAN",
            "country_short_name": "EL",
            "model": "PRIMERA",
@@ -48,11 +49,12 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| mark | string | - | Название марки (NISSAN или INFINITI) |
-| country_short_name | string | - | Сокращение страны (например: AR / GL ) |
+| type | string | Да | Тип машины (всегда CARS_FOREIGN) |
+| mark | string | Да | Название марки (NISSAN или INFINITI) |
+| country_short_name | string | Да | Сокращение страны (например: AR / GL ) |
+| directory | string | Да | Техсимвольное число содержашее в себе текущую модель+серию |
 | model | string | - | Название модели (например ATLAS) |
 | serial | string | - | Серия модели (например F22, F23, F24) |
-| directory | string | Да | Техсимвольное число содержашее в себе текущую модель+серию |
 | from_date | null/Date | - | Дата производства "от" |
 | to_date | null/Date | - | Дата производства "до" |
 

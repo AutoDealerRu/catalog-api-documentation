@@ -27,14 +27,14 @@ curl -H 'Authorization: <token>' \
             "model_id": 4211,
             "modification_id": 12428,
             "group_id": 12096,
-            "number": "XLS011",
-            "name": "Масло осевого редуктора",
-            "article_id": 129385604,
             "provider": {
                 "id": 11353,
                 "name": "CARLUBE",
                 "image": "AFTERMARKET/logos/11353"
             }
+            "number": "XLS011",
+            "name": "Масло осевого редуктора",
+            "article_id": 129385604,
         },
         ...
     ],
@@ -52,19 +52,19 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип кузова |
-| mark | string | - | Название каталога (всегда будет AFTERMARKET) |
-| mark_short_name | string | - | Сокращенное название марки |
-| model_id | integer | - | Идентифкационный номер модели |
-| modification_id | integer | - | Идентифкационный номер модификации |
-| group_id | integer | - | Идентифкационный номер группы |
-| number | string | Да | Номер |
-| name | string | - | Название детали |
-| article_id | integer | Да | ID артикула |
+| type | string | Да | Тип кузова |
+| mark | string | Да | Название каталога (всегда будет AFTERMARKET) |
+| mark_short_name | string | Да | Сокращенное название марки |
+| model_id | integer | Да | Идентифкационный номер модели |
+| modification_id | integer | Да | Идентифкационный номер модификации |
+| group_id | integer | Да | Идентифкационный номер группы |
 | provider | object | - | Производитель |
 | provider.id | integer | Да | ID производителя |
 | provider.name | string | - | Название производителя |
 | provider.image | string | - | Путь до изображения производителя |
+| number | string | Да | Номер |
+| name | string | - | Название детали |
+| article_id | integer | Да | ID артикула |
 
 ### Значения breadcrumbs
 
@@ -74,6 +74,6 @@ curl -H 'Authorization: <token>' \
 | url | string | Адрес текущей хлебной крошки |
 
 
-## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id/:provider_id/:number/:article_id`
+## `GET /:type/:mark/:mark_short_name/:model_id/:modification_id/:group_id/:provider.id/:number/:article_id`
 
 ### Для перехода к описанию номера нужно передать provider.id, number и article_id в GET параметры

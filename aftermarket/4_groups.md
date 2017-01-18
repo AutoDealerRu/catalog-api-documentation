@@ -98,11 +98,11 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип кузова |
-| mark | string | - | Название каталога (всегда будет AFTERMARKET) |
-| mark_short_name | string | - | Сокращенное название марки |
-| model_id | integer | - | Идентифкационный номер модели |
-| modification_id | integer | - | Идентифкационный номер модификации |
+| type | string | Да | Тип кузова |
+| mark | string | Да | Название каталога (всегда будет AFTERMARKET) |
+| mark_short_name | string | Да | Сокращенное название марки |
+| model_id | integer | Да | Идентифкационный номер модели |
+| modification_id | integer | Да | Идентифкационный номер модификации |
 | id | integer | Да | ID группы |
 | level | integer | - | Указатель текущего уровня вложенности (1 ~ 5) |
 | group_name | string | - | Имя группы |

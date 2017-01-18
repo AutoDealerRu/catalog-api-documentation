@@ -50,13 +50,13 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип кузова |
-| mark | string | - | Название марки (KIA или HYUNDAI) |
-| country_short | string | - | Сокращение страны (например: AUS / MES ) |
-| family | string | - | Семейство (одна модель может относится к нескольким семействам) |
-| model | string | - | Название модели (например ATLAS) |
-| modification | string | - | Номер модификации |
-| group | string | - | Сокращение группы |
+| type | string | Да | Тип кузова |
+| mark | string | Да | Название марки (KIA или HYUNDAI) |
+| country_short | string | Да | Сокращение страны (например: AUS / MES ) |
+| family | string | Да | Семейство (одна модель может относится к нескольким семействам) |
+| model | string | Да | Название модели (например ATLAS) |
+| modification | string | Да | Номер модификации |
+| group | string | Да | Сокращение группы |
 | subgroup | string | Да | Сокращение подгруппы |
 | name | string | - | Название группы |
 | image | string | - | Путь до изображения группы |

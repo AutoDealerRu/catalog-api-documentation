@@ -47,8 +47,8 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип кузова |
-| mark | string | - | Название марки (KIA или HYUNDAI) |
+| type | string | Да | Тип кузова |
+| mark | string | Да | Название марки (KIA или HYUNDAI) |
 | country_short | string | Да | Сокращение страны (например: AUS / MES ) |
 | full_name | string | - | Полное название страны |
 

@@ -2,8 +2,6 @@
 
 ## `GET /:mark/:country_short_name/:directory/:modification/:group/:subgroup`
 
-Возвращает объект с tab и breadcrumbs
-
 ### Примеры
 
 | Конечная точка | Описание |
@@ -17,12 +15,9 @@ curl -H 'Authorization: <token>' \
 -X GET https://acat.online/api/catalogs/CARS_FOREIGN/NISSAN/EL/298/1/A/101
 ```
 
-### Если изображение есть
-[GET Пример ответа]()
+## Если изображение есть [Пример ответа](/nissan_infiniti/7_numbers.md#Пример-ответа-частичный)
 
-# ВАЖНО!
-
-## Может придти ответ `tab: NULL` - изображения нет -> номеров нет
+# ВАЖНО! Может придти ответ `tab: NULL` - изображения нет, следовательно номеров нет
 
 ### Пример запроса
 

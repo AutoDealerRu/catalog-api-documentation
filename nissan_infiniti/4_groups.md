@@ -25,9 +25,11 @@ curl -H 'Authorization: <token>' \
     "image": "/NISSAN/019/GENIMG/000000.gif",
     "groups": [
         {
+           "type": "CARS_FOREIGN",
            "mark": "INFINITI",
            "country_short_name": "ER",
            "directory": "019",
+           "modification": 1,
            "group_short": "A",
            "group_name": "ENGINE MECHANICAL",
            "coordinate": {
@@ -58,9 +60,11 @@ curl -H 'Authorization: <token>' \
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
 | image | null/string | - | Путь до изображения |
-| mark | string | - | Название марки (NISSAN или INFINITI) |
-| country_short_name | string | - | Сокращение страны (например: AR / GL ) |
-| directory | string | - | Техсимвольное число содержашее в себе текущую модель+серию |
+| type | string | Да | Тип машины (всегда CARS_FOREIGN) |
+| mark | string | Да | Название марки (NISSAN или INFINITI) |
+| country_short_name | string | Да | Сокращение страны (например: AR / GL ) |
+| directory | string | Да | Техсимвольное число содержашее в себе текущую модель+серию |
+| modification | integer | Да | Номер модификации |
 | group_short | string | Да | Сокращенное имя группы |
 | group_name | string | - | Имя группы |
 | coordinate | object | - | Координаты |
