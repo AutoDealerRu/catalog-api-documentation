@@ -50,9 +50,9 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | - | Тип кузова |
-| mark | string | - | Название марки (KIA или HYUNDAI) |
-| country_short | string | - | Сокращение страны (например: AUS / MES ) |
+| type | string | Да | Тип кузова |
+| mark | string | Да | Название марки (KIA или HYUNDAI) |
+| country_short | string | Да | Сокращение страны (например: AUS / MES ) |
 | family | string | Да | Семейство (одна модель может относится к нескольким семействам) |
 | model | string | Да | Код модели |
 | model_name | string | - | Название модели |
