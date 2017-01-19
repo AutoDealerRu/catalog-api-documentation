@@ -30,7 +30,7 @@ curl -H 'Authorization: <token>' \
             "index": 3,
             "mark_short_name": "BMW",
             "catalog_type": "VT",
-            "image": "163627_t.jpg"
+            "image": "https://212709.selcdn.ru/autocatalog-online/BMW/w_grafik/163627_t.jpg"
         },
         ...
     ],
