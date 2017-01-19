@@ -108,10 +108,10 @@ curl -H 'Authorization: <token>' \
 | note | string  | Примечание |
 | model_info | string  | Данные по модели |
 | amount | String  | Количество |
-| coordinate[] | Object | - | Координаты |
-| coordinate[].top | Object | - | Верхняя координата |
-| coordinate[].top.x | Integer | - | Верхняя координата Х |
-| coordinate[].top.y | Integer | - | Верхняя координата Y |
-| coordinate[].bottom | Object | - | Нижняя координата |
-| coordinate[].bottom.x | Integer | - | Нижняя координата Х |
-| coordinate[].bottom.y | Integer | - | Нижняя координата Y |
+| coordinate[] | Object | Координаты |
+| coordinate[].top | Object |  Верхняя координата |
+| coordinate[].top.x | Integer | Верхняя координата Х |
+| coordinate[].top.y | Integer | Верхняя координата Y |
+| coordinate[].bottom | Object | Нижняя координата |
+| coordinate[].bottom.x | Integer | Нижняя координата Х |
+| coordinate[].bottom.y | Integer |  Нижняя координата Y |
