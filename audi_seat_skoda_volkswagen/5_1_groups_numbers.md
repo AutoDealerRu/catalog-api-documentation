@@ -54,12 +54,12 @@ curl -H 'Authorization: <token>' \
             "coordinate": [
                 {
                     "top": {
-                        x: 1367,
-                        y: 1055,
+                        "x": 1367,
+                        "y": 1055,
                     },
                     "bottom": {
-                        x: 1438,
-                        y: 1124,
+                        "x": 1438,
+                        "y": 1124,
                     }
                 },
                 ...
