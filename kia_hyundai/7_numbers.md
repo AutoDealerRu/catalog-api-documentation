@@ -52,8 +52,8 @@ curl -H 'Authorization: <token>' \
             "to_date": null,
             "description": [
                 {
-                    name: "Привод",
-                    value: "2WD"
+                    "name": "Привод",
+                    "value": "2WD"
                 },
                 ...
             ],
