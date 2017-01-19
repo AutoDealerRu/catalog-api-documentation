@@ -29,7 +29,7 @@ curl -H 'Authorization: <token>' \
         "group": "A",
         "subgroup": "110",
         "figure": "110C",
-        "section": "003"
+        "section": "003",
         "current": true
     },{
         "type": "CARS_FOREIGN",
