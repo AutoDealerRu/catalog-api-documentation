@@ -1,6 +1,6 @@
 # Номера деталей (numbers)
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration`
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration`
 
 Возвращает объект с массивами numbers, breadcrumbs
 
@@ -22,27 +22,29 @@ curl -H 'Authorization: <token>' \
 ```json
 {
     "numbers": [
-        "sysopt": "sysopt",
-        "model_code": "LN51L-KRA",
-        "catalog_code": "671440",
-        "mark_short_name": "TOYOTA",
-        "type": "CARS_FOREIGN",
-        "country_short_name": "US",
-        "disk": "B1",
-        "illustration_short_name": "MT0887F",
-        "number": "09110",
-        "related_group": "09110",
-        "number_type": 3,
-        "description": "JACK ASSY",
-        "related_illustration_short_name": "",
-        "coordinate": {
-            "top": {
-                "x": 300,
-                "y": 35
-            },
-            "bottom": {
-                "x": 357,
-                "y": 52
+        {
+            "sysopt": "sysopt",
+            "model_code": "LN51L-KRA",
+            "catalog_code": "671440",
+            "mark_short_name": "TOYOTA",
+            "type": "CARS_FOREIGN",
+            "country_short_name": "US",
+            "disk": "B1",
+            "illustration_short_name": "MT0887F",
+            "number": "09110",
+            "related_group": "09110",
+            "number_type": 3,
+            "description": "JACK ASSY",
+            "related_illustration_short_name": "",
+            "coordinate": {
+                "top": {
+                    "x": 300,
+                    "y": 35
+                },
+                "bottom": {
+                    "x": 357,
+                    "y": 52
+                }
             }
         },
         ...
@@ -87,6 +89,7 @@ curl -H 'Authorization: <token>' \
 | illustration_short_name | string | Да | Код подгруппы |
 | related_group | string | Да | Код связанной группы |
 | related_illustration_short_name | string | Да | Код связанной подгруппы |
+| number | string | Да | Номер детали |
 | number_type | Integer | - | Тип детали |
 | description | string | - | Описание |
 | coordinate | Object | - | Координата |
@@ -119,17 +122,6 @@ curl -H 'Authorization: <token>' \
 | name | string | Имя хлебной крошки |
 | url | string | адрес текущей хлебной крошки |
 
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration/:number`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Для перехода к расширенной информации о детали выберите номер детали(number) в GET параметры

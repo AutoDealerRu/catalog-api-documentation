@@ -48,6 +48,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
+| type | string | - | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
 | mark | string | Да | Название марки (TOYOTA или LEXUS) |
 | country_short_name | string | Да | Сокращение страны (например: US / JP ) |
 | catalog_code | string | Да | Код каталога |

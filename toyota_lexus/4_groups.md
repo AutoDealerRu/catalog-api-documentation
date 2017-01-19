@@ -1,6 +1,6 @@
 # Группы (groups)
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:compl_code`
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:compl_code`
 
 Возвращает объект с массивами groups, breadcrumbs и объектом complectation
 
@@ -98,6 +98,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя | Тип | Описание |
 | :---- | :------: | :--------------- |
+| type | string | - | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
 | mark_short_name | string | Да | Краткое название марки (TOYOTA или LEXUS) |
 | country_short_name | string | Да | Сокращение страны (например: US / JP ) |
 | catalog_code | string | Да | Код каталога |
@@ -126,7 +127,7 @@ curl -H 'Authorization: <token>' \
 | name | string | Имя хлебной крошки |
 | url | string | адрес текущей хлебной крошки |
 
-## `GET /:type/:mark/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration`
+## `GET /:type/:mark_short_name/:country_short_name/:model_code/:sysopt/:complectation_code/:group/:illustration`
 
 Для перехода к списку деталей нужно выбрать подгруппу и передать код группы (group) и код подгруппы (illustration) в GET параметры
 

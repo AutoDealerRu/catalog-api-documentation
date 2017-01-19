@@ -26,7 +26,7 @@ curl -H 'Authorization: <token>' \
     "subgroup": {
         "short_name": 316004,
         "name": "Рук-во по эксплуат. E81, E87 без iDrive",
-        "image": "316004_t.jpg",
+        "image": "https://acat.online/catalogs/CARS_FOREIGN/BMW/E81/51382/LEFT/MANUAL/01/316004/image",
         "index": 8844,
         "catalog_type": "VT",
         "series_short_name": "E81",

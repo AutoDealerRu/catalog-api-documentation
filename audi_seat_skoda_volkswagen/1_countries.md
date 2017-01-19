@@ -6,14 +6,14 @@
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/TOYOTA | Страны марки TOYOTA |
-| GET /CARS_FOREIGN/LEXUS | Страны марки LEXUS |
+| GET /CARS_FOREIGN/AUDI | Страны марки AUDI |
+| GET /CARS_FOREIGN/SKODA | Страны марки SKODA |
 
 ### Пример запроса
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/TOYOTA
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/AUDI
 ```
 
 ### Пример ответа
@@ -23,18 +23,18 @@ curl -H 'Authorization: <token>' \
     "countries": [
         {
             "type": "CARS_FOREIGN",
-            "mark": "TOYOTA",
-            "country_short_name": "US",
-            "full_name": "США"
+            "country_short_name": "RA",
+            "mark": "AUDI",
+            "full_name": "Аргентина"
         },
         ...
     ],
     "breadcrumbs": [
         ...
         ,{
-            "name": "TOYOTA",
-            "url": "TOYOTA"
-        }
+             "name": "AUDI",
+             "url": "AUDI"
+         }
     ]
 }
 ```
@@ -44,8 +44,8 @@ curl -H 'Authorization: <token>' \
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
 | type | string | - | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки) |
-| mark | string | - | Название марки (TOYOTA или LEXUS) |
-| country_short_name | string | Да | Сокращение страны (например: US / JP ) |
+| mark | string | - | Название марки (AUDI, SEAT, SKODA или VOLKSWAGEN) |
+| country_short_name | string | Да | Сокращение страны (например: USA / MEX ) |
 | full_name | string | - | Полное название страны |
 
 ### Значения breadcrumbs
