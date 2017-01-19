@@ -30,7 +30,7 @@ curl -H 'Authorization: <token>' \
         "subgroup": "110",
         "figure": "110C",
         "section": "003"
-        "current": true,
+        "current": true
     },{
         "type": "CARS_FOREIGN",
         "mark": "INFINITI",
