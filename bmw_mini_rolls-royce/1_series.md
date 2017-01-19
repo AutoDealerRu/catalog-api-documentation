@@ -30,7 +30,7 @@ curl -H 'Authorization: <token>' \
             "index": 3,
             "mark_short_name": "BMW",
             "catalog_type": "VT",
-            "image": "163627_t.jpg"
+            "image": "https://212709.selcdn.ru/autocatalog-online/BMW/w_grafik/163627_t.jpg"
         },
         ...
     ],
@@ -54,7 +54,7 @@ curl -H 'Authorization: <token>' \
 | index | integer | - | Порядковый номер |
 | mark_short_name | string | - | Стандартизированное название марки |
 | catalog_type | string | - | Тип каталога (enum, VT - современный каталог, ST - живая традиция) |
-| image | integer | - | URL до изображения |
+| image | string | - | URL до изображения |
 
 ### Значения breadcrumbs
 

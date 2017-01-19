@@ -27,7 +27,7 @@ curl -H 'Authorization: <token>' \
         {
             "short_name": 316004,
             "name": "Рук-во по эксплуат. E81, E87 без iDrive",
-            "image": "316004_t.jpg",
+            "image": "https://212709.selcdn.ru/autocatalog-online/BMW/w_grafik/316004_t.jpg",
             "index": 8844,
             "catalog_type": "VT",
             "series_short_name": "E81",

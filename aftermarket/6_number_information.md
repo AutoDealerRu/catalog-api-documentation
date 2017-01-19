@@ -23,7 +23,7 @@ curl -H 'Authorization: <token>' \
     	"number": "C2G001ABE",
     	"original_numbers": [
             "123456789"    	
-    	]
+    	],
     	"status": "Нормальный",
     	"name": "Комплект тормозных колодок, дисковый тормоз",
     	"packing_unit": 0,

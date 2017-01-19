@@ -31,7 +31,7 @@ curl -H 'Authorization: <token>' \
                 "id": 11353,
                 "name": "CARLUBE",
                 "image": "AFTERMARKET/logos/11353"
-            }
+            },
             "number": "XLS011",
             "name": "Масло осевого редуктора",
             "article_id": 129385604,

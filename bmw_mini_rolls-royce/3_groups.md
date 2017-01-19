@@ -27,7 +27,7 @@ curl -H 'Authorization: <token>' \
         {
             "number": "01",
             "name": "Техническая литература",
-            "image": "99291_t.jpg",
+            "image": "https://212709.selcdn.ru/autocatalog-online/BMW/w_grafik/99291_t.jpg",
             "series_short_name": "E81",
             "catalog_type": "VT",
             "category_short_name": "HC",

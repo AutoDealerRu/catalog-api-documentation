@@ -25,7 +25,7 @@ curl -H 'Authorization: <token>' \
             "mark": "AFTERMARKET",
             "mark_short_name": "AC",
             "model_id": 4211,
-            "modification_id": 12428
+            "modification_id": 12428,
             "model_name_eng": "ACE",
             "name": "AC ACE",
             "modification_type": "4.6",
