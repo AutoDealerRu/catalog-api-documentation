@@ -58,8 +58,8 @@ curl -H 'Authorization: <token>' \
                 ...
             ],
             "options": [
-                'AT KNOB - LEATHER WRAPPED+WOOD GRAIN',
-                'Some option 2',
+                "AT KNOB - LEATHER WRAPPED+WOOD GRAIN",
+                "Some option 2",
                 ...
             ],
             "color": {
