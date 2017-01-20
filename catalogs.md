@@ -22,12 +22,12 @@ curl -H 'Authorization: <token>' \
     	  {
     		"name": "АЗЛК",
     		"value": "AZLK",
-    		"image": "63"
+    		"image": "https://212709.selcdn.ru/autocatalog-online/main/marks/63.png"
     	  },
     	  {
     		"name": "ВАЗ",
     		"value": "VAZ",
-    		"image": "40"
+    		"image": "https://212709.selcdn.ru/autocatalog-online/main/marks/40.png"
     	  },
     	  ...
         ]

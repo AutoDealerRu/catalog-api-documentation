@@ -26,11 +26,12 @@ curl -H 'Authorization: <token>' \
         "years": null,
         "index": 896,
         "relevance": null,
-        "image": "58961.jpg"
+        "image": "https://212709.selcdn.ru/autocatalog-online/main/models/58961.jpg"
     },
     "group": {
         "short_name": 3373769,
-        "name": "Инструмент"
+        "name": "Инструмент",
+        "image": "https://acat.online/api/catalogs/CARS_NATIVE/VAZ/GENERAL/58961/3373769/image"
     },
     "numbers": [
         {
