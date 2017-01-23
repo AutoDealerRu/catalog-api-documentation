@@ -110,8 +110,7 @@ curl -H 'Authorization: <token>' \
 | short_name | string | Код группы |
 | illustration_short_name | string | Код подгруппы |
 | name | string | Название подгруппы |
-| image | string | Путь до картинки подгруппы |
-| illustrate | string | Путь до иллюстрации |
+| image | string | Путь до иллюстрации |
 
 
 ### Значения breadcrumbs
