@@ -66,8 +66,7 @@ curl -H 'Authorization: <token>' \
                     "illustration_short_name": "MT0887F",
                     "short_name": "0901",
                     "name": "STANDARD TOOL",
-                    "image": "http://auto2d.com/img/toyota/ImgIllIndex/US/671440/MT0887F.png",
-                    "illustrate": "http://auto2d.com/img/toyota/Img/US/B1/MT0887F.png"
+                    "image": "http://auto2d.com/img/toyota/ImgIllIndex/US/671440/MT0887F.png"
                 },
                 ...
             ]
@@ -91,7 +90,6 @@ curl -H 'Authorization: <token>' \
 | subgroups[].illustration_short_name | string | Да | Код подгруппы |
 | subgroups[].name | string | - | Название подгруппы |
 | subgroups[].image | string | - | Путь до картинки подгруппы |
-| subgroups[].illustrate | string | - | Путь до иллюстрации |
 | subgroups[].category | string | - | Родительская категория |
 
 ### Значения объекта complectation
