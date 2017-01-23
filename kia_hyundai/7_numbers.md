@@ -2,7 +2,7 @@
 
 ## `GET /:type/:mark/:country_short/:family/:model/:modification/:group/:subgroup`
 
-Возвращает объект с image (object) и массивами numbers, breadcrumbs
+Возвращает объект с image (путь до изображения) и массивами numbers, breadcrumbs
 
 ### Примеры
 
@@ -21,16 +21,7 @@ curl -H 'Authorization: <token>' \
 
 ```json
 {
-    "image": {
-        "type": "CARS_FOREIGN",
-        "mark": "KIA",
-        "country_short": "EUR",
-        "family": "CARENS",
-        "model": "EURK1D006A",
-        "modification": "BKWDS65",
-        "group": "AC",
-        "subgroup": "AC004457EU"
-    },
+    "image": "https://acat.online/api/catalogs/CARS_FOREIGN/KIA/EUR/CARENS/EURK1D006A/BKWDS65/AC/AC004457EU/image",
     "numbers": [
         {
             "label": "KME1DA",
@@ -103,27 +94,6 @@ curl -H 'Authorization: <token>' \
     ]
 }
 ```
-
-### Значения image
-
-| Имя точка | Тип | Используется в URL | Описание |
-| :---- | :------: | :------: | :--------------- |
-| type | string | Да | Тип кузова |
-| mark | string | Да | Название марки (KIA или HYUNDAI) |
-| country_short | string | Да | Сокращение страны (например: AUS / MES ) |
-| family | string | Да | Семейство (одна модель может относится к нескольким семействам) |
-| model | string | Да | Название модели (например ATLAS) |
-| modification | string | Да | Номер модификации |
-| group | string | Да | Сокращение группы |
-| subgroup | string | Да | Сокращение подгруппы |
-
-#### Пример запроса загрузки изображения
-#### `GET /:type/:mark/:country_short/:family/:model/:modification/:group/:subgroup/image`
-```bash
-curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/KIA/EUR/CARENS/EURK1D006A/BKWDS65/AC/AC004457EU/image
-```
-#### В ответ придет изображение, если статус 200 (схема) или 404 ("изображение не найдено", с изображением - заглушкой)
 
 ### Значения numbers (number_type = 'NUMBER')
 

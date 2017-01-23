@@ -32,7 +32,7 @@ curl -H 'Authorization: <token>' \
            "model_name": "CARENS 06: -OCT.2006 (2006-2006)",
            "from_date": "2006-01-01T00:00:00.000Z",
            "to_date": "2006-01-01T00:00:00.000Z",
-           "image": "KIA/Cutups/EURK1D00.rle"
+           "image": "https://212709.selcdn.ru/autocatalog-online/mcct/KIA/Cutups/EURK1D00.rle"
         },
         ...
     ],
