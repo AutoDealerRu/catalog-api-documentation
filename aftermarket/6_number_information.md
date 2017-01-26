@@ -20,56 +20,45 @@ curl -H 'Authorization: <token>' \
 ```json
 {
     "info": {
-    	"number": "C2G001ABE",
-    	"original_numbers": [
-            "123456789"    	
-    	],
-    	"status": "Нормальный",
-    	"name": "Комплект тормозных колодок, дисковый тормоз",
-    	"packing_unit": 0,
-    	"package_amount": 0,
-    	"can_be_changed": false,
-    	"independent_use": false,
-    	"accessories": false,
-    	"require_mandatory_designation": false,
-    	"criteries": [
-    	  {
-    		"value": "задний мост",
-    		"name": "Сторона установки"
-    	  },
-    	  ...
-    	  {
-    		"value": "54",
-    		"name": "Высота [мм]"
-    	  },
-    	  ...
-    	  {
-    		"name": "До года выпуска",
-    		"value": "Fri Oct 01 1999 06:00:00 GMT+0600 (+06)"
-    	  }
-    	],
-    	"images": [
-    	  {
-    		"alt": "Фотография",
-    		"image": "AFTERMARKET/details/38/2544107.jpg"
-    	  }
-    	],
-    	"provider": {
-    	  "id": 11005,
-    	  "name": "ABE",
-    	  "image": "AFTERMARKET/logos/11005"
-    	},
-    	"crosses": [
+        "type": "CARS_FOREIGN",
+        "number": "XLS011",
+        "status": "Нормальный",
+        "name": "Масло осевого редуктора; Масло раздаточной коробки; Масло рулевого механизма Limited Slip Gear Oil",
+        "packing_unit": 1,
+        "package_amount": 1,
+        "can_be_changed": false,
+        "independent_use": false,
+        "accessories": false,
+        "require_mandatory_designation": false,
+        "criteries": [
             {
-                "brand": "FORD",
-                "original_number": "1111281"
+                "value": "1L",
+                "name": "Количество"
             },
-            ...
-        ]
-    },   
+            {
+                "value": "Минеральное масло",
+                "name": "Масло"
+            },
+            {
+                "name": "до заправочного объёма [л]",
+                "value": "3,1"
+            }
+        ],
+        "information": [
+            {
+                "text": "SAE 80W90, API GL-4/GL-5, ZF TE-ML 05C, 12C, 16E, 21C, Arvin Meritor Axles",
+                "description": "Общая информация"
+            }
+        ],
+        "provider": {
+            "id": 11353,
+            "name": "CARLUBE",
+            "image": "https://212709.selcdn.ru/autocatalog-online/aftermarket/logos/11353"
+        }
+    },
     "breadcrumbs": [
         ...
-        ,{            
+        {
             "name": "Масло осевого редуктора",
             "url": "11353/XLS011/129385604"
         }
