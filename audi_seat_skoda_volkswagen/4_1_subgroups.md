@@ -30,7 +30,7 @@ curl -H 'Authorization: <token>' \
         "mark": "AUDI",
         "group": "0",
         "name": "Аксессуары, Infotainment",
-        "img": "0.png"
+        "image": "https://212709.selcdn.ru/autocatalog-online/ETKA/groups/0.png"
     },
     "model": {
         "country_short_name": "RA",
@@ -61,8 +61,7 @@ curl -H 'Authorization: <token>' \
             "detail": 10010,
             "name": "Таблички Подушка безопасности",
             "options": "",
-            "filename": "620010100",
-            "illustrate": "620/620010100.png"
+            "image": "https://212709.selcdn.ru/autocatalog-online/ETKA/Minis/620/620010100.png"
         },
         ...
     ]
@@ -118,7 +117,7 @@ curl -H 'Authorization: <token>' \
 | detail | string | Да | Код группы деталей |
 | name | string | - | Название подгруппы |
 | options | string | - | Опции |
-| illustrate | string | - | Иллюстрация |
+| image | string | - | Изображение |
 
 ## `GET /:type/:mark/:country_short_name/:model/:year/:catalog_code/:dir/group/:group/:subgroup/:detail`
 

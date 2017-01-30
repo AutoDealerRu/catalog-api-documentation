@@ -35,7 +35,7 @@ curl -H 'Authorization: <token>' \
         "detail": 100010,
         "name": "Блок цил. с коленвалом, порш-\r\nнями, мас. нас. и мас. подд.",
         "options": "",
-        "illustrate": "119/119100100.png"
+        "image": "https://acat.online/api/catalogs/CARS_FOREIGN/AUDI/RDW/A100/1994/149/R/group/1/100/100010/image"
     },
     "numbers": [
         {
@@ -90,7 +90,7 @@ curl -H 'Authorization: <token>' \
 | detail | string | Код группы деталей |
 | name | string | Название подгруппы |
 | options | string | Опции |
-| illustrate | string | Иллюстрация |
+| image | string | Иллюстрация |
 
 ### Значения numbers
 

@@ -27,7 +27,8 @@ curl -H 'Authorization: <token>' \
             "short_name": "FRM",
             "full_name": "FREEMONT",
             "brand_short_name": "FIAT",
-            "type": "CARS_FOREIGN"
+            "type": "CARS_FOREIGN",
+            "image": "https://212709.selcdn.ru/autocatalog-online/Fiat/appsrv_img/F/model_imgs/small/FRM"
         },
         ...
     ],
@@ -49,6 +50,7 @@ curl -H 'Authorization: <token>' \
 | full_name | string | - | Наименование |
 | brand_short_name | string | - | Идентификатор бренда |
 | type | string | - | Тип кузова |
+| image | string | - | URL до изображения |
 
 ### Значения breadcrumbs
 

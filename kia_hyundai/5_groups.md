@@ -31,7 +31,7 @@ curl -H 'Authorization: <token>' \
            "modification": "BKWDS65",
            "group": "AC",
            "name": "Аксессуары",
-           "image": "KIA/Maj/AC.png"
+           "image": "https://212709.selcdn.ru/autocatalog-online/mcct/KIA/Maj/AC.png"
         },
         ...
     ],

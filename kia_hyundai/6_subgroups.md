@@ -32,7 +32,7 @@ curl -H 'Authorization: <token>' \
            "group": "AC",
            "subgroup": "AC004457EU",
            "name": "AC-001-EU  TOW BAR",
-           "image": "KIA/Thumb/EURK1D00/AC004457EU.png"
+           "image": "https://212709.selcdn.ru/autocatalog-online/mcct/KIA/Thumb/EURK1D00/AC004457EU.png"
         },
         ...
     ],

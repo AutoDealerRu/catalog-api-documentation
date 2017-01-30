@@ -27,7 +27,8 @@ curl -H 'Authorization: <token>' \
             "short_name": 101,
             "full_name": "БЛОК И ГОЛОВКА ЦИЛИНДРОВ",
             "filename": "24/2415A72DC753B8251C229790FA44F804.png",
-            "modification_short_name": "3P"
+            "modification_short_name": "3P",
+            "image": "https://212709.selcdn.ru/autocatalog-online/Fiat/images/L_EPERFIG/24/2415A72DC753B8251C229790FA44F804.png"
         }
         ...
     ],
@@ -49,6 +50,7 @@ curl -H 'Authorization: <token>' \
 | full_name | string | - | Наименование |
 | filename | string | - | URL до изображения |
 | modification_short_name | string | - | Идентификатор модификации |
+| image | string | - | URL до изображения |
 
 ### Значения breadcrumbs
 

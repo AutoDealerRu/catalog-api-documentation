@@ -25,14 +25,14 @@ curl -H 'Authorization: <token>' \
             "type": "CARS_FOREIGN",
             "mark": "AFTERMARKET",
             "mark_name": "AC",
-            "image": "AFTERMARKET/marks/png/ac.png",
+            "image": null,
             "mark_short_name": "AC"
         },
         {
             "type": "CARS_FOREIGN",
             "mark": "AFTERMARKET",
             "mark_name": "ACURA",
-            "image": "AFTERMARKET/marks/png/acura.png",
+            "image": "https://212709.selcdn.ru/autocatalog-online/aftermarket/marks/png/acura.png",
             "mark_short_name": "ACURA"
         },
         ...

@@ -56,13 +56,13 @@ curl -H 'Authorization: <token>' \
             "mark": "AUDI",
             "group": "0",
             "name": "Аксессуары, Infotainment",
-            "img": "0.png"
+            "image": "https://212709.selcdn.ru/autocatalog-online/ETKA/groups/0.png"
         },
         ...
     ],
     "services": [
         {
-            dir": "R",
+            "dir": "R",
             "catalog_code": "708",
             "year": "2014",
             "model": "A1",
@@ -71,7 +71,7 @@ curl -H 'Authorization: <token>' \
             "mark": "AUDI",
             "service": 200,
             "name": "Расходные детали",
-            "img": "200.png"
+            "image": "https://212709.selcdn.ru/autocatalog-online/ETKA/groups/200.png"
         },
         ...
     ]
@@ -115,7 +115,7 @@ curl -H 'Authorization: <token>' \
 | dir | string | Да | Директория (используется в get-параметрах) |
 | group | string | Да | Код группы |
 | name | string | - | Название группы |
-| img | string | - | Картинка |
+| image | string | - | Картинка |
 
 ### Значения services
 

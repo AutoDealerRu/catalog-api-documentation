@@ -30,7 +30,7 @@ curl -H 'Authorization: <token>' \
             "provider": {
                 "id": 11353,
                 "name": "CARLUBE",
-                "image": "AFTERMARKET/logos/11353"
+                "image": "https://212709.selcdn.ru/autocatalog-online/aftermarket/logos/11353"
             },
             "number": "XLS011",
             "name": "Масло осевого редуктора",

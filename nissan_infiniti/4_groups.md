@@ -22,7 +22,7 @@ curl -H 'Authorization: <token>' \
 
 ```json
 {
-    "image": "/NISSAN/019/GENIMG/000000.gif",
+    "image": "https://212709.selcdn.ru/autocatalog-online/nissan/EL/298/GENIMG/000000.gif",
     "groups": [
         {
            "type": "CARS_FOREIGN",

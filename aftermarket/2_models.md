@@ -33,7 +33,7 @@ curl -H 'Authorization: <token>' \
         },{
             "type": "CARS_FOREIGN",
             "mark": "AFTERMARKET",
-            "mark_short_name": "AC"
+            "mark_short_name": "AC",
             "model_id": 4208,
             "mark_name": "AC",
             "model_name_eng": "428 Fastback",

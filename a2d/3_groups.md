@@ -26,7 +26,7 @@ curl -H 'Authorization: <token>' \
         "years": null,
         "index": 896,
         "relevance": null,
-        "image": "58961.jpg"
+        "image": "https://212709.selcdn.ru/autocatalog-online/main/models/58961.jpg"
     },
     "groups": [
         {

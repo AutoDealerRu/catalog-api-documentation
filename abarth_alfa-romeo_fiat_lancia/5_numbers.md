@@ -30,7 +30,7 @@ curl -H 'Authorization: <token>' \
     "modification_short_name": "3P",
     "unit_short_name": 101,
     "group_short_name": "1",
-    "filename": "",
+    "image": "https://acat.online/api/catalogs/CARS_FOREIGN/FIAT/CIN/3P/101/10101%2F08/1/image",
     "applicability": "CC1.2+CMBBZ",
     "applicabilities": [
         "CC1.2",
@@ -94,7 +94,7 @@ curl -H 'Authorization: <token>' \
 | modification_short_name | string | Идентификатор модификации |
 | unit_short_name | integer | Идентификатор основной группы |
 | group_short_name | string | Идентификатор группы |
-| filename | string | URL иллюстрации |
+| image | string | URL иллюстрации |
 | applicability | string | Применяемость без форматирования |
 | applicabilities | array | Применяемость |
 | numbers | string | Номера |

@@ -24,7 +24,7 @@ curl -H 'Authorization: <token>' \
 {
     "subgroups": [
         {
-            "image": "NISSAN/EL/298/GRPIMG/000000.gif",
+            "image": "https://212709.selcdn.ru/autocatalog-online/nissan/EL/298/GRPIMG/000000.gif",
             "items": [
                 {
                     "type": "CARS_FOREIGN",

@@ -67,8 +67,7 @@ curl -H 'Authorization: <token>' \
         "illustration_short_name": "MT0887F",
         "short_name": "0901",
         "name": "STANDARD TOOL",
-        "image": "http://auto2d.com/img/toyota/ImgIllIndex/US/671440/MT0887F.png",
-        "illustrate": "http://auto2d.com/img/toyota/Img/US/B1/MT0887F.png"
+        "image": "https://acat.online/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
     }
 }
 ```
@@ -111,8 +110,7 @@ curl -H 'Authorization: <token>' \
 | short_name | string | Код группы |
 | illustration_short_name | string | Код подгруппы |
 | name | string | Название подгруппы |
-| image | string | Путь до картинки подгруппы |
-| illustrate | string | Путь до иллюстрации |
+| image | string | Путь до иллюстрации |
 
 
 ### Значения breadcrumbs
