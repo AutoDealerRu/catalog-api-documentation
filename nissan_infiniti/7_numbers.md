@@ -1,4 +1,4 @@
-# Подгруппы (subgroups)
+# Номера (numbers)
 
 ## `GET /:mark/:country_short_name/:directory/:modification/:group`
 

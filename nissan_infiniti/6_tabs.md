@@ -1,4 +1,4 @@
-# Подгруппы (subgroups)
+# Изображения / Закладки (tabs)
 
 ## `GET /:mark/:country_short_name/:directory/:modification/:group/:subgroup`
 
