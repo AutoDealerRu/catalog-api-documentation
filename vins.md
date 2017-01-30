@@ -33,19 +33,18 @@ curl -H 'Authorization: <token>' \
 ### Пример ответа Nissan, Infiniti
 
 ```json
-{
-    "vins": [
-        {
-            "vin": "KNMCSHLMS7P680889",
-            "type": "CARS_FOREIGN",
-            "mark": "NISSAN",
-            "country_short_name": "EL",
-            "directory": "016",
-            "modification": 4,
-            "model_name": "ALMERA B10RS"
-        }
-    ]
-}
+[
+    {
+        "vin": "KNMCSHLMS7P680889",
+        "type": "CARS_FOREIGN",
+        "mark": "NISSAN",
+        "country_short_name": "EL",
+        "directory": "016",
+        "modification": 4,
+        "model_name": "ALMERA B10RS"
+    },
+    ...
+]
 ```
 
 ### Пример ответа Toyota, Lexus
