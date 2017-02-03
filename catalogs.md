@@ -22,13 +22,19 @@ curl -H 'Authorization: <token>' \
     	  {
     		"name": "АЗЛК",
     		"value": "AZLK",
-    		"image": "https://212709.selcdn.ru/autocatalog-online/main/marks/63.png"
+    		"image": "https://212709.selcdn.ru/autocatalog-online/main/marks/63.png",
+			"SKD": false,
+			"archival": false,
+			"engine": false
     	  },
     	  {
-    		"name": "ВАЗ",
-    		"value": "VAZ",
-    		"image": "https://212709.selcdn.ru/autocatalog-online/main/marks/40.png"
-    	  },
+			  "name": "Andoria",
+              "value": "ANDORIA_ENGINE",
+              "image": "https://212709.selcdn.ru/autocatalog-online/main/marks/162.png",
+              "SKD": false,
+              "archival": false,
+              "engine": true
+          },
     	  ...
         ]
     },
@@ -41,23 +47,21 @@ curl -H 'Authorization: <token>' \
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
 | index | integer | - | Порядковый номер |
-| name | string | - | Название типа |
-| value | string | Да | Сокращеное название типа |
-| image | string | - | Путь до изображения типа |
-| marks | array of objects | - | Марки текущего типа |
-
-### Значения marks
-
-| Имя точка | Тип | Используется в URL | Описание |
-| :---- | :------: | :------: | :--------------- |
-| name | string | - | Название марки |
-| value | string | Да | Сокращеное название типа |
-| image | string | - | Путь до изображения марки |
+| name | string | - | Тип транспортного средства |
+| value | string | Да | Сокращеное название типа транспортного средства |
+| image | string | - | Путь до изображения |
+| marks | array | - | Марки текущего типа |
+| marks[..].name | string | - | Название марки |
+| marks[..].value | string | - | Идентификатор марки |
+| marks[..].image | string | - | Путь до изображения |
+| marks[..].SDK | boolean | - | Параметр крупноузлового каталога |
+| marks[..].archival | boolean | - | Параметр архивного каталога |
+| marks[..].engine | boolean | - | Параметр каталога двигателей |
 
 
-## `GET /:type/:mark`
+## `GET /:type/:mark[/:category]`
 
-Для перехода к следующему уровню передайте в GET параметры value и marks[0].value
+Для перехода к следующему уровню передайте в GET параметры value и marks[..].value.
 
 ### Пример запроса
 
