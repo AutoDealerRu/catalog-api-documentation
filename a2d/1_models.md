@@ -8,7 +8,7 @@
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_NATIVE/VAZ/GENERAL
+-X GET https://acat.online/api/catalogs/CARS_NATIVE/VAZ
 ```
 
 ### Пример ответа
@@ -21,7 +21,10 @@ curl -H 'Authorization: <token>' \
         "description": "Волжский автомобильный завод (Российская Федерация, г.Тольятти)",
         "url": "http://www.vaz.ru/",
         "category": "GENERAL",
-        "short_name": "VAZ"
+        "short_name": "VAZ",
+        "archival": false,
+        "SKD": false,
+        "engine": false
     },
     "models": [
         {
@@ -56,6 +59,10 @@ curl -H 'Authorization: <token>' \
 | url | string | URL производителя |
 | category | string | Тип каталога |
 | short_name | string | Идентификатор марки |
+| SDK | boolean | - | Параметр крупноузлового каталога |
+| archival | boolean | - | Параметр архивного каталога |
+| engine | boolean | - | Параметр каталога двигателей |
+
 
 ### Значения models
 

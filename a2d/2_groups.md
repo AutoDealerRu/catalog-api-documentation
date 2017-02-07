@@ -8,7 +8,7 @@
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_NATIVE/VAZ/GENERAL/58961
+-X GET https://acat.online/api/catalogs/CARS_NATIVE/VAZ/58961
 ```
 
 ### Пример ответа
@@ -22,7 +22,6 @@ curl -H 'Authorization: <token>' \
         "name_with_mark": "ВАЗ X-Ray",
         "modification": "Lada XRay",
         "mark_short_name": "VAZ",
-        "category": "GENERAL",
         "years": null,
         "index": 896,
         "relevance": null,
@@ -65,7 +64,6 @@ curl -H 'Authorization: <token>' \
 | name_with_mark | string | Наименование модели с указанием марки |
 | modification | string | Модификация |
 | mark_short_name | string | Идентификатор марки |
-| category | string | Тип каталога |
 | years | string |  |
 | index | integer | Порядковый номер |
 | relevance | string (date) | Применяемость |
