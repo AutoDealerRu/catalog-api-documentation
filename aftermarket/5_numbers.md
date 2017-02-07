@@ -32,6 +32,12 @@ curl -H 'Authorization: <token>' \
                 "name": "CARLUBE",
                 "image": "https://212709.selcdn.ru/autocatalog-online/aftermarket/logos/11353"
             },
+            "images": [
+                {
+                    "image": "https://212709.selcdn.ru/autocatalog-online/aftermarket/details/45/1684296.jpg",
+                    "alt": "Рисунок"
+                }
+            ],
             "number": "XLS011",
             "name": "Масло осевого редуктора",
             "article_id": 129385604,
@@ -58,6 +64,9 @@ curl -H 'Authorization: <token>' \
 | model_id | integer | Да | Идентифкационный номер модели |
 | modification_id | integer | Да | Идентифкационный номер модификации |
 | group_id | integer | Да | Идентифкационный номер группы |
+| images | array of objects | - | Изображения (может быть пуст) |
+| images.image | string | - | Путь до изображения детали |
+| images.alt | string / date | - | Название изображения |
 | provider | object | - | Производитель |
 | provider.id | integer | Да | ID производителя |
 | provider.name | string | - | Название производителя |
