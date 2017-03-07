@@ -74,7 +74,7 @@ curl -H 'Authorization: <token>' \
 **Для уточнения поиска до модели необходимо передать в запрос ID модели**
 
 
-### Пример запроса Abarth,Alfa-Romeo,Fiat,Lancia
+### Пример запроса Abarth/Alfa-Romeo/Fiat/Lancia
 
 ```bash
 curl -H 'Authorization: <token>' \
