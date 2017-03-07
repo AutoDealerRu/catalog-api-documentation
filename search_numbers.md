@@ -16,12 +16,12 @@
 ## Примеры поиска по номеру в разных каталогах
 
 1. **A2D** [[Запрос](search_numbers.md#Пример-запроса-a2d)] [[Ответ](search_numbers.md#Пример-ответа-a2d)] [[Значения](search_numbers.md#Значения-ответа-a2d)]
-2. **Abarth,Alfa-Romeo,Fiat,Lancia** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)]
-3. **Audi,Seat,Skoda,Volkswagen** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Audi-Seat-Skoda-Volkswagen)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Audi-Seat-Skoda-Volkswagen)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Audi-Seat-Skoda-Volkswagen)]
-4. **BMW,Mini,Rolls-Royce** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-BMW-Mini-Rolls-Royce)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-BMW-Mini-Rolls-Royce)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-BMW-Mini-Rolls-Royce)]
-5. **Kia,Hyundai** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Kia-Hyundai)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Kia-Hyundai)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Kia-Hyundai)]
-6. **Nissan,Infiniti** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Nissan-Infiniti)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Nissan-Infiniti)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Nissan-Infiniti)]
-7. **Toyota,Lexus** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Toyota-Lexus)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Toyota-Lexus)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Toyota-Lexus)]
+2. **Abarth,Alfa-Romeo,Fiat,Lancia** [[Запрос](search_numbers.md#Пример-запроса-abarthalfa-romeofiatlancia)] [[Ответ](search_numbers.md#Пример-ответа-abarthalfa-romeofiatlancia)] [[Значения](search_numbers.md#Значения-ответа-abarthalfa-romeofiatlancia)]
+3. **Audi,Seat,Skoda,Volkswagen** [[Запрос](search_numbers.md#Пример-запроса-audiseatskodavolkswagen)] [[Ответ](search_numbers.md#Пример-ответа-audiseatskodavolkswagen)] [[Значения](search_numbers.md#Значения-ответа-audiseatskodavolkswagen)]
+4. **BMW,Mini,Rolls-Royce** [[Запрос](search_numbers.md#Пример-запроса-bmwminirolls-royce)] [[Ответ](search_numbers.md#Пример-ответа-bmwminirolls-royce)] [[Значения](search_numbers.md#Значения-ответа-bmwminirolls-royce)]
+5. **Kia,Hyundai** [[Запрос](search_numbers.md#Пример-запроса-kiahyundai)] [[Ответ](search_numbers.md#Пример-ответа-kiahyundai)] [[Значения](search_numbers.md#Значения-ответа-kiahyundai)]
+6. **Nissan,Infiniti** [[Запрос](search_numbers.md#Пример-запроса-nissaninfiniti)] [[Ответ](search_numbers.md#Пример-ответа-nissaninfiniti)] [[Значения](search_numbers.md#Значения-ответа-nissaninfiniti)]
+7. **Toyota,Lexus** [[Запрос](search_numbers.md#Пример-запроса-toyotalexus)] [[Ответ](search_numbers.md#Пример-ответа-toyotalexus)] [[Значения](search_numbers.md#Значения-ответа-toyotalexus)]
 
 ### Пример запроса A2D
 
@@ -74,7 +74,7 @@ curl -H 'Authorization: <token>' \
 **Для уточнения поиска до модели необходимо передать в запрос ID модели**
 
 
-### Пример запроса Abarth/Alfa-Romeo/Fiat/Lancia
+### Пример запроса Abarth,Alfa-Romeo,Fiat,Lancia
 
 ```bash
 curl -H 'Authorization: <token>' \
