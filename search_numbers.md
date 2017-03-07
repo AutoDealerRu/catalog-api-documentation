@@ -8,14 +8,14 @@
 | mark | string | Название марки, в которой ищется номер (VAZ / BMW / KIA / NISSAN / ...) |
 | number | string  | Искомый номер (например: '12345') |
 **ВАЖНО!**
-- 1. для каталога a2d в поле number можно передавать названия детали(текст, например "кранштейн")
-- 2. поиск по тексту не зависит от регистра
-- 3. результаты в каталогах отличаются
-- 4. в любом ответе всегда есть поле mark для определения каталога
+- для каталога a2d в поле number можно передавать названия детали(текст, например "кранштейн")
+- поиск по тексту не зависит от регистра
+- результаты в каталогах отличаются
+- в любом ответе всегда есть поле mark для определения каталога
 
 ## Примеры поиска по номеру в разных каталогах
 
-1. **A2D** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-A2D)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-A2D)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-A2D)]
+1. **A2D** [[Запрос](/search_numbers.md#Пример-запроса-A2D)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-A2D)] [[Значения](search_numbers.md#Значения-ответа-A2D)]
 2. **Abarth,Alfa-Romeo,Fiat,Lancia** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)]
 3. **Audi,Seat,Skoda,Volkswagen** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-Audi-Seat-Skoda-Volkswagen)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-Audi-Seat-Skoda-Volkswagen)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-Audi-Seat-Skoda-Volkswagen)]
 4. **BMW,Mini,Rolls-Royce** [[Запрос](/blob/search/search_numbers.md#Пример-запроса-BMW-Mini-Rolls-Royce)] [[Ответ](/blob/search/search_numbers.md#Пример-ответа-BMW-Mini-Rolls-Royce)] [[Значения](/blob/search/search_numbers.md#Значения-ответа-BMW-Mini-Rolls-Royce)]
