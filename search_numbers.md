@@ -15,7 +15,7 @@
 
 ## Примеры поиска по номеру в разных каталогах
 
-1. **A2D** [[Запрос](#Пример-запроса-A2D)] [[Ответ](/blob/master/search_numbers.md#Пример-ответа-A2D)] [[Значения](/blob/master/search_numbers.md#Значения-ответа-A2D)]
+1. **A2D** [[Запрос](#Пример-запроса-A2D)] [[Ответ](/blob/master/search_numbers.md#Пример-ответа-A2D)] [[Значения](#Значения-ответа-A2D)]
 2. **Abarth,Alfa-Romeo,Fiat,Lancia** [[Запрос](/blob/master/search_numbers.md#Пример-запроса-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Ответ](/blob/master/search_numbers.md#Пример-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Значения](/blob/master/search_numbers.md#Значения-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)]
 3. **Audi,Seat,Skoda,Volkswagen** [[Запрос](/blob/master/search_numbers.md#Пример-запроса-Audi-Seat-Skoda-Volkswagen)] [[Ответ](/blob/master/search_numbers.md#Пример-ответа-Audi-Seat-Skoda-Volkswagen)] [[Значения](/blob/master/search_numbers.md#Значения-ответа-Audi-Seat-Skoda-Volkswagen)]
 4. **BMW,Mini,Rolls-Royce** [[Запрос](/blob/master/search_numbers.md#Пример-запроса-BMW-Mini-Rolls-Royce)] [[Ответ](/blob/master/search_numbers.md#Пример-ответа-BMW-Mini-Rolls-Royce)] [[Значения](/blob/master/search_numbers.md#Значения-ответа-BMW-Mini-Rolls-Royce)]
