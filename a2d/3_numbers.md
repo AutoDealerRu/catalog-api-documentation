@@ -107,9 +107,6 @@ curl -H 'Authorization: <token>' \
 | :---- | :------: | :------: | :--------------- |
 | short_name | integer | - | Идентификатор |
 | name | string | - | Наименование |
-| type | string | Да | Тип |
-| mark | string | Да | Идентификатор марки |
-| model_short_name | string | Да | Идентификатор модели |
 | coordinates | array | - | Координаты других группп |
 | coordinates[..].name | string | - | Название точки на изображении |
 | coordinates[..].group_short_name | integer | Да | Идентификатор группы-ссылки |
