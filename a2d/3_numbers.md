@@ -31,6 +31,26 @@ curl -H 'Authorization: <token>' \
         "short_name": 3373769,
         "name": "Инструмент",
         "image": "https://acat.online/api/catalogs/CARS_NATIVE/VAZ/GENERAL/58961/3373769/image"
+        "type": "CARS_NATIVE",
+        "mark": "VAZ",
+        "model_short_name": "58961",
+        "coordinates" : [
+            {
+                "name" : "III",
+                "group_short_name" : 26993,
+                "coordinate" : {
+                    "top" : {
+                        "x" : 272,
+                        "y" : 67
+                    },
+                    "bottom" : {
+                        "x" : 312,
+                        "y" : 97
+                    }
+                }
+            },
+            ...
+        ]
     },
     "numbers": [
         {
@@ -86,10 +106,20 @@ curl -H 'Authorization: <token>' \
 
 ### Значения group
 
-| Имя | Тип | Описание |
-| :---- | :------: | :--------------- |
-| short_name | integer | Идентификатор |
-| name | string | Наименование |
+| Имя | Тип | Используется в URL| Описание |
+| :---- | :------: | :------: | :--------------- |
+| short_name | integer | - | Идентификатор |
+| name | string | - | Наименование |
+| type | string | Да | Тип |
+| mark | string | Да | Идентификатор марки |
+| model_short_name | string | Да | Идентификатор модели |
+| coordinates | array | - | Координаты других группп |
+| coordinates[..].name | string | - | Название точки на изображении |
+| coordinates[..].group_short_name | integer | Да | Идентификатор группы-ссылки |
+| coordinates[..].coordinate.bottom.x | integer | Нижний Х |
+| coordinates[..].coordinate.bottom.y | integer | Нижний У |
+| coordinates[..].coordinate.top.x | integer | Верхний Х |
+| coordinates[..].coordinate.top.y | integer | Верхний У |
 
 ### Значения numbers
 
@@ -102,6 +132,13 @@ curl -H 'Authorization: <token>' \
 | count | array | Счетчики |
 | count[..].count | string | Кол-Во |
 | count[..].title | string | Принадлежность |
+| coordinates | array | Координаты |
+| coordinates[..].bottom | object | Нижние точки |
+| coordinates[..].bottom.x | integer | Нижний Х |
+| coordinates[..].bottom.y | integer | Нижний У |
+| coordinates[..].top | object | Верхние точки |
+| coordinates[..].top.x | integer | Верхний Х |
+| coordinates[..].top.y | integer | Верхний У |
 
 ### Значения breadcrumbs
 
