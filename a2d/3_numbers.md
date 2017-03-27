@@ -1,6 +1,6 @@
 # Номера деталей
 
-## `GET /:mark/:category/:model/:subgroup`
+## `GET /:mark/:model/:subgroup`
 
 Возвращает объект с двумя массивами (numbers, breadcrumbs) и двумя объектами (model, group)
 
@@ -73,12 +73,12 @@ curl -H 'Authorization: <token>' \
                     }
                 }
             ]
-        }
+        },
         ...
     ],
     "breadcrumbs": [
         ...
-        {
+        ,{
             "name": "Инструмент",
             "url": "3373769"
         }

@@ -1,6 +1,6 @@
 # Группы
 
-## `GET /:mark/:category/:model`
+## `GET /:mark/:model`
 
 Возвращает объект с двумя массивами (groups, breadcrumbs) и объектом model
 
@@ -41,12 +41,12 @@ curl -H 'Authorization: <token>' \
                     ]
                 }
             ]
-        }
+        },
         ...
     ],
     "breadcrumbs": [
         ...
-        {
+        ,{
             "name": "X-Ray",
             "url": "58961"
         }
@@ -88,6 +88,6 @@ curl -H 'Authorization: <token>' \
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET /:mark/:category/:model/:short_name`
+## `GET /:mark/:model/:short_name`
 
 Для перехода к списку номеров деталей нужно выбрать подгруппу и передать ее идентификатор (short_name) в GET параметры

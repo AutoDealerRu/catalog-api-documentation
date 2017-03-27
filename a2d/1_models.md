@@ -1,6 +1,6 @@
 # Модели
 
-## `GET /:mark/:category`
+## `GET /:mark`
 
 Возвращает объект с двумя массивами (models, breadcrumbs) и объектом mark
 
@@ -36,12 +36,12 @@ curl -H 'Authorization: <token>' \
             "index": 896,
             "relevance": null,
             "image": "https://212709.selcdn.ru/autocatalog-online/main/models/58961.jpg"
-        }
+        },
         ...
     ],
     "breadcrumbs": [
         ...
-        {
+        ,{
             "name": "ВАЗ",
             "url": "VAZ"
         }
@@ -85,6 +85,6 @@ curl -H 'Authorization: <token>' \
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET /:mark/:category/:short_name`
+## `GET /:mark/:short_name`
 
 Для перехода к списку групп нужно выбрать модель и передать ее идентификатор (short_name) в GET параметры
