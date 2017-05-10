@@ -13,7 +13,7 @@ curl -H 'Authorization: <token>' \
 
 ```json
 {
-  "image": "https://212709.selcdn.ru/autocatalog-online/renault/dessins/00135143.png",
+  "image": "https://acat.online/api/catalogs/CARS_FOREIGN/RENAULT/61/3348/10042/58d87a7f28798c02743e915c/image",
   "positions": [
     {
       "index": 1,

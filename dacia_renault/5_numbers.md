@@ -25,7 +25,7 @@ curl -H 'Authorization: <token>' \
   "modification_short_name": 165,
   "category_short_name": 494,
   "subgroup_short_name": 29182,
-  "image": "https://212709.selcdn.ru/autocatalog-online/renault/dessins/00135143.png",
+  "image": "https://acat.online/api/catalogs/CARS_FOREIGN/RENAULT/61/3348/10042/image",
   "related": [
     {
       "name": "N400112",
