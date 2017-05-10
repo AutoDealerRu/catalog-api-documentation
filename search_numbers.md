@@ -398,6 +398,55 @@ curl -H 'Authorization: <token>' \
 
 
 
+### Пример запроса Dacia, Renault
+
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=RENAULT&number=600503272R
+```
+**С уточнением модели**
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=RENAULT&number=600503272R&model=7
+```
+
+#### Пример ответа Dacia, Renault
+
+```json
+[
+    {
+        "subgroup_short_name": 28051,
+        "type": "CARS_FOREIGN",
+        "mark": "RENAULT",
+        "model": 7,
+        "modification": 159,
+        "category": 476,
+        "category_name": "Кузов",
+        "modification_name": "BB00",
+        "model_name": "Clio II",
+        "mark_name": "Renault"
+    },
+  ...
+]
+```
+
+#### Значения ответа Dacia, Renault
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| type | string | Да | Тип транспортного средства |
+| mark | string | Да | Идентификатор марки |
+| model | string | Да | Идентификатор модели |
+| modification | integer | Да | Идентификатор модификации |
+| category | string | Да | Идентификатор категории |
+| category_name | string | Да | Наименование категории |
+| modification_name | string | Да | Наименование модификации |
+| model_name | string | Да | Наименование модели |
+| mark_name | string | - | Наименование марки |
+| subgroup_short_name | string | - | Идентификатор подгруппы |
+
+
+
 ### Пример запроса Toyota,Lexus
 
 ```bash
