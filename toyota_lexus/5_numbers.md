@@ -76,7 +76,7 @@ curl -H 'Authorization: <token>' \
         "complectation_code": "001",
         "sysopt": "sysopt"
     },
-    "image": "https://localhost:3001/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
+    "image": "https://acat.autodealer.ru/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
     "country": {
         "type": "CARS_FOREIGN",
         "mark": "TOYOTA",
@@ -144,8 +144,8 @@ curl -H 'Authorization: <token>' \
 | country_short_name | string | Да | Сокращение страны (например: US / JP ) |
 | full_name | string | Да | Страна (например: США ) |
 
-### Значения image
-| string | Путь до иллюстрации |
+### Значение image
+URL - Путь до иллюстрации
 
 
 ### Значения breadcrumbs
