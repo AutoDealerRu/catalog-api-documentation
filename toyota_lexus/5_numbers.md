@@ -76,7 +76,7 @@ curl -H 'Authorization: <token>' \
         "complectation_code": "001",
         "sysopt": "sysopt"
     },
-    "image": "https://acat.autodealer.ru/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
+    "image": "https://acat.online/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
     "country": {
         "type": "CARS_FOREIGN",
         "mark": "TOYOTA",
