@@ -32,10 +32,14 @@ curl -H 'Authorization: <token>' \
         "catalog_code": 149,
         "group": "1",
         "subgroup": "100",
-        "detail": 100010,
-        "name": "Блок цил. с коленвалом, порш-\r\nнями, мас. нас. и мас. подд.",
-        "options": "",
-        "image": "https://acat.online/api/catalogs/CARS_FOREIGN/AUDI/RDW/A100/1994/149/R/group/1/100/100010/image"
+        "detail": 100010,      
+        "image": "https://acat.online/api/catalogs/CARS_FOREIGN/AUDI/RDW/A100/1994/149/R/group/1/100/100010/image",
+        "names": [
+            {
+            "name": "Блок цил. с коленвалом, порш-\r\nнями, мас. нас. и мас. подд.",
+            "option": ""
+            }
+        ]
     },
     "numbers": [
         {
@@ -88,8 +92,9 @@ curl -H 'Authorization: <token>' \
 | group | string | Код группы |
 | subgroup | string | Код подгруппы |
 | detail | string | Код группы деталей |
-| name | string | Название подгруппы |
-| options | string | Опции |
+| names[] | Object | Название подгруппы и опций |
+| names[].name | string | Название подгруппы |
+| names[].options | string | Опции |
 | image | string | Иллюстрация |
 
 ### Значения numbers
