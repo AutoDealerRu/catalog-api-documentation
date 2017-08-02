@@ -129,6 +129,13 @@ curl -H 'Authorization: <token>' \
      },
      ...
   ],
+  "abbreviations": [
+    {
+        "abbreviation": "C",
+        "description": "Coupe"
+    },
+    ...
+  ],
   "breadcrumbs": [
 	...,
 	{
@@ -231,6 +238,13 @@ curl -H 'Authorization: <token>' \
 
 #### Пример построения ссылки для number_type = 'SECTION'
 #### `/:type/:mark/:country_short_name/:directory/:modification/:group/:number`
+
+### Значения abbreviations
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| abbreviation | string | - | Сокращение |
+| description | string | - | Расшифровка |
 
 ### Значения breadcrumbs
 

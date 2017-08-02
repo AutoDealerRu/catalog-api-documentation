@@ -46,6 +46,13 @@ curl -H 'Authorization: <token>' \
         },
         ...
     ],
+    "abbreviations": [
+        {
+            "abbreviation": "C",
+            "description": "Coupe"
+        },
+        ...
+    ],
     "breadcrumbs": [
         ...
         ,{
@@ -76,6 +83,13 @@ curl -H 'Authorization: <token>' \
 | other | array | - | остальные характеристики (array of objects) |
 | other.name | string | - | Имя характеристики |
 | other.value | string | - | Значение характеристики |
+
+### Значения abbreviations
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| abbreviation | string | - | Сокращение |
+| description | string | - | Расшифровка |
 
 ### Значения breadcrumbs
 
