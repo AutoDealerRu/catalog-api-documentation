@@ -59,15 +59,29 @@ curl -H 'Authorization: <token>' \
             "name": "STANDARD TOOL"
         }
     ],
-    "subgroup": {
-        "country_short_name": "US",
-        "catalog_code": "671440",
-        "category": "ENGINE",
+    "images": [
+        {
+            "country_short_name": "US",
+            "catalog_code": "671440",
+            "category": "ENGINE",
+            "complectation_code": "001",
+            "illustration_short_name": "MT0887F",
+            "short_name": "0901",
+            "name": "STANDARD TOOL"
+        },
+        ...
+    ],
+    "complectation": {
+        "model_code": "LN51L-KRA",
         "complectation_code": "001",
-        "illustration_short_name": "MT0887F",
-        "short_name": "0901",
-        "name": "STANDARD TOOL",
-        "image": "https://acat.online/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
+        "sysopt": "sysopt"
+    },
+    "image": "https://acat.online/api/catalogs/CARS_FOREIGN/TOYOTA/US/671440/LN51L-KRA/sysopt/001/0901/MT0887F/image",
+    "country": {
+        "type": "CARS_FOREIGN",
+        "mark": "TOYOTA",
+        "country_short_name": "US",
+        "full_name": "США"
     }
 }
 ```
@@ -99,7 +113,7 @@ curl -H 'Authorization: <token>' \
 | coordinate.bottom.x | Integer | - | Нижняя координата Х |
 | coordinate.bottom.y | Integer | - | Нижняя координата Y |
 
-### Значения subgroup
+### Значения images
 
 | Имя | Тип | Описание |
 | :---- | :------: | :--------------- |
@@ -111,6 +125,27 @@ curl -H 'Authorization: <token>' \
 | illustration_short_name | string | Код подгруппы |
 | name | string | Название подгруппы |
 | image | string | Путь до иллюстрации |
+
+
+### Значения complectation
+
+| Имя | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| model_code | string | Да | Код модели |
+| complectation_code | string | - | Код комплектации |
+| sysopt | string | Да | Sysopt |
+
+
+### Значения country
+| Имя | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| type | string | Да | Тип машины (в данном каталоге только CARS_FOREIGN - легковые иномарки)  |
+| mark | Integer | Да | Название марки |
+| country_short_name | string | Да | Сокращение страны (например: US / JP ) |
+| full_name | string | Да | Страна (например: США ) |
+
+### Значение image
+URL - Путь до иллюстрации
 
 
 ### Значения breadcrumbs
