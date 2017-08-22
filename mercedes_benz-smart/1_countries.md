@@ -57,11 +57,11 @@ curl -H 'Authorization: <token>' \
 | :---- | :------: | :------: | :--------------- |
 | type | string | Да | Тип машины (всегда CARS_FOREIGN) |
 | mark | string | Да | Название марки (NISSAN или INFINITI) |
-| short | string | Да | Сокращение страны (например: AR / GL ) |
+| short | string | Да | Сокращение страны (например: EU / US ) |
 | name | string | - | Полное название страны |
 | current | boolean | - | Текущая страна (Да / Нет) |
 | aggregations | array of objects | - | Список агрегатов страны |
-| aggregations[..].short | string | Да | Сокращение агрегата |
+| aggregations[..].short | string | Да | Сокращение агрегата (например: FG / M ) |
 | aggregations[..].name | string | - | Название агрегата |
 | aggregations[..].short | string | - | Изображение агрегата |
 
