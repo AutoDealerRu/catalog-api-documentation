@@ -52,7 +52,7 @@ curl -H 'Authorization: <token>' \
         "name": "Комплект регулировочных шайб",
         "modification": "FS015-40 (5-дверный 2-местный фургон)",
         "notes": "",
-        "sort_weight": 30
+        "sort_weight": 30 
     },
     ...
 ]
