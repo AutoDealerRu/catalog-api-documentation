@@ -465,7 +465,22 @@ curl -H 'Authorization: <token>' \
 ```json
 [
     {
-        ...
+        "type": "CARS_FOREIGN",
+        "mark": "TOYOTA",
+        "country": "US",
+        "catalog_code": "791420",
+        "model_code": "FJ60LG-KA",
+        "sysopt": "sysopt",
+        "complectation_code": "004",
+        "group": "1603",
+        "illustration": "MA4986K",
+        "number": "9165140816",
+        "country_name": "США",
+        "model_name": "LAND CRUISER",
+        "model_modification": "BJ60,HJ60,FJ6#",
+        "complectation_name": "FJ60LG-KA",
+        "group_name": "RADIATOR & WATER OUTLET",
+        "number_name": "** STANDARD PART"
     },
     ...
 ]
