@@ -7,7 +7,9 @@
 | type | string  | Тип транспортного средства (CARS_NATIVE / CARS_FOREIGN / BUS /  ... ) |
 | mark | string | Название марки, в которой ищется номер (VAZ / BMW / KIA / NISSAN / ...) |
 | number | string  | Искомый номер (например: '12345') |
+
 **ВАЖНО!**
+
 - для каталога a2d в поле number можно передавать названия детали(текст, например "кранштейн")
 - поиск по тексту не зависит от регистра
 - результаты в каталогах отличаются
@@ -81,7 +83,7 @@ curl -H 'Authorization: <token>' \
 
 **Для отсеивания "не нужных" результатов можно смотреть на вес первого и оставить из всех результатов только те, у кого вес как у первого элемента**
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/a2d/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/a2d/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Abarth,Alfa-Romeo,Fiat,Lancia
@@ -134,7 +136,7 @@ curl -H 'Authorization: <token>' \
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/fiat/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/fiat/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Audi,Seat,Skoda,Volkswagen
@@ -206,7 +208,7 @@ curl -H 'Authorization: <token>' \
 
 **2. Имена подгрупп отличаются, но данные на странице результатов одинаковы**
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/etka/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/etka/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса BMW,Mini,Rolls-Royce
@@ -268,7 +270,7 @@ curl -H 'Authorization: <token>' \
 
 **На поиск без уточнения по ID модели стоит ограничение в 100 результатов**
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/bmw/search.php#L22) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/bmw/search.php#L22) на конечную страницу каталога
 
 
 ### Пример запроса Kia,Hyundai
@@ -337,7 +339,7 @@ curl -H 'Authorization: <token>' \
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/kia/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/kia/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Nissan,Infiniti
@@ -416,7 +418,7 @@ curl -H 'Authorization: <token>' \
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/nissan/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/nissan/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Dacia,Renault
@@ -466,7 +468,7 @@ curl -H 'Authorization: <token>' \
 | mark_name | string | - | Наименование марки |
 | subgroup_short_name | string | - | Идентификатор подгруппы |
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/renault/search.php#L20) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/renault/search.php#L20) на конечную страницу каталога
 
 
 
@@ -525,7 +527,7 @@ curl -H 'Authorization: <token>' \
 | group_name | string | - | Название группы |
 | number_name | string | - | Название детали |
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/toyota/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/toyota/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Mercedes,Smart
@@ -597,7 +599,7 @@ curl -H 'Authorization: <token>' \
 
 **На поиск без уточнения по ID модели стоит ограничение в 100 результатов**
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/mercedes/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/mercedes/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Ssangyong
@@ -631,4 +633,4 @@ curl -H 'Authorization: <token>' \
 | group_name | string | - | Название группы |
 | number_name | string | - | Название детали |
 
-[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/ssangyong/search.php#L21) на конечную страницу каталога
+[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/ssangyong/search.php#L21) на конечную страницу каталога
