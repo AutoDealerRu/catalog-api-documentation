@@ -23,6 +23,8 @@
 6. **Nissan,Infiniti** [[Запрос](search_numbers.md#Пример-запроса-nissaninfiniti)] [[Ответ](search_numbers.md#Пример-ответа-nissaninfiniti)] [[Значения](search_numbers.md#Значения-ответа-nissaninfiniti)]
 7. **Dacia,Renault** [[Запрос](search_numbers.md#Пример-запроса-daciarenault)] [[Ответ](search_numbers.md#Пример-ответа-daciarenault)] [[Значения](search_numbers.md#Значения-ответа-daciarenault)]
 8. **Toyota,Lexus** [[Запрос](search_numbers.md#Пример-запроса-toyotalexus)] [[Ответ](search_numbers.md#Пример-ответа-toyotalexus)] [[Значения](search_numbers.md#Значения-ответа-toyotalexus)]
+9. **Mercedes,Smart** [[Запрос](search_numbers.md#Пример-запроса-mercedessmart)] [[Ответ](search_numbers.md#Пример-ответа-mercedessmart)] [[Значения](search_numbers.md#Значения-ответа-mercedessmart)]
+10. **Ssangyong** [[Запрос](search_numbers.md#Пример-запроса-ssangyong)] [[Ответ](search_numbers.md#Пример-ответа-ssangyong)] [[Значения](search_numbers.md#Значения-ответа-ssangyong)]
 
 ### Пример запроса A2D
 
@@ -79,6 +81,8 @@ curl -H 'Authorization: <token>' \
 
 **Для отсеивания "не нужных" результатов можно смотреть на вес первого и оставить из всех результатов только те, у кого вес как у первого элемента**
 
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/a2d/search.php#L21) на конечную страницу каталога
+
 
 ### Пример запроса Abarth,Alfa-Romeo,Fiat,Lancia
 
@@ -129,6 +133,8 @@ curl -H 'Authorization: <token>' \
 | group_name | string | - | Название группы |
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/fiat/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Audi,Seat,Skoda,Volkswagen
@@ -195,8 +201,12 @@ curl -H 'Authorization: <token>' \
 | subgroup_names[..].name | string | - | Имя подгруппы |
 | subgroup_names[..].option | string | - | Опции подгруппы |
 | number_name | string | - | Название детали |
+
 **1. Где group=service параметр detail отсутствует и он не нужен**
+
 **2. Имена подгрупп отличаются, но данные на странице результатов одинаковы**
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/etka/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса BMW,Mini,Rolls-Royce
@@ -255,7 +265,10 @@ curl -H 'Authorization: <token>' \
 | group_name | string | - | Название группы |
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
+
 **На поиск без уточнения по ID модели стоит ограничение в 100 результатов**
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/bmw/search.php#L22) на конечную страницу каталога
 
 
 ### Пример запроса Kia,Hyundai
@@ -324,6 +337,7 @@ curl -H 'Authorization: <token>' \
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
 
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/kia/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Nissan,Infiniti
@@ -402,6 +416,7 @@ curl -H 'Authorization: <token>' \
 | subgroup_name | string | - | Название подгруппы |
 | number_name | string | - | Название детали |
 
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/nissan/search.php#L21) на конечную страницу каталога
 
 
 ### Пример запроса Dacia,Renault
@@ -450,6 +465,8 @@ curl -H 'Authorization: <token>' \
 | model_name | string | Да | Наименование модели |
 | mark_name | string | - | Наименование марки |
 | subgroup_short_name | string | - | Идентификатор подгруппы |
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/renault/search.php#L20) на конечную страницу каталога
 
 
 
@@ -507,3 +524,111 @@ curl -H 'Authorization: <token>' \
 | complectation_name | object | - | Информация о комплектации |
 | group_name | string | - | Название группы |
 | number_name | string | - | Название детали |
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/toyota/search.php#L21) на конечную страницу каталога
+
+
+### Пример запроса Mercedes,Smart
+
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=MERCEDES_BENZ&number=A1242601798
+```
+
+**С уточнением страны**
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=MERCEDES_BENZ&number=A1242601798&country=EU
+```
+
+**С уточнением страны и модели**
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=MERCEDES_BENZ&number=A1242601798&country=EU&model=201024
+```
+
+#### Пример ответа Mercedes,Smart
+
+```json
+[
+    {
+        "type": "CARS_FOREIGN",
+        "mark": "MERCEDES_BENZ",
+        "country": "EU",
+        "aggregation": "FG",
+        "model": "201024",
+        "catalog": "14A",
+        "group": "26",
+        "subgroup": "030",
+        "country_name": "Европа",
+        "aggregation_name": "Шасси",
+        "model_name": "190 E AUSTRALIA",
+        "group_name": "ПЕРЕКЛЮЧЕНИЕ",
+        "subgroup_name": "FLOOR SHIFT USED WITH MANUAL FIVESPEED TRANSMISSION",
+        "name": "ПРИВОД КП НА ЦЕНТР. КОНС.",
+        "description": "FOUR-GATE SHIFT"
+    },
+    ...
+]
+```
+
+#### Значения ответа Mercedes,Smart
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| type | string | Да | Тип транспортного средства |
+| mark | string | Да | Идентификатор марки |
+| country | string | Да | Идентификатор страны |
+| aggregation | string | Да | Тип аггрегата |
+| model | integer | Да | Код модели |
+| catalog | integer | Да | Идентификатор каталога |
+| group | string | Да | Идентификатор группы |
+| subgroup | string | Да | Идентификатор подгруппы |
+| sa_id | not exist/string | Да | Идентификатор SA |
+| stroke_id | not exist/string | Да | Идентификатор STROKE |
+| number | string | - | Номер детали (артикул) |
+| subnumber | null/string | - | Номер детали (артикул, бывает что это "подномер" на изображении) |
+| country_name | string | - | Название страны |
+| aggregation_name | string | - | Название аггрегата |
+| model_name | string | - | Название модели |
+| group_name | string | - | Название группы |
+| subgroup_name | string | - | Название подгруппы |
+| number_name | string | - | Название детали |
+
+**На поиск без уточнения по ID модели стоит ограничение в 100 результатов**
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/mercedes/search.php#L21) на конечную страницу каталога
+
+
+### Пример запроса Ssangyong
+
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=SSANGYONG&number=A1242601798
+```
+
+#### Пример ответа Ssangyong
+
+```json
+[
+    {
+        ...
+    },
+    ...
+]
+```
+
+#### Значения ответа Ssangyong
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| type | string | Да | Тип транспортного средства |
+| mark | string | Да | Идентификатор марки |
+| model | string | Да | Код модели |
+| group | string | Да | Идентификатор группы |
+| number | string | - | Номер детали (артикул) |
+| model_name | string | - | Название модели |
+| group_name | string | - | Название группы |
+| number_name | string | - | Название детали |
+
+[Пример построения ссылки](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/ssangyong/search.php#L21) на конечную страницу каталога
