@@ -15,43 +15,47 @@ curl -H 'Authorization: <token>' \
 
 ```json
 {
-    "number": {
-        "positions": [
-            {
-                "code": "01",
-                "number": "5211131000",
-                "name": "PNL-SIDE OTR",
-                "date_production": "01.03.2006 - 30.11.2007",
-                "modification_count": "D20: 1E23: 1",
-                "additional_info": "LH",
-                "histories": [
-                    ...
-                    {
-                        "number": "5211131010",
-                        "type": "O",
-                        "date_production": "01.12.2007 - ...",
-                        "info": "08 M/Y,FASHION RAIL ADDED"
-                    }
-                ],
-                "coordinates": [
-                    {
-                        "top": {
-                            "x": 880,
-                            "y": 443
-                        },
-                        "bottom": {
-                            "x": 905,
-                            "y": 468
-                        }
-                    }
-                ]
+    "numbers": [
+      {
+          "model_short_name": 389410638,
+          "subgroup_short_name": 351476485,
+          "code": "01",
+          "number": "5211131000",
+          "name": "PNL-SIDE OTR",
+          "date_production": "01.03.2006 - 30.11.2007",
+          "modification_count": "D20: 1E23: 1",
+          "additional_info": "LH",
+          "histories": [
+              {
+                  "number": "5211131000",
+                  "date_production": "01.03.2006 - 30.11.2007"
+              },
+              {
+                  "number": "5211131010",
+                  "type": "O",
+                  "date_production": "01.12.2007 - ...",
+                  "info": "08 M/Y,FASHION RAIL ADDED"
+              }
+          ]
+      },
+      ...
+    ],
+    "image": "https://acat.online/api/catalogs/CARS_FOREIGN/SSANGYONG/389410638/351476485/image",
+    "labels": [
+        {
+            "index": "01",
+            "title": "PNL-SIDE OTR (5211131000)",
+            "top": {
+                "x": 880,
+                "y": 443
             },
-            ...
-        ],
-        "image": "https://acat.online/api/catalogs/CARS_FOREIGN/SSANGYONG/389410638/351476485/image",
-        "subgroup_short_name": 351476485,
-        "model_short_name": 389410638
-    },
+            "bottom": {
+                "x": 905,
+                "y": 468
+            }
+        },
+        ...
+    ],
     "group": {
         "name": "Body",
         "short_name": 1633727457,
@@ -64,7 +68,6 @@ curl -H 'Authorization: <token>' \
             ...
         ]
     },
-    "type": "CARS_FOREIGN",
     "nextSubGroup": {
         "name": "Body - ROOF PANEL",
         "short_name": 46945316,
@@ -80,8 +83,7 @@ curl -H 'Authorization: <token>' \
         {
             "name": "Actyon",
             "url": "389410638"
-        },
-        {
+        },{
             "name": "Body - SIDE & REAR BODY",
             "url": ""
         }
@@ -89,32 +91,36 @@ curl -H 'Authorization: <token>' \
 }
 ```
 
-### Значения number
+### Значения numbers
 
 | Имя | Тип | Описание |
 | :---- | :------: | :--------------- |
-| image | string |  |
-| subgroup_short_name | integer | Идентификатор подгруппы |
 | model_short_name | array | Название модели |
-| positions | array | Позиции |
-| positions.code | string |  Код |
-| positions.number | string | Номер |
-| positions.name | string | Наименование |
-| positions.date_production | string | Дата производства |
-| positions.modification_count | string | Кол-во |
-| positions.additional_info | string | Доп. информация |
-| positions.histories | array | История замен |
-| positions.histories.number | string | Номер |
-| positions.histories.type | string | Тип |
-| positions.histories.date_production | string | Дата производства |
-| positions.histories.info | string | Информация |
-| positions.coordinates | array | Координаты |
-| positions.coordinates.top | string | Верхняя левая точка |
-| positions.coordinates.top.x | string | x |
-| positions.coordinates.top.y | string | y |
-| positions.coordinates.bottom | string | Нижняя правая точка |
-| positions.coordinates.bottom.x | string | x |
-| positions.coordinates.bottom.y | string | y |
+| subgroup_short_name | integer | Идентификатор подгруппы |
+| code | string |  Код |
+| number | string | Номер |
+| name | string | Наименование |
+| date_production | string | Дата производства |
+| modification_count | string | Кол-во |
+| additional_info | null/string | Доп. информация |
+| histories | array | История замен |
+| histories.number | string | Номер |
+| histories.type | string | Тип |
+| histories.date_production | string | Дата производства |
+| histories.info | string | Информация |
+
+### Значения image & labels
+
+| Имя | Тип | Описание |
+| :---- | :------: | :--------------- |
+| index | string | Номер на изображении |
+| title | string | Названием + артикул точки на изображении |
+| top | string | Верхняя левая точка |
+| top.x | string | x |
+| top.y | string | y |
+| bottom | string | Нижняя правая точка |
+| bottom.x | string | x |
+| bottom.y | string | y |
 
 ### Значения group
 
