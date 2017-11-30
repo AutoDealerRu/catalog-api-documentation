@@ -606,7 +606,7 @@ curl -H 'Authorization: <token>' \
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=SSANGYONG&number=A1242601798
+-X GET https://acat.online/api/catalogs/search?type=CARS_FOREIGN&mark=SSANGYONG&number=6011108000
 ```
 
 #### Пример ответа Ssangyong
@@ -614,7 +614,14 @@ curl -H 'Authorization: <token>' \
 ```json
 [
     {
-        ...
+        "model": 389410638,
+        "group": 1633727457,
+        "subgroup": 1888337408,
+        "model_name": "Actyon",
+        "group_name": "Body",
+        "subgroup_name": "BODY MOUNTING",
+        "number": "6011108000",
+        "number_name": "INSULATOR-BODY NO1 UPR"
     },
     ...
 ]
@@ -624,13 +631,16 @@ curl -H 'Authorization: <token>' \
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| type | string | Да | Тип транспортного средства |
-| mark | string | Да | Идентификатор марки |
-| model | string | Да | Код модели |
-| group | string | Да | Идентификатор группы |
+| type | string | Да | Всегда 'CARS_FOREIGN' (дополнить при составлении URL адреса) |
+| mark | string | Да | Всегда 'SSANGYONG' (дополнить при составлении URL адреса) |
+| model | number | Да | Код модели |
+| group | number | - | Идентификатор группы |
+| subgroup | number | Да | Идентификатор подгруппы |
 | number | string | - | Номер детали (артикул) |
 | model_name | string | - | Название модели |
 | group_name | string | - | Название группы |
+| subgroup_name | string | - | Название подгруппы |
+| number | string | - | Номер (артикул) |
 | number_name | string | - | Название детали |
 
 [**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/ssangyong/search.php#L21) на конечную страницу каталога
