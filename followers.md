@@ -137,7 +137,7 @@
 
   ```bash
   curl -H 'Authorization: <token>' \
-  -H "Content-Type: application/json" -X POST -d '{"id":"2","rate":"5860f94350f75c86fe48992c"}' https://acat.online/api/public/followers
+  -H "Content-Type: application/json" -X POST -d '{"id":"2","rate":"5860f94350f75c86fe48992c"}' https://acat.online/api/dashboard/followers
   ```
 
 
@@ -181,7 +181,7 @@
 
   ```bash
   curl -H 'Authorization: <token>' \
-  -H "Content-Type: application/json" -X POST -d '{"id":"2","rate":"5860f9dd50f75c86fe48992d"}' https://acat.online/api/public/followers
+  -H "Content-Type: application/json" -X PUT -d '{"id":"2","rate":"5860f9dd50f75c86fe48992d"}' https://acat.online/api/dashboard/followers/2
   ```
 
 
@@ -203,5 +203,5 @@
 
   ```bash
   curl -H 'Authorization: <token>' \
-  -X DELETE https://acat.online/api/public/followers/2
+  -X DELETE https://acat.online/api/dashboard/followers/2
   ```
