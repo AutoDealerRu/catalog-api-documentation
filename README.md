@@ -9,6 +9,47 @@
 Далее выбираем тип транспортного средства (CARS_NATIVE, CARS_FOREIGN и т.д.), марку. Затем, в соответсвии с каталогом, вы получите
 различные ответы. Чтобы перейти на следующий уровень нужно в URL добавлять необходимые параметры, которые так-же описаны в документации.
 
+## ТИПЫ И МАРКИ Для всех каталогов
+
+### `GET /api/public/types`
+
+Получение перечня типов и марок, возвращает объект с десятью каталогами (fiat, bmw, nissan, kia, toyota, etka, a2d, renault, ssangyong, mercedes) и объектом mark
+
+### Пример запроса
+
+```bash
+curl -X GET https://acat.online/api/public/types
+```
+### Пример ответа
+
+```json
+{
+  "mercedes": {
+    "types": [
+      "CARS_FOREIGN",
+      ...
+      "TRUCKS_FOREIGN"
+    ],
+    "marks": [
+      "MERCEDES_BENZ",
+      "SMART",
+      "MERCEDES_BENZ_PS"
+    ]
+  },
+  ...
+  "nissan": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "INFINITI",
+      "NISSAN"
+    ]
+  }
+}
+```
+
+
 ### Пример кода для реализации сайта на основе API можно посмотреть **[ЗДЕСЬ](https://github.com/AutoDealerRu/acat-online-example)**
 Если у вас есть какие-либо вопросы - отправьте их на почту <support@autodealer.ru>
 
