@@ -1,310 +1,466 @@
-Этот каталог содержит в себе каталожную информацию по следующим маркам:  
-- CARS_NATIVE
-  - Andoria (двигатели)
-  - Balkancar (двигатели)
-  - Bearford (двигатели)
-  - Chrysler (двигатели)
-  - Cummins (двигатели)
-  - Deutz (двигатели)
-  - DongFeng (двигатели)
-  - Isuzu (двигатели)
-  - Iveco (двигатели)
-  - Komat'su (двигатели)
-  - Nissan (двигатели)
-  - АЗЛК
-  - ВАЗ
-  - ГАЗ
-  - ЗАЗ
-  - ИЖ
-  - ЛуАЗ
-  - УАЗ
+# ТИПЫ И МАРКИ
 
-- CARS_FOREIGN
-  - BYD
-  - Chevrolet
-  - Citroen
-  - Daewoo
-  - Derways
-  - DongFeng
-  - Ford
-  - Geely
-  - Hafei
-  - Honda
-  - Iran Khodro
-  - Isuzu
-  - Jaguar
-  - Jeep
-  - Land Rover
-  - Lifan
-  - Mahindra
-  - Mazda
-  - Mercedes Benz
-  - Mitsubishi
-  - Opel
-  - Peugeot
-  - Porsche
-  - Renault
-  - Rover
-  - Saab
-  - SsangYong
-  - Subaru
-  - Suzuki
-  - Volvo
+## `GET /api/public/types`
 
-- TRUCKS_NATIVE
-  - Madara
-  - Shaanxi Fast Gear
-  - ZF
-  - Алтай
-  - БелАЗ
-  - Брянский арсенал
-  - ГАЗ
-  - ЗИЛ
-  - КАЗ
-  - КамАЗ
-  - КрАЗ
-  - МАЗ
-  - МЗКТ
-  - МоАЗ
-  - МТМ
-  - НефАЗ
-  - СЗАП
-  - ТМЗ
-  - Тонар
-  - Урал
+Получение перечня типов и марок, возвращает объект с десятью каталогами (fiat, bmw, nissan, kia, toyota, etka, a2d, renault, ssangyong, mercedes) и объектом mark
 
-- TRUCKS_FOREIGN
-  - Avia
-  - BAW
-  - Beifang Benchi
-  - CAMC
-  - Caterpillar
-  - CNHTC Sinotruk
-  - DAF
-  - DongFeng
-  - FAW
-  - Foton
-  - Iveco
-  - JMC
-  - MAN
-  - Mercedes Benz
-  - Renault
-  - Scania
-  - Shaanxi
-  - Tata
-  - Tatra
-  - Terex
-  - Volvo
+### Пример запроса
 
-- BUS
-  - Golden Dragon
-  - Higer
-  - Ikarus
-  - JAC
-  - King Long
-  - Madara
-  - Yutong
-  - Богдан
-  - ЗИЛ
-  - КАвЗ
-  - КамАЗ
-  - ЛАЗ
-  - ЛиАЗ
-  - МАЗ
-  - НефАЗ
-  - ПАЗ
-  - РАФ
+```bash
+curl -X GET https://acat.online/api/public/types
+```
+### Пример ответа
 
-- SPECIAL_TECH_NATIVE
-  - АТЗ
-  - ВгТЗ
-  - ВТЗ
-  - КМЗ
-  - ЛТЗ
-  - МТЗ
-  - МТЗ
-  - Промтрактор
-  - ПТЗ
-  - ХЗТСШ
-  - ХТЗ
-  - ХТЗ
-  - ЧТЗ
-  - ЮМЗ
-  - Автокран
-  - Амкодор
-  - Амкодор
-  - АТЗ
-  - БелАЗ
-  - Беловеж
-  - Беловеж
-  - БобруйскАгроМаш
-  - Брянский арсенал
-  - Брянский арсенал
-  - ВЭКС
-  - Газпром-кран
-  - ГАКЗ
-  - Геомаш
-  - Гидромаш
-  - Донэкс
-  - Дормаш
-  - ЕлАЗ
-  - ЗЗГТ
-  - ЗЗГТ
-  - ЗиК
-  - Златэкс
-  - Ижнефтемаш
-  - Ижорские заводы
-  - Канаш
-  - КЗКТ
-  - Клевер
-  - КМЗ
-  - КМЗ 1 Мая
-  - Ковровец
-  - Кредмаш
-  - КЭЗ
-  - ЛЗА
-  - МАЗ
-  - Маштехремонт
-  - МЗКМ
-  - МЗКМ
-  - ММЗ
-  - МоАЗ
-  - МоАЗ
-  - МРМЗ
-  - МТЗ
-  - МТМ
-  - НефАЗ
-  - НКМЗ
-  - Орел-Погрузчик
-  - Оста
-  - ОТЗ
-  - Промтрактор
-  - ПТЗ
-  - Раскат
-  - РМЗ
-  - САЗ
-  - Сальсксельмаш
-  - Сарэкс
-  - Синергия
-  - Стройдормаш
-  - Стромнефтемаш
-  - ТВЭКС
-  - ТВЭКС
-  - ТЗА
-  - Торфмаш
-  - УВЗ
-  - УВЗ
-  - УМЗ №2
-  - Урал
-  - Уралмаш
-  - ХТЗ
-  - ЧЗТС
-  - ЧМЗ
-  - ЧСДМ
-  - ШААЗ
-  - Экско
-  - Эксмаш
-  - ЮрМаш
-  - Агро
-  - БелоцерковМАЗ
-  - БобруйскАгроМаш
-  - БобруйскАгроМаш
-  - БобруйскСельМаш
-  - БЭМЗ
-  - ВСМ
-  - Гомсельмаш
-  - Гомсельмаш
-  - ДКЗ
-  - ЗиД
-  - КЗК
-  - КЗК
-  - Клевер
-  - Клевер
-  - ЛидАгроПромМаш
-  - ЛидСельМаш
-  - МолдАгроТехника
-  - НефАЗ
-  - Ростсельмаш
-  - Ростсельмаш
-  - Сибсельмаш
-  - ТКЗ
-  - УМПО
-  - Унисибмаш
-  - Червона зирка
-
-- SPECIAL_TECH_FOREIGN
-  - Tracom
-  - Versatile
-  - Balkancar
-  - Case
-  - ChengGong
-  - Detva
-  - Doosan
-  - Foton
-  - Hanwoo
-  - HBXG
-  - Hidromek
-  - Hidromek
-  - JCB
-  - Komat'su
-  - LiuGong
-  - Locust
-  - Mitsuber
-  - New Holland
-  - SDLG
-  - Shantui
-  - Thermo King
-  - Tigarbo
-  - Volvo
-  - XCMG
-  - Xiamen
-  - Fortschritt
-  - Honey Bee
-  - MacDon
-  - Mecanica Ceahlau
-  - Metal-Fach
-  - Metal-Fach
-  - Tigarbo
-
-- ENGINE
-  - Nissan
-  - Yanmar
-  - Yuchai
-  - Zetor
-  - АМЗ
-  - Барнаултрансмаш
-  - Барнаултрансмаш
-  - ВТЗ
-  - ВТЗ
-  - ГАЗ
-  - ЗМЗ
-  - ЗМЗ
-  - КамАЗ
-  - КамАЗ
-  - ММЗ
-  - ММЗ
-  - Пензадизельмаш
-  - СМД
-  - Теплостар
-  - ТМЗ
-  - ТМЗ
-  - УМЗ
-  - УМЗ
-  - Элтра
-  - ЯМЗ
-  - ЯМЗ
-
-- MOTORCYCLE
-  - CF Moto
-  - Eagle-Wing
-  - Honda
-  - Jawa
-  - Jianshe
-  - Sarkana zvaigzne
-  - Suzuki
-  - Zongshen
-  - ЗиД
-  - ИЖ
-  - ИМЗ
-  - Русская механика
-  - УМПО
+```json
+{
+  "mercedes": {
+    "types": [
+      "CARS_FOREIGN",
+      "BUS",
+      "SPECIAL_TECH_FOREIGN",
+      "ENGINE",
+      "TRUCKS_FOREIGN"
+    ],
+    "marks": [
+      "MERCEDES_BENZ",
+      "SMART",
+      "MERCEDES_BENZ_PS"
+    ]
+  },
+  "ssangyong": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "SSANGYONG"
+    ]
+  },
+  "renault": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "RENAULT",
+      "DACIA"
+    ]
+  },
+  "a2d": {
+    "types": [
+      "CARS_FOREIGN",
+      "CARS_NATIVE",
+      "TRUCKS_NATIVE",
+      "TRUCKS_FOREIGN",
+      "BUS",
+      "SPECIAL_TECH_NATIVE",
+      "SPECIAL_TECH_FOREIGN",
+      "AGRICULTURAL_MACHINERY",
+      "TRACTOR",
+      "ENGINE",
+      "MOTORCYCLE"
+    ],
+    "marks": [
+      "WEICHAI_ENGINE",
+      "CVS_FERRARI",
+      "FRESIA",
+      "SCHOPF",
+      "DELTA",
+      "BZST",
+      "BZTM",
+      "BOLSHAYA_ZEMLYA",
+      "DZAK",
+      "ZLATMASH",
+      "OMSKTRANSMASH",
+      "PERVOMAJSKHIMMASH",
+      "SMOLTRA",
+      "SPECBURMASH",
+      "SEK",
+      "TDA_ENGINE",
+      "CHELEKS",
+      "YAVT",
+      "CSM",
+      "SDEC_ENGINE",
+      "VOLGABUS",
+      "VZS",
+      "GATCHINSELMASH",
+      "DORELECTROMASH",
+      "TMZV",
+      "GAZ_ENGINE",
+      "ANDORIA_ENGINE",
+      "AVIA",
+      "BALKANCAR_ENGINE",
+      "BALKANCAR",
+      "BAW",
+      "BEARFORD_ENGINE",
+      "BEIFANG_BENCHI",
+      "BYD",
+      "CAMC",
+      "CASE",
+      "CATERPILLAR",
+      "CF_MOTO",
+      "CHENGGONG",
+      "CHEVROLET",
+      "CHEVROLET_SKD",
+      "CHRYSLER_ENGINE",
+      "CITROEN_SKD",
+      "CNHTC_SINOTRUK",
+      "CNHTC_SINOTRUK_ARCHIVE",
+      "CUMMINS_ENGINE",
+      "CUMMINS_ENGINE",
+      "DAEWOO",
+      "DAEWOO_SKD",
+      "DAEWOO_ARCHIVE",
+      "DAF",
+      "DERWAYS",
+      "DETVA",
+      "DEUTZ_ENGINE",
+      "DONGFENG_ENGINE",
+      "DONGFENG",
+      "DONGFENG",
+      "DOOSAN",
+      "EAGLE-WING",
+      "FAW_ARCHIVE",
+      "FAW",
+      "FORD_SKD",
+      "FORTSCHRITT",
+      "FOTON",
+      "FOTON",
+      "GEELY",
+      "GOLDEN_DRAGON",
+      "HAFEI",
+      "HANWOO",
+      "HBXG",
+      "HIDROMEK_ARCHIVE",
+      "HIDROMEK",
+      "HIGER",
+      "HONDA_SKD",
+      "HONDA_SKD",
+      "HONEY_BEE",
+      "IKARUS",
+      "IRAN_KHODRO",
+      "ISUZU_ENGINE",
+      "ISUZU_SKD",
+      "IVECO_ENGINE",
+      "IVECO",
+      "JAC",
+      "JAGUAR_SKD",
+      "JAWA",
+      "JCB",
+      "JEEP_SKD",
+      "JIANSHE",
+      "JMC",
+      "KING_LONG",
+      "KOMAT'SU_ENGINE",
+      "KOMAT'SU",
+      "LAND_ROVER_SKD",
+      "LIFAN",
+      "LIUGONG",
+      "LOCUST",
+      "MACDON",
+      "MADARA",
+      "MADARA",
+      "MAHINDRA",
+      "MAN_SKD",
+      "MAN",
+      "MAZDA_SKD",
+      "MECANICA_CEAHLAU",
+      "MERCEDES_BENZ_SKD",
+      "MERCEDES_BENZ_SKD",
+      "METAL-FACH_ARCHIVE",
+      "METAL-FACH",
+      "MITSUBER",
+      "MITSUBISHI_SKD",
+      "NEW_HOLLAND",
+      "NISSAN_ENGINE",
+      "OPEL_SKD",
+      "PEUGEOT_SKD",
+      "PORSCHE_SKD",
+      "RENAULT_SKD",
+      "RENAULT",
+      "ROVER_SKD",
+      "SAAB",
+      "SAAB_SKD",
+      "SARKANA_ZVAIGZNE",
+      "SCANIA_SKD",
+      "SDLG",
+      "SHAANXI",
+      "SHAANXI_FAST_GEAR",
+      "SHANTUI",
+      "SSANGYONG_SKD",
+      "SUBARU_SKD",
+      "SUZUKI",
+      "SUZUKI_SKD",
+      "SUZUKI_SKD",
+      "TATA",
+      "TATRA",
+      "TEREX",
+      "THERMO_KING",
+      "TIGARBO",
+      "TRACOM",
+      "VERSATILE",
+      "VOLVO",
+      "VOLVO",
+      "VOLVO_SKD",
+      "VOLVO_SKD",
+      "XCMG",
+      "XIAMEN",
+      "YANMAR_ENGINE",
+      "YUCHAI_ENGINE",
+      "YUTONG_ARCHIVE",
+      "YUTONG",
+      "ZETOR_ENGINE",
+      "ZF",
+      "ZONGSHEN",
+      "AVTOKRAN",
+      "AGRO",
+      "AZLK",
+      "ALTAJ",
+      "AMZ_ENGINE",
+      "AMKODOR_ARCHIVE",
+      "AMKODOR",
+      "ATZ",
+      "BARNAULTRANSMASH_ARCHIVE_ENGINE",
+      "BARNAULTRANSMASH_ENGINE",
+      "BELAZ_ARCHIVE",
+      "BELAZ",
+      "BELAZ",
+      "BELOVEZH_ARCHIVE",
+      "BELOVEZH",
+      "BELOCERKOVMAZ",
+      "BOBRUJSKAGROMASH_ARCHIVE",
+      "BOBRUJSKAGROMASH",
+      "BOBRUJSKSELMASH",
+      "BOGDAN",
+      "BRYANSKIJ_ARSENAL_ARCHIVE",
+      "BRYANSKIJ_ARSENAL",
+      "BRYANSKIJ_ARSENAL",
+      "BEHMZ",
+      "VAZ_ARCHIVE",
+      "VAZ",
+      "VGTZ",
+      "VSM",
+      "VTZ_ARCHIVE_ENGINE",
+      "VTZ_ENGINE",
+      "VTZ",
+      "VEHKS",
+      "GAZ_ARCHIVE",
+      "GAZ",
+      "GAZ_ARCHIVE",
+      "GAZ",
+      "GAZPROM-KRAN",
+      "GAKZ",
+      "GEOMASH",
+      "GIDROMASH",
+      "GOMSELMASH",
+      "GOMSELMASH_ARCHIVE",
+      "DKZ",
+      "DONEHKS",
+      "DORMASH",
+      "ELAZ",
+      "ZAZ_ARCHIVE",
+      "ZAZ",
+      "ZZGT_ARCHIVE",
+      "ZZGT",
+      "ZID",
+      "ZID",
+      "ZIK",
+      "ZIL",
+      "ZIL_ARCHIVE",
+      "ZIL_ARCHIVE",
+      "ZIL",
+      "ZLATEHKS",
+      "ZMZ_ARCHIVE_ENGINE",
+      "ZMZ_ENGINE",
+      "IZH",
+      "IZH",
+      "IZH_ARCHIVE",
+      "IZHNEFTEMASH",
+      "IZHORSKIE_ZAVODY",
+      "IMZ",
+      "KAVZ",
+      "KAZ",
+      "KAMAZ_ENGINE",
+      "KAMAZ_ARCHIVE",
+      "KAMAZ_ARCHIVE",
+      "KAMAZ_ARCHIVE_ENGINE",
+      "KAMAZ",
+      "KAMAZ",
+      "KANASH",
+      "KZK_ARCHIVE",
+      "KZK",
+      "KZKT",
+      "KLEVER_ARCHIVE",
+      "KLEVER",
+      "KMZ",
+      "KMZ_1_MAYA",
+      "KOVROVEC",
+      "KRAZ_ARCHIVE",
+      "KRAZ",
+      "KREDMASH",
+      "KEHZ",
+      "LAZ",
+      "LZA",
+      "LIAZ",
+      "LIAZ_ARCHIVE",
+      "LIDAGROPROMMASH",
+      "LIDSELMASH",
+      "LTZ",
+      "LUAZ",
+      "MAZ_ARCHIVE",
+      "MAZ",
+      "MAZ",
+      "MAZ_ARCHIVE",
+      "MAZ",
+      "MASHTEKHREMONT",
+      "MZKM_ARCHIVE",
+      "MZKM",
+      "MZKT",
+      "MMZ",
+      "MMZ_ARCHIVE_ENGINE",
+      "MMZ_ENGINE",
+      "MOAZ",
+      "MOAZ",
+      "MOAZ_ARCHIVE",
+      "MOLDAGROTEKHNIKA",
+      "MRMZ",
+      "MTZ_ARCHIVE",
+      "MTZ",
+      "MTM",
+      "MTM",
+      "NEFAZ_ARCHIVE",
+      "NEFAZ_ARCHIVE",
+      "NEFAZ",
+      "NEFAZ",
+      "NEFAZ",
+      "NKMZ",
+      "OREL-POGRUZCHIK",
+      "OSTA",
+      "OTZ",
+      "PAZ",
+      "PAZ_ARCHIVE",
+      "PENZADIZELMASH_ENGINE",
+      "PROMTRAKTOR",
+      "PTZ",
+      "RASKAT",
+      "RAF",
+      "RMZ",
+      "ROSTSELMASH_ARCHIVE",
+      "ROSTSELMASH",
+      "RUSSKAYA_MEKHANIKA",
+      "RUSSKAYA_MEKHANIKA_ARCHIVE",
+      "SAZ",
+      "SALSKSELMASH",
+      "SAREHKS",
+      "SZAP_ARCHIVE",
+      "SZAP",
+      "SIBSELMASH",
+      "SINERGIYA",
+      "SMD_ENGINE",
+      "STROJDORMASH",
+      "STROMNEFTEMASH",
+      "TVEHKS_ARCHIVE",
+      "TVEHKS",
+      "TEPLOSTAR_ENGINE",
+      "TZA",
+      "TKZ",
+      "TMZ_ARCHIVE_ENGINE",
+      "TMZ_ENGINE",
+      "TMZ",
+      "TONAR_ARCHIVE",
+      "TONAR",
+      "TORFMASH",
+      "UAZ_ARCHIVE",
+      "UAZ",
+      "UVZ",
+      "UVZ_ARCHIVE",
+      "UMZ_ARCHIVE_ENGINE",
+      "UMZ_ENGINE",
+      "UMZ_-2",
+      "UMPO",
+      "UMPO",
+      "UNISIBMASH",
+      "URAL",
+      "URAL_ARCHIVE",
+      "URAL",
+      "URALMASH",
+      "HZTSSH",
+      "HTZ_ARCHIVE",
+      "HTZ",
+      "CHERVONA_ZIRKA",
+      "CHZTS",
+      "CHMZ",
+      "CHSDM",
+      "CHTZ",
+      "SHAAZ",
+      "EHKSKO",
+      "EHKSMASH",
+      "EHLTRA_ENGINE",
+      "YUMZ",
+      "YURMASH",
+      "YAMZ_ARCHIVE_ENGINE",
+      "YAMZ_ENGINE"
+    ]
+  },
+  "etka": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "AUDI",
+      "SEAT",
+      "SKODA",
+      "VOLKSWAGEN"
+    ]
+  },
+  "toyota": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "TOYOTA",
+      "LEXUS"
+    ]
+  },
+  "kia": {
+    "types": [
+      "BUS",
+      "CARS_FOREIGN",
+      "TRUCKS_FOREIGN"
+    ],
+    "marks": [
+      "KIA",
+      "HYUNDAI"
+    ]
+  },
+  "bmw": {
+    "types": [
+      "CARS_FOREIGN",
+      "MOTORCYCLE"
+    ],
+    "marks": [
+      "BMW",
+      "ROLLS-ROYCE",
+      "MINI"
+    ]
+  },
+  "fiat": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "FIAT",
+      "LANCIA",
+      "ALFA_ROMEO",
+      "ABARTH"
+    ]
+  },
+  "nissan": {
+    "types": [
+      "CARS_FOREIGN"
+    ],
+    "marks": [
+      "INFINITI",
+      "NISSAN"
+    ]
+  }
+}
+```
