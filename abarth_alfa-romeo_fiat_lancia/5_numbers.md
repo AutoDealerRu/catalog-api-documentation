@@ -15,7 +15,7 @@
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/FIAT/CIN/3P/10101%2F08/1
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/FIAT/CIN/3P/101/10101%2F08/1
 ```
 
 ### Пример ответа
