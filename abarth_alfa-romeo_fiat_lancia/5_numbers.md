@@ -121,7 +121,7 @@ curl -H 'Authorization: <token>' \
 ### Значения abbreviations
 
 | Имя | Тип | Описание |
-| :---- | :------: | :------: | :--------------- |
+| :---- | :------: | :--------------- |
 | abbreviation | string | Идентификатор |
 | description | string | Рассшифровка |
 
