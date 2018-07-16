@@ -251,6 +251,7 @@ curl -H 'Authorization: <token>' \
 4. Hyundai, Kia [[Ответ](/blob/master/search.md#Пример-ответа-Hyundai-Kia)] [[Значения](/blob/master/search.md#Значения-ответа-Hyundai-Kia)]
 5. Infiniti, Nissan [[Ответ](/blob/master/search.md#Пример-ответа-Infiniti-Nissan)] [[Значения](/blob/master/search.md#Значения-ответа-Infiniti-Nissan)]
 6. Lexus, Toyota [[Ответ](/blob/master/search.md#Пример-ответа-Lexus-Toyota)] [[Значения](/blob/master/search.md#Значения-ответа-Lexus-Toyota)]
+7. Mercedes Benz, Smart [[Ответ](/blob/master/search.md#Пример-ответа-Mercedes-Smart )] [[Значения](/blob/master/search.md#Значения-ответа-Mercedes-Smart)]
 
 ### Пример ответа BMW, Mini, Rolls Royce
 
@@ -542,3 +543,36 @@ curl -H 'Authorization: <token>' \
 | vins[..].model_code | integer | Да | Код модели |
 | vins[..].sysopt | integer | Да | - |
 | vins[..].complectation_code | integer | Да | Код комплектации |
+
+### Пример ответа Mercedes Benz, Smart
+
+```json
+{
+    "vins": [
+        {
+            "type": "CARS_FOREIGN",
+            "mark": "MERCEDES_BENZ",
+            "country": "SA",
+            "aggregation": "M",
+            "model": "100980",
+            "catalog": "67J",
+            "name": "GASOLINE ENGINE 184 KW (250 PS)",
+            "modification": "M 100 USA"
+        },
+        ...
+    ]
+}
+```
+
+### Значения ответа Mercedes Benz, Smart
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| vins[..].type | string | Да | Тип транспортного средства |
+| vins[..].mark | string | Да | Марка транспортного средства |
+| vins[..].country | string | Да | Сокращение страны |
+| vins[..].catalog | string | Да | Код каталога |
+| vins[..].aggregation | string | Да | Агрегат |
+| vins[..].model | string | Да | Код модели |
+| vins[..].name | string | Да | Наименоване |
+| vins[..].modification | integer | Да | Код модификации |
