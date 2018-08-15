@@ -251,6 +251,7 @@ curl -H 'Authorization: <token>' \
 4. Hyundai, Kia [[Ответ](/blob/master/search.md#Пример-ответа-Hyundai-Kia)] [[Значения](/blob/master/search.md#Значения-ответа-Hyundai-Kia)]
 5. Infiniti, Nissan [[Ответ](/blob/master/search.md#Пример-ответа-Infiniti-Nissan)] [[Значения](/blob/master/search.md#Значения-ответа-Infiniti-Nissan)]
 6. Lexus, Toyota [[Ответ](/blob/master/search.md#Пример-ответа-Lexus-Toyota)] [[Значения](/blob/master/search.md#Значения-ответа-Lexus-Toyota)]
+7. Mercedes Benz, Smart [[Ответ](/blob/master/search.md#Пример-ответа-Lexus-Toyota)] [[Значения](/blob/master/search.md#Значения-ответа-Lexus-Toyota)]
 
 ### Пример ответа BMW, Mini, Rolls Royce
 
@@ -542,3 +543,45 @@ curl -H 'Authorization: <token>' \
 | vins[..].model_code | integer | Да | Код модели |
 | vins[..].sysopt | integer | Да | - |
 | vins[..].complectation_code | integer | Да | Код комплектации |
+
+### Пример ответа Mercedes Benz, Smart
+**В редких случаях может быть два результата (разные страны)**
+```json
+{
+    "vins": [
+        {
+            "type": "CARS_FOREIGN",
+            "mark": "MERCEDES_BENZ",
+            "country": "EU",
+            "aggregation": "FG",
+            "model": "124043",
+            "catalog": "508",
+            "name": "PASSSENGER CAR,COUPE UP TO IDENT NO. B 065853 EXCEPT FOR B 014528,B 016676,B 016766,B 022474",
+            "modification": "230 CE"
+        },
+        {
+            "type": "CARS_FOREIGN",
+            "mark": "MERCEDES_BENZ",
+            "country": "EU",
+            "aggregation": "FG",
+            "model": "124043",
+            "catalog": "15T",
+            "name": "PASSSENGER CAR,COUPE FROM IDENT NO. B 065854 ALSO INSTALLED ON B 014528,B 016676,B 016766,B 022474",
+            "modification": "230 CE"
+        }
+    ]
+}
+```
+
+### Значения ответа Mercedes Benz, Smart
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| vins[..].type | string | Да | Тип транспортного средства |
+| vins[..].mark | string | Да | Марка транспортного средства |
+| vins[..].country | string | Да | Сокращение страны |
+| vins[..].aggregation | string | Да | Сокращение страны |
+| vins[..].model | string | Да | Сокращение страны |
+| vins[..].catalog | string | Да | Сокращение страны |
+| vins[..].name | string | - | Информация о модели |
+| vins[..].modification | integer | Да | Имя модели |
