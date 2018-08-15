@@ -15,7 +15,7 @@
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/CARS_FOREIGN/FIAT/CIN/3P/10101%2F08/1
+-X GET https://acat.online/api/catalogs/CARS_FOREIGN/FIAT/CIN/3P/101/10101%2F08/1
 ```
 
 ### Пример ответа
@@ -85,7 +85,7 @@ curl -H 'Authorization: <token>' \
 ### Значения
 
 | Имя | Тип | Описание |
-| :---- | :------: | :------: | :--------------- |
+| :---- | :------: | :--------------- |
 | id | integer | Идентификатор подгруппы |
 | description | string | Описание |
 | variant | integer | Вариант |
@@ -121,7 +121,7 @@ curl -H 'Authorization: <token>' \
 ### Значения abbreviations
 
 | Имя | Тип | Описание |
-| :---- | :------: | :------: | :--------------- |
+| :---- | :------: | :--------------- |
 | abbreviation | string | Идентификатор |
 | description | string | Рассшифровка |
 

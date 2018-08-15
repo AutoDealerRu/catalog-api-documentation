@@ -10,8 +10,8 @@
 
 **ВАЖНО!**
 
-- для каталога a2d в поле number можно передавать названия детали(текст, например "кранштейн")
-- поиск по тексту не зависит от регистра
+- для каталога a2d в поле number можно передавать номер детали(текст, например "21116-1000260-00" или "21116100026000")
+- поиск по тексту не зависит от регистра, и не учитывает спецсимволы (!"№;%:?*-=_+., )
 - результаты в каталогах отличаются
 - в любом ответе всегда есть поле mark для определения каталога
 
@@ -32,31 +32,30 @@
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?type=CARS_NATIVE&mark=VAZ&number=Шайба
+-X GET https://acat.online/api/catalogs/search?type=CARS_NATIVE&mark=VAZ&number=21116-1000260-00
 ```
 **С уточнением модели**
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?type=CARS_NATIVE&mark=VAZ&number=Шайба&model=37531
+-X GET https://acat.online/api/catalogs/search?type=CARS_NATIVE&mark=VAZ&number=8201315743&model=37531
 ```
 
 #### Пример ответа A2D
 
 ```json
 [
-    {
+    {        
         "type": "CARS_NATIVE",
         "mark_short_name": "VAZ",
-        "model_short_name": 37534,
-        "group_short_name": 2085644,
-        "number": "7701474784",
-        "mark_name": "ВАЗ",
-        "model_name": "Largus",
-        "group_name": "Вал вторичный КПП",
-        "name": "Комплект регулировочных шайб",
-        "modification": "FS015-40 (5-дверный 2-местный фургон)",
+        "name": "Двигатель в сборе",
         "notes": "",
-        "sort_weight": 30 
+        "modification": "KSOY5-42 (5-местный универсал)",
+        "number": "8201315743",
+        "group_short_name": 2085545,
+        "model_short_name": 37531,
+        "group_name": "Двигатель в сборе (16 кл)",
+        "model_name": "Largus",
+        "mark_name": "ВАЗ"
     },
     ...
 ]
@@ -77,11 +76,8 @@ curl -H 'Authorization: <token>' \
 | name | string | - | Название детали |
 | modification | string | - | Модифиация |
 | notes | string | - | Примечания |
-| sort_weight | integer | - | На сколько подходит под условия поиска (чем больше число - тем больше подходит) |
 
 **Для уточнения поиска до модели необходимо передать в запрос ID модели**
-
-**Для отсеивания "не нужных" результатов можно смотреть на вес первого и оставить из всех результатов только те, у кого вес как у первого элемента**
 
 [**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/a2d/search.php#L21) на конечную страницу каталога
 

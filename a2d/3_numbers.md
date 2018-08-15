@@ -82,7 +82,21 @@ curl -H 'Authorization: <token>' \
             "name": "Инструмент",
             "url": "3373769"
         }
-    ]
+    ],
+    "next": {
+        "name": "Трансмиссия - Коробка передач, сцепление",
+        "type": "CARS_NATIVE",
+        "mark": "VAZ",
+        "model": "58961",
+        "short_name": 3373667
+    },
+    "prev": {
+        "name": "Механизмы управления - Тормоза, сцепление (привод, механизмы)",
+        "type": "CARS_NATIVE",
+        "mark": "VAZ",
+        "model": "58961",
+        "short_name": 3373722
+    }
 }
 ```
 
