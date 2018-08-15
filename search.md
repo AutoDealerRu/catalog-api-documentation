@@ -245,12 +245,12 @@ curl -H 'Authorization: <token>' \
 ```
 
 ### Примеры по каталогам:
-1. BMW, Mini, Rolls-Royce [[Ответ](search.md#Пример-ответа-BMW-Mini-Rolls-Royce)] [[Значения](search.md#Значения-ответа-BMW-Mini-Rolls-Royce)]
-2. Audi, Seat, Skoda, Volkswagen [[Ответ](search.md#Пример-ответа-Audi-Seat-Skoda-Volkswagen)] [[Значения](search.md#Значения-ответа-Audi-Seat-Skoda-Volkswagen)]
-3. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](search.md#Пример-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Значения](search.md#Значения-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)]
-4. Hyundai, Kia [[Ответ](search.md#Пример-ответа-Hyundai-Kia)] [[Значения](search.md#Значения-ответа-Hyundai-Kia)]
-5. Infiniti, Nissan [[Ответ](search.md#Пример-ответа-Infiniti-Nissan)] [[Значения](search.md#Значения-ответа-Infiniti-Nissan)]
-6. Lexus, Toyota [[Ответ](search.md#Пример-ответа-Lexus-Toyota)] [[Значения](search.md#Значения-ответа-Lexus-Toyota)]
+1. BMW, Mini, Rolls-Royce [[Ответ](search.md#Пример-ответа-bmw-mini-rolls-royce)] [[Значения](search.md#Значения-ответа-bmw-mini-rolls-royce)]
+2. Audi, Seat, Skoda, Volkswagen [[Ответ](search.md#Пример-ответа-audi-seat-skoda-volkswagen)] [[Значения](search.md#Значения-ответа-audi-seat-skoda-volkswagen)]
+3. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](search.md#Пример-ответа-abarth-alfa-romeo-fiat-lancia)] [[Значения](search.md#Значения-ответа-abarth-alfa-romeo-fiat-lancia)]
+4. Hyundai, Kia [[Ответ](search.md#Пример-ответа-hyundai-kia)] [[Значения](search.md#Значения-ответа-hyundai-kia)]
+5. Infiniti, Nissan [[Ответ](search.md#Пример-ответа-infiniti-nissan)] [[Значения](search.md#Значения-ответа-infiniti-nissan)]
+6. Lexus, Toyota [[Ответ](search.md#Пример-ответа-lexus-toyota)] [[Значения](search.md#Значения-ответа-lexus-toyota)]
 7. Mercedes Benz, Smart [[Ответ](search.md#Пример-ответа-mercedes-benz-smart)] [[Значения](search.md#Значения-ответа-mercedes-benz-smart)]
 
 ### Пример ответа BMW, Mini, Rolls Royce
