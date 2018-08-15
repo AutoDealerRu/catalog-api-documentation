@@ -251,7 +251,7 @@ curl -H 'Authorization: <token>' \
 4. Hyundai, Kia [[Ответ](/blob/master/search.md#Пример-ответа-Hyundai-Kia)] [[Значения](/blob/master/search.md#Значения-ответа-Hyundai-Kia)]
 5. Infiniti, Nissan [[Ответ](/blob/master/search.md#Пример-ответа-Infiniti-Nissan)] [[Значения](/blob/master/search.md#Значения-ответа-Infiniti-Nissan)]
 6. Lexus, Toyota [[Ответ](/blob/master/search.md#Пример-ответа-Lexus-Toyota)] [[Значения](/blob/master/search.md#Значения-ответа-Lexus-Toyota)]
-7. Mercedes Benz, Smart [[Ответ](/blob/master/search.md#Пример-ответа-mercedes-benz-smart)] [[Значения](/blob/master/search.md#Значения-ответа-mercedes-benz-smart)]
+7. Mercedes Benz, Smart [[Ответ](#Пример-ответа-mercedes-benz-smart)] [[Значения](#Значения-ответа-mercedes-benz-smart)]
 
 ### Пример ответа BMW, Mini, Rolls Royce
 
