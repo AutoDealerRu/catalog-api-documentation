@@ -245,13 +245,13 @@ curl -H 'Authorization: <token>' \
 ```
 
 ### Примеры по каталогам:
-1. BMW, Mini, Rolls-Royce [[Ответ](/blob/master/search.md#Пример-ответа-BMW-Mini-Rolls-Royce)] [[Значения](/blob/master/search.md#Значения-ответа-BMW-Mini-Rolls-Royce)]
-2. Audi, Seat, Skoda, Volkswagen [[Ответ](/blob/master/search.md#Пример-ответа-Audi-Seat-Skoda-Volkswagen)] [[Значения](/blob/master/search.md#Значения-ответа-Audi-Seat-Skoda-Volkswagen)]
-3. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](/blob/master/search.md#Пример-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Значения](/blob/master/search.md#Значения-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)]
-4. Hyundai, Kia [[Ответ](/blob/master/search.md#Пример-ответа-Hyundai-Kia)] [[Значения](/blob/master/search.md#Значения-ответа-Hyundai-Kia)]
-5. Infiniti, Nissan [[Ответ](/blob/master/search.md#Пример-ответа-Infiniti-Nissan)] [[Значения](/blob/master/search.md#Значения-ответа-Infiniti-Nissan)]
-6. Lexus, Toyota [[Ответ](/blob/master/search.md#Пример-ответа-Lexus-Toyota)] [[Значения](/blob/master/search.md#Значения-ответа-Lexus-Toyota)]
-7. Mercedes Benz, Smart [[Ответ](#Пример-ответа-mercedes-benz-smart)] [[Значения](#Значения-ответа-mercedes-benz-smart)]
+1. BMW, Mini, Rolls-Royce [[Ответ](search.md#Пример-ответа-BMW-Mini-Rolls-Royce)] [[Значения](search.md#Значения-ответа-BMW-Mini-Rolls-Royce)]
+2. Audi, Seat, Skoda, Volkswagen [[Ответ](search.md#Пример-ответа-Audi-Seat-Skoda-Volkswagen)] [[Значения](search.md#Значения-ответа-Audi-Seat-Skoda-Volkswagen)]
+3. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](search.md#Пример-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)] [[Значения](search.md#Значения-ответа-Abarth-Alfa-Romeo-Fiat-Lancia)]
+4. Hyundai, Kia [[Ответ](search.md#Пример-ответа-Hyundai-Kia)] [[Значения](search.md#Значения-ответа-Hyundai-Kia)]
+5. Infiniti, Nissan [[Ответ](search.md#Пример-ответа-Infiniti-Nissan)] [[Значения](search.md#Значения-ответа-Infiniti-Nissan)]
+6. Lexus, Toyota [[Ответ](search.md#Пример-ответа-Lexus-Toyota)] [[Значения](search.md#Значения-ответа-Lexus-Toyota)]
+7. Mercedes Benz, Smart [[Ответ](search.md#Пример-ответа-mercedes-benz-smart)] [[Значения](search.md#Значения-ответа-mercedes-benz-smart)]
 
 ### Пример ответа BMW, Mini, Rolls Royce
 
