@@ -133,6 +133,7 @@ curl -H 'Authorization: <token>' \
 
 | Имя | Тип | Описание |
 | :---- | :------: | :--------------- |
+| id | integer | Идентификатор |
 | name | string | Наименование |
 | number | string | Номер |
 | index | integer | Порядковый номер |
