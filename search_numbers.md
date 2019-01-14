@@ -51,6 +51,8 @@ curl -H 'Authorization: <token>' \
         "notes": "",
         "modification": "KSOY5-42 (5-местный универсал)",
         "number": "8201315743",
+        "index": "1",
+        "id": "21156437",
         "group_short_name": 2085545,
         "model_short_name": 37531,
         "group_name": "Двигатель в сборе (16 кл)",
@@ -70,6 +72,8 @@ curl -H 'Authorization: <token>' \
 | model_short_name | integer | Да | ID модели |
 | group_short_name | integer | Да | ID группы |
 | number | string | - | Номер |
+| index | integer | - | Порядковый номер |
+| id | string | - | Идентификатор |
 | mark_name | string | - | Название марки |
 | model_name | string | - | Название модели |
 | group_name | string | - | Название группы |
