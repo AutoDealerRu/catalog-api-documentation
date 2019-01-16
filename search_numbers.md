@@ -73,7 +73,7 @@ curl -H 'Authorization: <token>' \
 | group_short_name | integer | Да | ID группы |
 | number | string | - | Номер |
 | index | integer | - | Порядковый номер |
-| id | string | - | Идентификатор |
+| id | integer | - | Идентификатор |
 | mark_name | string | - | Название марки |
 | model_name | string | - | Название модели |
 | group_name | string | - | Название группы |
