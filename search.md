@@ -404,7 +404,6 @@ curl -H 'Authorization: <token>' \
 | vins[..].complectation.gearbox.installation_dates[..].date_start | date (string) / null | - | Время начала монтажа |
 | vins[..].complectation.gearbox.installation_dates[..].date_end | date (string) / null | - | Время конца монтажа |
 | vins[..].models[..].full_name | string | - | Выбранная модель |
-
 | vins[..].country_code | string | - | Код страны |
 | vins[..].prod_date | date(string) | - | Производство |
 | vins[..].model_year | integer | - | Модельный год |
