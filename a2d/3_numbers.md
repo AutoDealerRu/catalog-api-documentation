@@ -155,3 +155,16 @@ curl -H 'Authorization: <token>' \
 | :---- | :------: | :--------------- |
 | name | string | Имя хлебной крошки |
 | url | string | адрес текущей хлебной крошки |
+
+# Запрос изображение группы
+
+## `GET /:mark/:model/:subgroup/image`
+
+Ссылка на изображение приходит с группой (параметр image)
+
+### Пример запроса
+
+```bash
+curl -H 'Authorization: <token>' \
+-X GET https://acat.online/api/catalogs/CARS_NATIVE/VAZ/58963/3373787/image
+```
