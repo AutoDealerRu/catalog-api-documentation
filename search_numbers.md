@@ -27,6 +27,7 @@
 8. **Toyota,Lexus** [[Запрос](search_numbers.md#Пример-запроса-toyotalexus)] [[Ответ](search_numbers.md#Пример-ответа-toyotalexus)] [[Значения](search_numbers.md#Значения-ответа-toyotalexus)]
 9. **Mercedes,Smart** [[Запрос](search_numbers.md#Пример-запроса-mercedessmart)] [[Ответ](search_numbers.md#Пример-ответа-mercedessmart)] [[Значения](search_numbers.md#Значения-ответа-mercedessmart)]
 10. **Ssangyong** [[Запрос](search_numbers.md#Пример-запроса-ssangyong)] [[Ответ](search_numbers.md#Пример-ответа-ssangyong)] [[Значения](search_numbers.md#Значения-ответа-ssangyong)]
+11. **Mitsubishi** - нет возможности реализовать поиск, его не будет
 
 ### Пример запроса A2D
 

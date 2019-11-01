@@ -252,6 +252,7 @@ curl -H 'Authorization: <token>' \
 5. Infiniti, Nissan [[Ответ](search.md#Пример-ответа-infiniti-nissan)] [[Значения](search.md#Значения-ответа-infiniti-nissan)]
 6. Lexus, Toyota [[Ответ](search.md#Пример-ответа-lexus-toyota)] [[Значения](search.md#Значения-ответа-lexus-toyota)]
 7. Mercedes Benz, Smart [[Ответ](search.md#Пример-ответа-mercedes-benz-smart)] [[Значения](search.md#Значения-ответа-mercedes-benz-smart)]
+8. Mitsubishi [[Ответ](search.md#Пример-ответа-mitsubishi)] [[Значения](search.md#Значения-ответа-mitsubishi)]
 
 ### Пример ответа BMW, Mini, Rolls Royce
 
@@ -584,3 +585,62 @@ curl -H 'Authorization: <token>' \
 | vins[..].catalog | string | Да | Сокращение страны |
 | vins[..].name | string | - | Информация о модели |
 | vins[..].modification | integer | Да | Имя модели |
+
+
+### Пример ответа Mitsubishi
+**В редких случаях может быть два результата (разные страны)**
+```json
+{
+    "vins": [
+        {
+            "type": "CARS_FOREIGN",
+            "mark": "mitsubishi",
+            "markName": "Mitsubishi",
+            "model": "46540d9181d08100272d2e844a7a5cd1",
+            "modelName": "Colt / Lancer / Mirage / Space Star",
+            "modification": "201fa6542d8785154453f778f386435c",
+            "parameters": [
+                {
+                    "value": "1600(SEDAN)",
+                    "name": "Car parameters"
+                },
+                {
+                    "value": "CS3A",
+                    "name": "Modification"
+                },
+                {
+                    "value": "2007",
+                    "name": "Year"
+                },
+                {
+                    "value": "Europe",
+                    "name": "Region"
+                },
+                {
+                    "value": "Left hand",
+                    "name": "Steering"
+                }
+            ],
+            "criteria": "51*JMBSNCS3A7U022230~2007021$2000121}2011033^T54A<02P",
+            "title": "LANCER/LANCER CLASSIC(EUR)"
+        }
+    ]
+}
+```
+
+### Значения ответа Mitsubishi
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| vins[..].type | string | Да | Тип транспортного средства |
+| vins[..].mark | string | Да | Марка транспортного средства |
+| vins[..].markName | string | - | Название марки |
+| vins[..].model | string | Да | ID модели |
+| vins[..].modelName | string | - | Имя модели (из каталога) |
+| vins[..].modification | string | Да | ID модификации |
+| vins[..].parameters[..].name | string | - | Название параметра |
+| vins[..].parameters[..].value | string | - | Значение параметра |
+| vins[..].criteria | string | Да | Критерия (для фильтрации групп/номеров) |
+| vins[..].title | integer | - | Имя модели (из VIN справочника) |
+
+#### **ВАЖНО!** ссылку формируем https://acat.online/api/catalogs/:type/:mark/:model/:modification?criteria=:criteria
