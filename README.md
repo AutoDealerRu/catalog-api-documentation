@@ -57,4 +57,4 @@ curl -X GET https://acat.online/api/public/types
 Внимание! Индексирование каталога поисковыми роботами запрещено. Пожалуйста, убедитесь, что в файле robots.txt установлены соответствующие запреты.
 При несоблюдении данного условия доступ к сервису будет автоматически заблокирован!
 
-Чтобы заблокировать индексацию каталога, необходимо разместить на вашем сайте файл **[robots.txt](https://212709.selcdn.ru/autocatalog-online/robots.txt)**. Он должен быть доступен по ссылке **[http://ВАШ_САЙТ/robots.txt](https://212709.selcdn.ru/autocatalog-online/robots.txt)**
+Чтобы заблокировать индексацию каталога, необходимо разместить на вашем сайте файл **[robots.txt](https://storage.yandexcloud.net/acat/robots.txt)**. Он должен быть доступен по ссылке **[http://ВАШ_САЙТ/robots.txt](https://storage.yandexcloud.net/acat/robots.txt)**
