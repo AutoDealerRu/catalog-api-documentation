@@ -26,15 +26,12 @@ curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FO
             },
             "id": "817904ab9b87057e1baa7033cdf94530",
             "name": "3000GT(EUR)",
-            "params": [],
-            "filters": null,
             "transmission": {
                 "type": null,
                 "name": null
             },
             "engine": null,
             "bodyType": null,
-            "steeringId": null,
             "steering": null,
             "year": "1990",
             "region": "Европа",
@@ -75,11 +72,56 @@ curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FO
 }
 ```
 
-### Значения models
+### Значения modifications
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| id | string | Да | Идентификатор модели |
+| id | string | Да | Идентификатор модификации |
+| name | string | - | Название модификации |
+| model.name | string | - | Имя модели |
+| model.id | string | - | ID модели |
+| transmission.name | string/null | - | Имя трансмиссии |
+| transmission.type | string/null | - | Тип трансмиссии |
+| engine | string/null | - | Двигатель |
+| bodyType | string/null | - | Тип кузова |
+| steering | string/null | - | Рулевое управление |
+| year | string/null | - | Год выпуска |
+| region | string/null | - | Регион |
+| description | string/null | - | Описание |
+
+### Значения filters
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| sortOrder | integer | - | Порядковый номер фильтра |
+| values | array | - | Значения |
+| values[..].id | string | - | Значение для фильтрации |
+| values[..].text | string | - | Текстовое значение для фильтрации |
+| currentValue | string | - | ID выбранного значения для фильтрации (свойства может не быть) |
+| currentValueText | string | - | Отображаемый текст выбранного значения для фильтрации (свойства может не быть) |
+| name.text | string | - | Название фильтра на русском |
+| name.key | string | - | Передаваемый ключ для фильтрации (year/steering/...) |
+
+#### ВАЖНО! При выборе фильтра допустимые значения для фильтрации обновляются. 
+#### При выборе фильтра сбрасывайте страницу (?...&page=1) или удаляйте этот параметр
+#### Все фильтры передаются в виде filter.name.key=selectedValue.id
+
+
+### Значения
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| pages | integer[] | - | Массив страниц |
+| page | integer | - | Текущая страница |
+| itemsCount | integer | - | Количество записей удовлетворяющих фильтрам (без фильтров) |
+| showEngine | boolean | - | Если true значит у одной и более модификаций есть двигатель |
+| showTransmission | boolean | - | Если true значит у одной и более модификаций есть трансмиссия (name / type) |
+
+### Значения model
+
+| Имя точка | Тип | Используется в URL | Описание |
+| :---- | :------: | :------: | :--------------- |
+| id | string | - | Идентификатор модели |
 | name | string | - | Имя модели |
 | img | string | - | Ссылка на изображение |
 
@@ -91,4 +133,4 @@ curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FO
 | url | string | адрес текущей хлебной крошки |
 
 
-## `GET https://acat.online/api/breadcrumbs[0].url/breadcrumbs[1].url/breadcrumbs[2].url/:model`
+## `GET https://acat.online/api/breadcrumbs[0].url/breadcrumbs[1].url/breadcrumbs[2].url/breadcrumbs[3].url/:modification`
