@@ -1,4 +1,4 @@
-# Модели (models)
+# Модификации (modifications)
 
 ## `GET /:type/:mark/:model`
 
@@ -52,8 +52,7 @@ curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FO
           ],
           "name": {
               "text": "Год",
-              "key": "year",
-              "id": "year"
+              "key": "year"
           }
       },
     ],
