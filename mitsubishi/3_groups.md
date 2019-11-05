@@ -2,16 +2,18 @@
 
 ## `GET /:type/:mark/:model/:modification[/:group][?criteria=]`
 
-Возвращает объект содержащий filters, modifications, breadcrumbs, pages, page, itemsCount
+Возвращает объект содержащий model, modification, breadcrumbs, groups, criteria, group
 
 | Конечная точка | Описание |
 | :---- | :--------------- |
-| GET /CARS_FOREIGN/mitsubishi/d044189982d7063dee143c0a7264f1ee/ | Фильтры и модификации Mitsubishi 3000GT |
+| GET /CARS_FOREIGN/mitsubishi/d044189982d7063dee143c0a7264f1ee/817904ab9b87057e1baa7033cdf94530 | Первый уровень групп |
+| GET /CARS_FOREIGN/mitsubishi/d044189982d7063dee143c0a7264f1ee/817904ab9b87057e1baa7033cdf94530/MfCfmoAxMQ | Второй уровень групп |
 
 ### Пример запроса
 
 ```bash
-curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FOREIGN/mitsubishi/d044189982d7063dee143c0a7264f1ee
+curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FOREIGN/mitsubishi/d044189982d7063dee143c0a7264f1ee/817904ab9b87057e1baa7033cdf94530
+curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FOREIGN/mitsubishi/d044189982d7063dee143c0a7264f1ee/817904ab9b87057e1baa7033cdf94530/MfCfmoAxMQ
 ```
 
 ### Пример ответа
