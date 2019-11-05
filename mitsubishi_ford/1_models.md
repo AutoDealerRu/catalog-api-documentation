@@ -7,6 +7,7 @@
 | Конечная точка | Описание |
 | :---- | :--------------- |
 | GET /CARS_FOREIGN/mitsubishi | Модели марки Mitsubishi |
+| GET /CARS_FOREIGN/ford | Модели марки Ford |
 
 ### Пример запроса
 
