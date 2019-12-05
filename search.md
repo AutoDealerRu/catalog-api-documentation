@@ -621,6 +621,13 @@ curl -H 'Authorization: <token>' \
                     "name": "Steering"
                 }
             ],
+            "optionCodes": [
+                {
+                    "code": "L",
+                    "description": "Left Hand"
+                },
+                ...
+            ],
             "criteria": "51*JMBSNCS3A7U022230~2007021$2000121}2011033^T54A<02P",
             "title": "LANCER/LANCER CLASSIC(EUR)"
         }
@@ -638,8 +645,12 @@ curl -H 'Authorization: <token>' \
 | vins[..].model | string | Да | ID модели |
 | vins[..].modelName | string | - | Имя модели (из каталога) |
 | vins[..].modification | string | Да | ID модификации |
+| vins[..].parameters | object[] | - | Параметры |
 | vins[..].parameters[..].name | string | - | Название параметра |
 | vins[..].parameters[..].value | string | - | Значение параметра |
+| vins[..].optionCodes | object[] | - | Опционные коды |
+| vins[..].optionCodes[..].code | string | - | Код |
+| vins[..].optionCodes[..].description | string | - | Расшифровка |
 | vins[..].criteria | string | Да | Критерия (для фильтрации групп/номеров) |
 | vins[..].title | integer | - | Имя модели (из VIN справочника) |
 

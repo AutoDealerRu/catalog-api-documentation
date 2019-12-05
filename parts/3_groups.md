@@ -74,6 +74,7 @@ curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FO
 | :---- | :------: | :------: | :--------------- |
 | id | string | Да | Идентификатор модели |
 | name | string | - | Название группы/подгруппы |
+| description | string | - | Описание |
 | img | string/null | - | Ссылка на изображение |
 | hasSubgroups | boolean | - | Если истенно, то следующий уровень - группы (появятся изображения) |
 | hasParts | boolean | - | Ссылка на изображение |

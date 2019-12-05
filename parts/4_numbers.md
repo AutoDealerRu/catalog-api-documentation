@@ -117,13 +117,13 @@ curl -H 'Authorization: <token>' -X GET https://acat.online/api/catalogs/CARS_FO
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
-| name | string | - | Название группы (/детали) |
+| name | string | - | Название детали |
 | description | string | - | Описание группы |
 | positionNumber | string | - | Номер позиции |
 | number | string | - | Номер группы |
 | parts | object[] | - | Список номеров |
 | parts[..].id | string | - | Номер |
-| parts[..].name | string/null | - | Название |
+| parts[..].name | string/null | - | Описание детали (примечание) |
 | parts[..].number | string | - | Номер |
 | parts[..].positionNumber | string | - | Номер группы |
 | parts[..].description | string | - | Описание |
