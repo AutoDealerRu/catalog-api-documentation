@@ -14,7 +14,7 @@
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?text=ваз
+-X GET https://acat.online/api/catalogs/search2?text=ваз
 ```
 
 ### Пример ответа поиска по марке
@@ -67,7 +67,7 @@ curl -H 'Authorization: <token>' \
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?text=300
+-X GET https://acat.online/api/catalogs/search2?text=300
 ```
 
 ### Пример ответа поиска по модели
@@ -164,7 +164,7 @@ curl -H 'Authorization: <token>' \
 **Правила кузова: тире обязательно, до тире 3-6 символов(буквы латиницы/цифры), после тире 6-7 цифр**
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?text=00KY6-000001
+-X GET https://acat.online/api/catalogs/search2?text=00KY6-000001
 ```
 
 ### Пример ответа поиска по кузову Nissan
@@ -241,19 +241,19 @@ curl -H 'Authorization: <token>' \
 
 ```bash
 curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search?text=U5YFF24227L020768
+-X GET https://acat.online/api/catalogs/search2?text=U5YFF24227L020768
 ```
 
 ### Примеры по каталогам:
-1. BMW, Mini, Rolls-Royce [[Ответ](search.md#Пример-ответа-bmw-mini-rolls-royce)] [[Значения](search.md#Значения-ответа-bmw-mini-rolls-royce)]
-2. Audi, Seat, Skoda, Volkswagen [[Ответ](search.md#Пример-ответа-audi-seat-skoda-volkswagen)] [[Значения](search.md#Значения-ответа-audi-seat-skoda-volkswagen)]
-3. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](search.md#Пример-ответа-abarth-alfa-romeo-fiat-lancia)] [[Значения](search.md#Значения-ответа-abarth-alfa-romeo-fiat-lancia)]
-4. Hyundai, Kia [[Ответ](search.md#Пример-ответа-hyundai-kia)] [[Значения](search.md#Значения-ответа-hyundai-kia)]
+<!--1. BMW, Mini, Rolls-Royce [[Ответ](search.md#Пример-ответа-bmw-mini-rolls-royce)] [[Значения](search.md#Значения-ответа-bmw-mini-rolls-royce)]
+2. Audi, Seat, Skoda, Volkswagen [[Ответ](search.md#Пример-ответа-audi-seat-skoda-volkswagen)] [[Значения](search.md#Значения-ответа-audi-seat-skoda-volkswagen)]-->
+1. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](search.md#Пример-ответа-abarth-alfa-romeo-fiat-lancia)] [[Значения](search.md#Значения-ответа-abarth-alfa-romeo-fiat-lancia)]
+<!--4. Hyundai, Kia [[Ответ](search.md#Пример-ответа-hyundai-kia)] [[Значения](search.md#Значения-ответа-hyundai-kia)]
 5. Infiniti, Nissan [[Ответ](search.md#Пример-ответа-infiniti-nissan)] [[Значения](search.md#Значения-ответа-infiniti-nissan)]
 6. Lexus, Toyota [[Ответ](search.md#Пример-ответа-lexus-toyota)] [[Значения](search.md#Значения-ответа-lexus-toyota)]
-7. Mercedes Benz, Smart [[Ответ](search.md#Пример-ответа-mercedes-benz-smart)] [[Значения](search.md#Значения-ответа-mercedes-benz-smart)]
-8. Mitsubishi [[Ответ](search.md#Пример-ответа-mitsubishi)] [[Значения](search.md#Значения-ответа-mitsubishi)]
-
+7. Mercedes Benz, Smart [[Ответ](search.md#Пример-ответа-mercedes-benz-smart)] [[Значения](search.md#Значения-ответа-mercedes-benz-smart)]-->
+2. Parts (остальные с отметкой поиска по VIN) [[Ответ](search.md#Пример-ответа-parts)] [[Значения](search.md#Значения-ответа-parts)]
+<!--
 ### Пример ответа BMW, Mini, Rolls Royce
 
 ```json
@@ -417,7 +417,7 @@ curl -H 'Authorization: <token>' \
 | abbreviations[..].family | string | - | Семейство сокращения |
 | abbreviations[..].text | string | - | Текст сокращения (чаще всего англ) |
 | abbreviations[..].family_text | string | - | Семейство текста (чаще русский) |
-
+-->
 ### Пример ответа Abarth, Alfa Romeo, Fiat, Lancia
 
 ```json
@@ -446,7 +446,7 @@ curl -H 'Authorization: <token>' \
 | vins[..].model_short_name | string | Да | Сокращенное имя модели |
 | vins[..].modification_short_name | string | Да | Сокращенное имя модифиации |
 | vins[..].modification_name | string | - | Имя модификации |
-
+<!--
 ### Пример ответа Hyundai, Kia
 **В редких случаях может быть два результата (разные страны)**
 ```json
@@ -585,9 +585,9 @@ curl -H 'Authorization: <token>' \
 | vins[..].catalog | string | Да | Сокращение страны |
 | vins[..].name | string | - | Информация о модели |
 | vins[..].modification | integer | Да | Имя модели |
+-->
 
-
-### Пример ответа Mitsubishi
+### Пример ответа Parts
 **В редких случаях может быть два результата (разные страны)**
 ```json
 {
@@ -635,7 +635,7 @@ curl -H 'Authorization: <token>' \
 }
 ```
 
-### Значения ответа Mitsubishi
+### Значения ответа Parts
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
