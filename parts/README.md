@@ -19,7 +19,9 @@ curl -X GET https://acat.online/api/public/types
           "CARS_FOREIGN",
           "TRUCKS_FOREIGN",
           "BUS",
-          "ENGINE"
+          "ENGINE",
+          "MOTORCYCLE",
+          "SPECIAL_TECH_FOREIGN"
       ],
       "marks": [
           "mitsubishi",
@@ -44,7 +46,29 @@ curl -X GET https://acat.online/api/public/types
           "porsche",
           "chery",
           "volvo-trucks",
-          "man"
+          "man",
+          "renault",
+          "dacia",
+          "ssangyong",
+          "lexus",
+          "toyota",
+          "audi",
+          "seat",
+          "skoda",
+          "vw",
+          "bmw",
+          "bmw-moto",
+          "mini",
+          "rolls-royce",
+          "smart",
+          "infiniti",
+          "nissan",
+          "mercedes",
+          "kia",
+          "hyundai",
+          "saab",
+          "daf",
+          "iveco"
       ]
   }
 }
