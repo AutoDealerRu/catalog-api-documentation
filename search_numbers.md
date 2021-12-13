@@ -18,7 +18,6 @@
 ## Примеры поиска по номеру в разных каталогах
 
 1. **A2D** [[Запрос](search_numbers.md#Пример-запроса-a2d)] [[Ответ](search_numbers.md#Пример-ответа-a2d)] [[Значения](search_numbers.md#Значения-ответа-a2d)]
-2. **Abarth,Alfa-Romeo,Fiat,Lancia** [[Запрос](search_numbers.md#Пример-запроса-abarthalfa-romeofiatlancia)] [[Ответ](search_numbers.md#Пример-ответа-abarthalfa-romeofiatlancia)] [[Значения](search_numbers.md#Значения-ответа-abarthalfa-romeofiatlancia)]
 
 ### Пример запроса A2D
 
@@ -76,56 +75,3 @@ curl -H 'Authorization: <token>' \
 **Для уточнения поиска до модели необходимо передать в запрос ID модели**
 
 [**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/a2d/search.php#L21) на конечную страницу каталога
-
-
-### Пример запроса Abarth,Alfa-Romeo,Fiat,Lancia
-
-```bash
-curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search2?type=CARS_FOREIGN&mark=FIAT&number=71740648
-```
-
-#### Пример ответа Abarth,Alfa-Romeo,Fiat,Lancia
-
-```json
-[
-    {
-        "type": "CARS_FOREIGN",
-        "mark": "FIAT",
-        "model": "CIN",
-        "modification": "3P",
-        "unit": 101,
-        "subgroup": "10101/08",
-        "variant": 1,
-        "number": "71740648",
-        "model_name": "PUNTO",
-        "modification_name": "PUNTO MY 2013 (2013-....)",
-        "unit_name": "БЛОК И ГОЛОВКА ЦИЛИНДРОВ",
-        "group_name": "БЛОК И ГОЛОВКА ЦИЛИНДРОВ",
-        "subgroup_name": "CYLINDER HEAD AND GASKETS",
-        "number_name": "CYLINDER HEAD WITH VALVES"
-    },
-    ...
-]
-```
-
-#### Значения ответа Abarth,Alfa-Romeo,Fiat,Lancia
-
-| Имя точка | Тип | Используется в URL | Описание |
-| :---- | :------: | :------: | :--------------- |
-| type | string | Да | Тип транспортного средства |
-| mark | string | Да | Идентификатор марки |
-| model | string | Да | Идентификатор модели |
-| modification | string | Да | Идентификатор модификации |
-| unit | integer | Да | Идентификатор группы |
-| subgroup | string | Да | Идентификатор подгруппы |
-| variant | integer | Да | Номер варианта изображения |
-| number | string | - | Номер |
-| model_name | string | - | Название модели |
-| modification_name | string | - | Название модификации |
-| unit_name | string | - | Название блока |
-| group_name | string | - | Название группы |
-| subgroup_name | string | - | Название подгруппы |
-| number_name | string | - | Название детали |
-
-[**Пример построения ссылки**](https://github.com/AutoDealerRu/acat-online-example/blob/master/templates/fiat/search.php#L21) на конечную страницу каталога
