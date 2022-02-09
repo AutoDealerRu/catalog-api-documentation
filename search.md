@@ -3,10 +3,9 @@
 **Поиск - глобальный, ищет по всем каталогам**
 
 1. [Поиск по номеру](search_numbers.md#Поиск-по-номеру)
-2. [Поиск по VIN](search.md#Поиск-по-vin)
-3. [Поиск по кузову (frame / фрейму)](search.md#Поиск-по-кузову)
-4. [Поиск по модели](search.md#Поиск-по-модели)
-5. [Поиск по марке](search.md#Поиск-по-марке)
+2. [Поиск по VIN/Frame(кузову)](search.md#Поиск-по-vin)
+3. [Поиск по модели](search.md#Поиск-по-модели)
+4. [Поиск по марке](search.md#Поиск-по-марке)
 
 ## Поиск по марке 
 
@@ -158,81 +157,6 @@ curl -H 'Authorization: <token>' \
 
 
 
-## Поиск по кузову
-
-### Пример запроса поиска по кузову
-**Правила кузова: тире обязательно, до тире 3-6 символов(буквы латиницы/цифры), после тире 6-7 цифр**
-```bash
-curl -H 'Authorization: <token>' \
--X GET https://acat.online/api/catalogs/search2?text=00KY6-000001
-```
-
-### Пример ответа поиска по кузову Nissan
-
-```json
-{
-    "frames": [
-        {
-            "type": "CARS_FOREIGN",
-            "mark": "NISSAN",
-            "country_short_name": "AR",
-            "directory": "321",
-            "modification": 2,
-            "model_name": "SAFARI Y60"
-        },
-        ...
-    ]
-}
-```
-
-### Значения поиска по кузову Nissan
-
-| Имя точка | Тип | Используется в URL | Описание |
-| :---- | :------: | :------: | :--------------- |
-| frames | array of objects | - | Результаты поиска по кузову |
-| frames[..].type | string | Да | Тип транспортного средства |
-| frames[..].mark | string | Да | Марка транспортного средства |
-| frames[..].country_short_name | string | Да | Сокращение страны |
-| frames[..].directory | string | Да | Сокращенный номер модели |
-| frames[..].modification | integer | Да | Номер модификации |
-| frames[..].model_name | string | - | Модели с модификацией |
-
-### Пример ответа поиска по кузову Toyota/Lexus
-
-```json
-{
-    "frames": [
-        {
-            "type": "CARS_FOREIGN",
-            "mark": "TOYOTA",
-            "country_short_name": "JP",
-            "catalog_code": "662120",
-            "model_code": "ACA20W-AZPSH",
-            "sysopt": "sysopt",
-            "complectation_code": "006",
-            "model_name": "RAV4 J/L"
-        },
-        ...
-    ]
-}
-```
-
-### Значения поиска по кузову Toyota/Lexus
-
-| Имя точка | Тип | Используется в URL | Описание |
-| :---- | :------: | :------: | :--------------- |
-| frames | array | - | Результаты поиска по кузову |
-| frames[..].type | string | Да | Тип транспортного средства |
-| frames[..].mark | string | Да | Марка транспортного средства |
-| frames[..].country_short_name | string | Да | Сокращение страны |
-| frames[..].catalog_code | string | Да | Сокращенный номер каталога |
-| frames[..].model_code | string | Да | Сокращенный номер модели |
-| frames[..].sysopt | string | Да | - |
-| frames[..].complectation_code | string | Да | Номер комплектации |
-| frames[..].model_name | string | - | Модели с модификацией |
-
-
-
 ## Поиск по VIN
 **Результаты для каждого из каталогов немного отличаются**
 **Для определения каталога используйте vins[..].mark**
@@ -249,49 +173,11 @@ curl -H 'Authorization: <token>' \
 ```bash
 curl -H 'Authorization: <token>' \
 -X GET https://acat.online/api/catalogs/search2?text=U5YFF24227L020768&catalog=PARTS&mark=kia
-``` 
-
-1. Доступные каталоги для поиска по VIN: FIAT, PARTS
-2. Доступные марки можно посмотреть по [[ссылке](https://acat.online/api/public/types)]
-
-Например у каталога FIAT:
-```
-"marks": [ "FIAT", "LANCIA", "ALFA_ROMEO", "ABARTH" ]
 ```
 
 
 ### Примеры по каталогам:
-1. Abarth, Alfa Romeo, Fiat, Lancia [[Ответ](search.md#Пример-ответа-abarth-alfa-romeo-fiat-lancia)] [[Значения](search.md#Значения-ответа-abarth-alfa-romeo-fiat-lancia)]
-2. Parts (остальные с отметкой поиска по VIN) [[Ответ](search.md#Пример-ответа-parts)] [[Значения](search.md#Значения-ответа-parts)]
-
-### Пример ответа Abarth, Alfa Romeo, Fiat, Lancia
-
-```json
-{
-    "vins": [
-        {
-            "vin": "323B3118594",
-            "type": "CARS_FOREIGN",
-            "mark": "FIAT",
-            "model_short_name": "LIN",
-            "modification_short_name": "3M",
-            "modification_name": "LINEA (2007-....)"
-        },
-        ...
-    ]
-}
-```
-
-### Значения ответа Abarth, Alfa Romeo, Fiat, Lancia
-
-| Имя точка | Тип | Используется в URL | Описание |
-| :---- | :------: | :------: | :--------------- |
-| vins[..].vin | string | - | VIN номер |
-| vins[..].type | string | Да | Тип транспортного средства |
-| vins[..].mark_short_name | string | Да | Марка |
-| vins[..].model_short_name | string | Да | Сокращенное имя модели |
-| vins[..].modification_short_name | string | Да | Сокращенное имя модифиации |
-| vins[..].modification_name | string | - | Имя модификации |
+1. Parts [[Ответ](search.md#Пример-ответа-parts)] [[Значения](search.md#Значения-ответа-parts)]
 
 ### Пример ответа Parts
 **В редких случаях может быть два результата (разные страны)**
@@ -304,6 +190,7 @@ curl -H 'Authorization: <token>' \
             "markName": "Mitsubishi",
             "model": "46540d9181d08100272d2e844a7a5cd1",
             "modelName": "Colt / Lancer / Mirage / Space Star",
+            "modelImg": "https://img2.acat.online/models/mitsubishi/Colt_Lancer_Mirage_Space-Star.jpg",
             "modification": "201fa6542d8785154453f778f386435c",
             "parameters": [
                 {
@@ -335,6 +222,7 @@ curl -H 'Authorization: <token>' \
                 ...
             ],
             "criteria": "51*JMBSNCS3A7U022230~2007021$2000121}2011033^T54A<02P",
+            "criteriaURI": "b6%2AJMBSNC62AKU467010~1988113!c16f6b53%241988041%7D1995073%5EWB9+%3C27H%3EU09",
             "title": "LANCER/LANCER CLASSIC(EUR)"
         }
     ]
@@ -349,7 +237,8 @@ curl -H 'Authorization: <token>' \
 | vins[..].mark | string | Да | Марка транспортного средства |
 | vins[..].markName | string | - | Название марки |
 | vins[..].model | string | Да | ID модели |
-| vins[..].modelName | string | - | Имя модели (из каталога) |
+| vins[..].modelName | string/null | - | Имя модели (из каталога) |
+| vins[..].modelImg | string/null | - | Изображение модели |
 | vins[..].modification | string | Да | ID модификации |
 | vins[..].parameters | object[] | - | Параметры |
 | vins[..].parameters[..].name | string | - | Название параметра |
@@ -357,7 +246,8 @@ curl -H 'Authorization: <token>' \
 | vins[..].optionCodes | object[] | - | Опционные коды |
 | vins[..].optionCodes[..].code | string | - | Код |
 | vins[..].optionCodes[..].description | string | - | Расшифровка |
-| vins[..].criteria | string | Да | Критерия (для фильтрации групп/номеров) |
-| vins[..].title | integer | - | Имя модели (из VIN справочника) |
+| vins[..].criteria | string | - | Критерия (для фильтрации групп/номеров) |
+| vins[..].criteriaURI | string | Да | Критерия (для фильтрации групп/номеров) |
+| vins[..].title | string | - | Имя модели (из VIN справочника) |
 
 #### **ВАЖНО!** ссылку формируем https://acat.online/api/catalogs/:type/:mark/:model/:modification?criteria=:criteria
