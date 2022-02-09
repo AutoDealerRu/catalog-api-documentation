@@ -158,8 +158,6 @@ curl -H 'Authorization: <token>' \
 
 
 ## Поиск по VIN
-**Результаты для каждого из каталогов немного отличаются**
-**Для определения каталога используйте vins[..].mark**
 
 ### Пример запроса
 
@@ -168,18 +166,14 @@ curl -H 'Authorization: <token>' \
 -X GET https://acat.online/api/catalogs/search2?text=U5YFF24227L020768
 ```
 
-#### Пример запроса с указанием марки
+### Пример запроса с указанием марки
 
 ```bash
 curl -H 'Authorization: <token>' \
 -X GET https://acat.online/api/catalogs/search2?text=U5YFF24227L020768&catalog=PARTS&mark=kia
 ```
 
-
-### Примеры по каталогам:
-1. Parts [[Ответ](search.md#Пример-ответа-parts)] [[Значения](search.md#Значения-ответа-parts)]
-
-### Пример ответа Parts
+### Пример ответа
 **В редких случаях может быть два результата (разные страны)**
 ```json
 {
@@ -229,7 +223,7 @@ curl -H 'Authorization: <token>' \
 }
 ```
 
-### Значения ответа Parts
+### Значения ответа
 
 | Имя точка | Тип | Используется в URL | Описание |
 | :---- | :------: | :------: | :--------------- |
@@ -250,4 +244,4 @@ curl -H 'Authorization: <token>' \
 | vins[..].criteriaURI | string | Да | Критерия (для фильтрации групп/номеров) |
 | vins[..].title | string | - | Имя модели (из VIN справочника) |
 
-#### **ВАЖНО!** ссылку формируем https://acat.online/api/catalogs/:type/:mark/:model/:modification?criteria=:criteria
+#### **ВАЖНО!** ссылку формируем https://acat.online/api/catalogs/:type/:mark/:model/:modification?criteria=vins[..].criteriaURI
